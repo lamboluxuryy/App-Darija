@@ -195,5 +195,197 @@ export const quizzes = [
         explanation: "'Inshallah' = si Dieu le veut. Peut exprimer l'espoir ou poliment l'incertitude."
       }
     ]
+  },
+  {
+    id: 5,
+    courseId: 8,
+    title: "Quiz : Émotions & Météo",
+    emoji: "🌤️",
+    questions: [
+      {
+        id: 1,
+        type: "translate-to-french",
+        question: "Que signifie 'Ferhan' ?",
+        correct: "Content / Heureux",
+        options: ["Triste", "Content / Heureux", "Fatigué", "Effrayé"],
+        explanation: "'Ferhan' = content ou heureux. 'Ferhana' pour le féminin."
+      },
+      {
+        id: 2,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'Il pleut' en Darija ?",
+        correct: "Kayna shta",
+        options: ["Kayna shta", "Kayn berd", "Kayn shemsh", "Kayn rih"],
+        explanation: "'Kayna shta' = il y a de la pluie / il pleut. 'Shta' = la pluie."
+      },
+      {
+        id: 3,
+        type: "choose-meaning",
+        question: "Quelle émotion exprime 'Hzin' ?",
+        correct: "Tristesse",
+        options: ["Joie", "Tristesse", "Colère", "Surprise"],
+        explanation: "'Hzin/Hzina' = triste. La racine 'hzn' exprime la tristesse en arabe."
+      },
+      {
+        id: 4,
+        type: "fill-blank",
+        question: "'_____ bzzaf f-mrakesh f-sayf.' (Il fait très chaud à Marrakech en été)",
+        correct: "Shkhoun",
+        options: ["Berd", "Shta", "Shkhoun", "Rih"],
+        explanation: "'Shkhoun' = chaud. 'Berd' = froid. Deux mots clés pour la météo."
+      },
+      {
+        id: 5,
+        type: "translate-to-french",
+        question: "Que signifie '3yyan' ?",
+        correct: "Fatigué / Malade",
+        options: ["Content", "En colère", "Fatigué / Malade", "Ennuyé"],
+        explanation: "'3yyan/3yyana' = fatigué(e) ou malade selon le contexte."
+      }
+    ]
+  },
+  {
+    id: 6,
+    courseId: 12,
+    title: "Quiz : La Maison & Le Corps",
+    emoji: "🏠",
+    questions: [
+      {
+        id: 1,
+        type: "translate-to-french",
+        question: "Que signifie 'Dar' ?",
+        correct: "Maison",
+        options: ["Chambre", "Maison", "Cuisine", "Salon"],
+        explanation: "'Dar' = maison ou chez soi. 'Ana f-dar' = je suis à la maison."
+      },
+      {
+        id: 2,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'tête' en Darija ?",
+        correct: "Ras",
+        options: ["Rejl", "Draa", "Ras", "Qelb"],
+        explanation: "'Ras' = tête. Aussi utilisé familièrement pour 'chef' ou 'sommet'."
+      },
+      {
+        id: 3,
+        type: "choose-meaning",
+        question: "Que désigne 'Bit l-ma' ?",
+        correct: "Salle de bain",
+        options: ["Cuisine", "Salon", "Salle de bain", "Chambre à coucher"],
+        explanation: "'Bit' = pièce, 'l-ma' = l'eau. Littéralement 'la pièce de l'eau', c'est la salle de bain."
+      },
+      {
+        id: 4,
+        type: "fill-blank",
+        question: "'Khaydini _____.' (J'ai mal à la tête)",
+        correct: "Ras",
+        options: ["Bit", "Sali", "Ras", "Bab"],
+        explanation: "'Khaydini ras' = j'ai mal à la tête. 'Khaydini' = ça me fait mal."
+      },
+      {
+        id: 5,
+        type: "translate-to-french",
+        question: "Que signifie 'Shbbak' ?",
+        correct: "Fenêtre",
+        options: ["Porte", "Fenêtre", "Mur", "Escalier"],
+        explanation: "'Shbbak' = fenêtre. Vient de l'arabe classique 'shubbak'."
+      }
+    ]
+  },
+  {
+    id: 7,
+    courseId: 7,
+    title: "Quiz : Transports & Directions",
+    emoji: "🚌",
+    questions: [
+      {
+        id: 1,
+        type: "translate-to-french",
+        question: "Que signifie 'Tiyara' ?",
+        correct: "Avion",
+        options: ["Bus", "Train", "Avion", "Voiture"],
+        explanation: "'Tiyara' = avion. Vient de 'tar' (voler). Mot très imagé !"
+      },
+      {
+        id: 2,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'à gauche' en Darija ?",
+        correct: "L-lisar",
+        options: ["L-limin", "L-lisar", "Negda", "Mn hnaya"],
+        explanation: "'L-lisar' = à gauche. Emprunté du français 'la gauche' !"
+      },
+      {
+        id: 3,
+        type: "choose-meaning",
+        question: "Que signifie 'Fein kayn' ?",
+        correct: "Où se trouve ?",
+        options: ["C'est loin", "Tourne à droite", "Où se trouve ?", "Va tout droit"],
+        explanation: "'Fein kayn' = où se trouve. 'Fein' = où, 'kayn' = il y a / se trouve."
+      },
+      {
+        id: 4,
+        type: "fill-blank",
+        question: "'Mshi _____ hta l-place.' (Va tout droit jusqu'à la place)",
+        correct: "Negda",
+        options: ["L-limin", "L-lisar", "Negda", "B3id"],
+        explanation: "'Negda' = tout droit, en ligne droite. Indispensable pour s'orienter."
+      },
+      {
+        id: 5,
+        type: "translate-to-french",
+        question: "Que signifie 'Qrib' ?",
+        correct: "Proche / Près",
+        options: ["Loin", "À droite", "Proche / Près", "Derrière"],
+        explanation: "'Qrib' = proche/près. Son contraire est 'b3id' = loin."
+      }
+    ]
+  },
+  {
+    id: 8,
+    courseId: 11,
+    title: "Quiz : Le Travail & Le Temps",
+    emoji: "💼",
+    questions: [
+      {
+        id: 1,
+        type: "translate-to-french",
+        question: "Que signifie 'L-flous' ?",
+        correct: "L'argent",
+        options: ["Le patron", "Le travail", "L'argent", "Le salaire"],
+        explanation: "'L-flous' = l'argent. Toujours au pluriel en Darija. Vient du grec 'obolos'."
+      },
+      {
+        id: 2,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'demain' en Darija ?",
+        correct: "Ghda",
+        options: ["Lbareh", "Ghda", "Nhar", "Simana"],
+        explanation: "'Ghda' = demain. Souvent suivi de 'inshallah' pour exprimer l'espoir."
+      },
+      {
+        id: 3,
+        type: "choose-meaning",
+        question: "Que signifie 'Rtabt' ?",
+        correct: "Je me suis reposé(e)",
+        options: ["J'ai travaillé", "Je me suis reposé(e)", "J'ai voyagé", "J'ai dormi"],
+        explanation: "'Rtabt' = je me suis reposé(e). Passé du verbe 'rtah' (se reposer)."
+      },
+      {
+        id: 4,
+        type: "fill-blank",
+        question: "'_____ mezyana walakin b3ida.' (Le boulot est bien mais c'est loin)",
+        correct: "L-khedma",
+        options: ["L-mdir", "L-flous", "L-khedma", "L-mokhdem"],
+        explanation: "'L-khedma' = le travail/boulot. Plus familier que 'l-3aml'."
+      },
+      {
+        id: 5,
+        type: "translate-to-french",
+        question: "Que signifie 'Lbareh' ?",
+        correct: "Hier",
+        options: ["Demain", "Aujourd'hui", "Hier", "La semaine dernière"],
+        explanation: "'Lbareh' = hier. Très courant dans les récits du quotidien."
+      }
+    ]
   }
 ];

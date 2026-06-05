@@ -1,0 +1,18 @@
+export const achievementsList = [
+  { id: 'first-lesson', title: 'Premier pas', description: 'Vous avez complété votre première leçon !', condition: 'Complétez 1 leçon', emoji: '🌱', xpReward: 10, rarity: 'common' },
+  { id: 'five-lessons', title: 'En route', description: '5 leçons complétées !', condition: 'Complétez 5 leçons', emoji: '📚', xpReward: 20, rarity: 'common' },
+  { id: 'ten-lessons', title: 'Apprenti Darija', description: '10 leçons au compteur !', condition: 'Complétez 10 leçons', emoji: '⚡', xpReward: 40, rarity: 'rare' },
+  { id: 'twenty-lessons', title: 'Sérieux apprenant', description: '20 leçons — vous connaissez le Darija !', condition: 'Complétez 20 leçons', emoji: '🔥', xpReward: 60, rarity: 'rare' },
+  { id: 'first-quiz', title: 'Testeur', description: 'Votre premier quiz passé.', condition: 'Passez 1 quiz', emoji: '🧠', xpReward: 15, rarity: 'common' },
+  { id: 'all-quizzes', title: 'Quiz Master', description: 'Tous les quiz complétés !', condition: 'Complétez tous les quiz', emoji: '🏆', xpReward: 100, rarity: 'epic' },
+  { id: 'perfect-quiz', title: 'Score parfait', description: '100% à un quiz !', condition: 'Obtenez 100% à un quiz', emoji: '💯', xpReward: 50, rarity: 'rare' },
+  { id: 'first-fav', title: 'Collectionneur', description: 'Premier favori ajouté.', condition: 'Ajoutez 1 favori', emoji: '⭐', xpReward: 5, rarity: 'common' },
+  { id: 'ten-favs', title: 'Grand collectionneur', description: '10 favoris sauvegardés !', condition: 'Ajoutez 10 favoris', emoji: '🌟', xpReward: 25, rarity: 'rare' },
+  { id: 'xp-50', title: 'Premier niveau', description: '50 XP gagnés !', condition: 'Gagnez 50 XP', emoji: '🎯', xpReward: 0, rarity: 'common' },
+  { id: 'xp-200', title: 'Montée en puissance', description: '200 XP gagnés !', condition: 'Gagnez 200 XP', emoji: '💪', xpReward: 0, rarity: 'rare' },
+  { id: 'xp-500', title: 'Intermédiaire confirmé', description: '500 XP — un vrai niveau !', condition: 'Gagnez 500 XP', emoji: '💎', xpReward: 0, rarity: 'epic' },
+  { id: 'xp-1000', title: 'Expert', description: '1000 XP — vous êtes une référence !', condition: 'Gagnez 1000 XP', emoji: '👑', xpReward: 0, rarity: 'legendary' },
+  { id: 'streak-7', title: 'Semaine parfaite', description: '7 jours de suite !', condition: 'Maintenez 7 jours de série', emoji: '🔥', xpReward: 70, rarity: 'epic' },
+  { id: 'first-dialogue', title: 'Dialogueur', description: 'Premier dialogue complété.', condition: 'Complétez 1 dialogue', emoji: '💬', xpReward: 20, rarity: 'common' },
+  { id: 'first-flashcard', title: 'Mémoire vive', description: 'Première session de flashcards !', condition: 'Faites 1 flashcard', emoji: '🃏', xpReward: 10, rarity: 'common' },
+];
