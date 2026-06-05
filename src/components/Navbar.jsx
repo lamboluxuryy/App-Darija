@@ -24,12 +24,12 @@ const allLinks = [
 
 export default function Navbar() {
   const location = useLocation();
-  const { xp, getLevel } = useApp();
+  const { xp, getLevel, userProfile } = useApp();
   const level = getLevel();
 
   const isActive = (path) => {
     if (path === '/pratiquer') {
-      return ['/oral', '/flashcards', '/dialogues'].includes(location.pathname);
+      return ['/oral', '/flashcards', '/dialogues', '/speaking'].includes(location.pathname);
     }
     return location.pathname === path;
   };
@@ -68,13 +68,15 @@ export default function Navbar() {
           })}
         </nav>
 
-        <div className="flex items-center gap-2 px-3 py-2 rounded-xl glass-gold flex-shrink-0">
-          <span className="text-base">{level.icon}</span>
+        <Link to="/profil" className="flex items-center gap-2 px-3 py-2 rounded-xl glass-gold flex-shrink-0 hover:scale-105 transition-all">
+          <span className="text-xl">{userProfile?.avatar || level.icon}</span>
           <div>
-            <div className="text-xs text-amber-400/70 leading-tight">XP</div>
-            <div className="text-sm font-bold text-amber-400 leading-tight">{xp}</div>
+            <div className="text-xs text-amber-400/70 leading-tight truncate max-w-20">
+              {userProfile?.name || 'Mon profil'}
+            </div>
+            <div className="text-sm font-bold text-amber-400 leading-tight">{xp} XP</div>
           </div>
-        </div>
+        </Link>
       </header>
 
       {/* Tablet mid nav */}

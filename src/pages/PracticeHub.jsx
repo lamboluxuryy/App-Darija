@@ -1,10 +1,21 @@
 import { Link } from 'react-router-dom';
-import { Mic, CreditCard, MessageSquare, ChevronRight } from 'lucide-react';
+import { Mic, CreditCard, MessageSquare, ChevronRight, Radio } from 'lucide-react';
 import { useApp } from '../context/AppContext';
 import { dialogues } from '../data/dialogues';
 import { courses } from '../data/courses';
 
 const sections = [
+  {
+    to: '/speaking',
+    icon: Radio,
+    emoji: '🎤',
+    title: 'Parler Darija',
+    desc: 'Entraînez votre prononciation avec le micro — écoute et répétition',
+    color: 'from-rose-500/20 to-pink-500/20',
+    border: 'border-rose-500/30',
+    iconColor: 'text-rose-400',
+    stat: '48 phrases',
+  },
   {
     to: '/oral',
     icon: Mic,

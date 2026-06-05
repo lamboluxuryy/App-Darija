@@ -40,6 +40,10 @@ export function AppProvider({ children }) {
     const s = localStorage.getItem('darija-word-of-day');
     return s ? JSON.parse(s) : null;
   });
+  const [userProfile, setUserProfileState] = useState(() => {
+    const s = localStorage.getItem('darija-user-profile');
+    return s ? JSON.parse(s) : null;
+  });
 
   // Persist
   useEffect(() => { localStorage.setItem('darija-completed-lessons', JSON.stringify(completedLessons)); }, [completedLessons]);
@@ -52,6 +56,12 @@ export function AppProvider({ children }) {
   useEffect(() => { localStorage.setItem('darija-favorites', JSON.stringify(favorites)); }, [favorites]);
   useEffect(() => { localStorage.setItem('darija-achievements', JSON.stringify(unlockedAchievements)); }, [unlockedAchievements]);
   useEffect(() => { if (wordOfDay) localStorage.setItem('darija-word-of-day', JSON.stringify(wordOfDay)); }, [wordOfDay]);
+  useEffect(() => { if (userProfile) localStorage.setItem('darija-user-profile', JSON.stringify(userProfile)); }, [userProfile]);
+
+  const setUserProfile = (profile) => {
+    setUserProfileState(profile);
+    localStorage.setItem('darija-user-profile', JSON.stringify(profile));
+  };
 
   // Streak update on mount
   useEffect(() => {
@@ -83,7 +93,7 @@ export function AppProvider({ children }) {
         case 'ten-lessons': unlocked = totalLessons >= 10; break;
         case 'twenty-lessons': unlocked = totalLessons >= 20; break;
         case 'first-quiz': unlocked = totalQuizzes >= 1; break;
-        case 'all-quizzes': unlocked = totalQuizzes >= 8; break;
+        case 'all-quizzes': unlocked = totalQuizzes >= 20; break;
         case 'perfect-quiz': unlocked = state.perfectQuiz ?? false; break;
         case 'first-fav': unlocked = totalFavs >= 1; break;
         case 'ten-favs': unlocked = totalFavs >= 10; break;
@@ -168,6 +178,7 @@ export function AppProvider({ children }) {
       completedLessons, completedQuizzes, completedDialogues,
       flashcardHistory, xp, streak, favorites,
       unlockedAchievements, newAchievement, wordOfDay,
+      userProfile, setUserProfile,
       setWordOfDay, completeLesson, completeQuiz,
       completeDialogue, recordFlashcard, toggleFavorite, getLevel,
     }}>

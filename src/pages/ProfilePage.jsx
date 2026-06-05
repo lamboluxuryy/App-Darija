@@ -1,9 +1,12 @@
-import { Trophy, Flame, BookOpen, Star, Zap, CheckCircle, Lock } from 'lucide-react';
+import { useState } from 'react';
+import { Trophy, Flame, BookOpen, Star, Zap, CheckCircle, Edit2 } from 'lucide-react';
 import { useApp } from '../context/AppContext';
 import { courses } from '../data/courses';
 import { quizzes } from '../data/quizzes';
 import { achievementsList } from '../data/achievements';
 import { dialogues } from '../data/dialogues';
+
+const AVATARS = ['🧑', '👨', '👩', '🧔', '👦', '👧', '🧑‍💻', '👨‍🎓', '👩‍🎓', '🤓', '😎', '🥷', '🦸', '🎓', '🌟', '🦁', '🐯', '🦅', '🌙', '🔥'];
 
 const rarityConfig = {
   common: { label: 'Commun', color: 'text-gray-400 border-gray-400/30 bg-gray-400/10' },
@@ -16,9 +19,19 @@ export default function ProfilePage() {
   const {
     xp, streak, completedLessons, completedQuizzes,
     completedDialogues, favorites, unlockedAchievements, getLevel,
+    userProfile, setUserProfile,
   } = useApp();
 
   const level = getLevel();
+  const [editing, setEditing] = useState(false);
+  const [editName, setEditName] = useState(userProfile?.name || '');
+  const [editAvatar, setEditAvatar] = useState(userProfile?.avatar || '🧑');
+
+  const saveEdit = () => {
+    if (!editName.trim()) return;
+    setUserProfile({ ...userProfile, name: editName.trim(), avatar: editAvatar });
+    setEditing(false);
+  };
   const progressPercent = level.next
     ? Math.min(((xp - (level.prev || 0)) / (level.next - (level.prev || 0))) * 100, 100)
     : 100;
@@ -44,9 +57,21 @@ export default function ProfilePage() {
         <div className="glass rounded-3xl p-8 mb-6 text-center relative overflow-hidden">
           <div className="absolute inset-0 moroccan-pattern opacity-20" />
           <div className="relative">
-            <div className="text-7xl mb-3 animate-float">{level.icon}</div>
-            <h1 className="text-2xl font-bold text-white mb-1">Mon Profil</h1>
-            <div className="gradient-text text-3xl font-bold mb-4">{level.name}</div>
+            {/* Edit button */}
+            <button
+              onClick={() => { setEditing(true); setEditName(userProfile?.name || ''); setEditAvatar(userProfile?.avatar || '🧑'); }}
+              className="absolute top-0 right-0 p-2 text-white/30 hover:text-amber-400 transition-colors"
+            >
+              <Edit2 size={16} />
+            </button>
+
+            <div className="text-7xl mb-2 animate-float">{userProfile?.avatar || level.icon}</div>
+            {userProfile?.name ? (
+              <h1 className="text-2xl font-bold text-white mb-0.5">{userProfile.name}</h1>
+            ) : (
+              <h1 className="text-2xl font-bold text-white mb-0.5">Mon Profil</h1>
+            )}
+            <div className="gradient-text text-xl font-bold mb-4">{level.icon} {level.name}</div>
 
             {level.next ? (
               <div className="max-w-xs mx-auto">
@@ -154,7 +179,7 @@ export default function ProfilePage() {
         </div>
 
         {/* Reset */}
-        <div className="text-center">
+        <div className="text-center mb-8">
           <button
             onClick={() => {
               if (window.confirm('Réinitialiser toute la progression ? Cette action est irréversible.')) {
@@ -167,6 +192,45 @@ export default function ProfilePage() {
             Réinitialiser la progression
           </button>
         </div>
+
+        {/* Edit modal */}
+        {editing && (
+          <div className="fixed inset-0 z-[150] flex items-center justify-center bg-black/70 backdrop-blur-sm px-4">
+            <div className="glass border border-amber-400/20 rounded-3xl p-7 max-w-sm w-full text-center">
+              <h2 className="text-xl font-bold text-white mb-5">Modifier le profil</h2>
+              <input
+                type="text"
+                value={editName}
+                onChange={e => setEditName(e.target.value)}
+                placeholder="Votre prénom"
+                maxLength={20}
+                autoFocus
+                className="w-full px-4 py-3 rounded-2xl bg-white/10 border border-white/20 text-white placeholder-white/30 text-center text-lg mb-4 focus:outline-none focus:border-amber-400/60 transition-all"
+              />
+              <div className="grid grid-cols-5 gap-2 mb-5">
+                {AVATARS.map(em => (
+                  <button
+                    key={em}
+                    onClick={() => setEditAvatar(em)}
+                    className={`text-2xl w-11 h-11 rounded-xl transition-all ${
+                      editAvatar === em ? 'bg-amber-400/30 ring-2 ring-amber-400 scale-110' : 'hover:bg-white/10'
+                    }`}
+                  >
+                    {em}
+                  </button>
+                ))}
+              </div>
+              <div className="flex gap-3">
+                <button onClick={() => setEditing(false)} className="flex-1 py-3 rounded-2xl glass border border-white/10 text-white/60">
+                  Annuler
+                </button>
+                <button onClick={saveEdit} disabled={!editName.trim()} className="flex-1 py-3 rounded-2xl font-bold bg-gradient-to-r from-amber-400 to-orange-500 text-black disabled:opacity-30">
+                  Sauvegarder
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

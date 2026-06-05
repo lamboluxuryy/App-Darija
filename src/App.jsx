@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { AppProvider } from './context/AppContext';
 import Navbar from './components/Navbar';
 import AchievementToast from './components/AchievementToast';
+import OnboardingModal from './components/OnboardingModal';
 import Home from './pages/Home';
 import CoursesPage from './pages/CoursesPage';
 import LessonPage from './pages/LessonPage';
@@ -14,14 +15,16 @@ import DictionaryPage from './pages/DictionaryPage';
 import GrammarPage from './pages/GrammarPage';
 import ProfilePage from './pages/ProfilePage';
 import PracticeHub from './pages/PracticeHub';
+import SpeakingPage from './pages/SpeakingPage';
 
 export default function App() {
   return (
     <AppProvider>
       <BrowserRouter basename="/App-Darija">
-        <div className="min-h-screen bg-[#0f0a1e]">
+        <div className="min-h-screen app-bg">
           <Navbar />
           <AchievementToast />
+          <OnboardingModal />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/cours" element={<CoursesPage />} />
@@ -30,6 +33,7 @@ export default function App() {
             <Route path="/pratiquer" element={<PracticeHub />} />
             <Route path="/flashcards" element={<FlashcardsPage />} />
             <Route path="/dialogues" element={<DialoguePage />} />
+            <Route path="/speaking" element={<SpeakingPage />} />
             <Route path="/quiz" element={<QuizPage />} />
             <Route path="/dictionnaire" element={<DictionaryPage />} />
             <Route path="/grammaire" element={<GrammarPage />} />
