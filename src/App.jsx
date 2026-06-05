@@ -11,7 +11,7 @@ import FavoritesPage from './pages/FavoritesPage';
 export default function App() {
   return (
     <AppProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/App-Darija">
         <div className="min-h-screen bg-[#0f0a1e]">
           <Navbar />
           <Routes>
