@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { BookOpen, Mic, HelpCircle, Home, User, MessageSquare, CreditCard, BookMarked, NotebookPen } from 'lucide-react';
+import { BookOpen, Mic, HelpCircle, Home, User, MessageSquare, CreditCard, BookMarked, NotebookPen, Map } from 'lucide-react';
 import { useApp } from '../context/AppContext';
 
 const navItems = [
@@ -19,6 +19,7 @@ const allLinks = [
   { path: '/quiz', icon: HelpCircle, label: 'Quiz' },
   { path: '/dictionnaire', icon: BookMarked, label: 'Dictionnaire' },
   { path: '/grammaire', icon: NotebookPen, label: 'Grammaire' },
+  { path: '/parcours', icon: Map, label: 'Parcours' },
   { path: '/profil', icon: User, label: 'Profil' },
 ];
 

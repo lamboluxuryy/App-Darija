@@ -16,6 +16,7 @@ import GrammarPage from './pages/GrammarPage';
 import ProfilePage from './pages/ProfilePage';
 import PracticeHub from './pages/PracticeHub';
 import SpeakingPage from './pages/SpeakingPage';
+import ParcoursPage from './pages/ParcoursPage';
 
 export default function App() {
   return (
@@ -39,6 +40,7 @@ export default function App() {
             <Route path="/grammaire" element={<GrammarPage />} />
             <Route path="/favoris" element={<FavoritesPage />} />
             <Route path="/profil" element={<ProfilePage />} />
+            <Route path="/parcours" element={<ParcoursPage />} />
           </Routes>
         </div>
       </BrowserRouter>

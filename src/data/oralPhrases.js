@@ -390,6 +390,202 @@ export const oralPhrases = [
         tags: ["maison", "voisins"]
       }
     ]
+  },
+  {
+    id: 9,
+    category: "Médina & Souk",
+    emoji: "🏛️",
+    phrases: [
+      {
+        darija: "فين كاين باب المدينة القديمة؟",
+        romanization: "Fin kayn bab l-mdina l-qdima?",
+        translation: "Où est la porte de la vieille ville ?",
+        difficulty: "easy",
+        tags: ["médina", "navigation"]
+      },
+      {
+        darija: "خفض ليا الثمن، هاد السعر غالي بزاف",
+        romanization: "Khfed liya t-taman, had s-s3er ghali bzzaf",
+        translation: "Baisse-moi le prix, c'est vraiment trop cher",
+        difficulty: "medium",
+        tags: ["souk", "négociation", "prix"]
+      },
+      {
+        darija: "واش تقدر تدلني على الدرب ديال الحرانية؟",
+        romanization: "Wash tqder tdellni 3la d-derb dyal l-7rraniya?",
+        translation: "Peux-tu m'indiquer la ruelle des artisans ?",
+        difficulty: "hard",
+        tags: ["médina", "navigation", "artisanat"]
+      },
+      {
+        darija: "هاد البضاعة أصلية ولا تقليد؟",
+        romanization: "Had l-bda3a asliya wla taqlid?",
+        translation: "Cette marchandise est authentique ou de l'imitation ?",
+        difficulty: "medium",
+        tags: ["souk", "achat", "authenticité"]
+      },
+      {
+        darija: "بغيت نشري تذكار ليفاميليا ديالي",
+        romanization: "Bghit nshri tdhkar l-familia dyali",
+        translation: "Je veux acheter un souvenir pour ma famille",
+        difficulty: "easy",
+        tags: ["souk", "souvenir", "achat"]
+      },
+      {
+        darija: "ضيعت راسي فالمدينة، واش تعاونني؟",
+        romanization: "Dya3t rasi f-l-mdina, wash t3awenni?",
+        translation: "Je me suis perdu dans la médina, peux-tu m'aider ?",
+        difficulty: "hard",
+        tags: ["médina", "urgence", "navigation"]
+      }
+    ]
+  },
+  {
+    id: 10,
+    category: "Santé & Médecin",
+    emoji: "🏥",
+    phrases: [
+      {
+        darija: "خاصني نجي نشوف الطبيب",
+        romanization: "Khasni nji nshuf t-tbib",
+        translation: "J'ai besoin de voir le médecin",
+        difficulty: "easy",
+        tags: ["santé", "médecin"]
+      },
+      {
+        darija: "كيتوجعني راسي بزاف منذ الصبح",
+        romanization: "Kaytoj3ni rasi bzzaf mndu s-sbah",
+        translation: "J'ai très mal à la tête depuis ce matin",
+        difficulty: "medium",
+        tags: ["santé", "douleur", "symptômes"]
+      },
+      {
+        darija: "فين كاين أقرب فارماسيان؟",
+        romanization: "Fin kayn aqrab farmasyan?",
+        translation: "Où est la pharmacie la plus proche ?",
+        difficulty: "easy",
+        tags: ["santé", "pharmacie"]
+      },
+      {
+        darija: "عندي حرارة وكنكح بزاف",
+        romanization: "3ndi hrara w kankoh bzzaf",
+        translation: "J'ai de la fièvre et je tousse beaucoup",
+        difficulty: "medium",
+        tags: ["santé", "symptômes", "médecin"]
+      },
+      {
+        darija: "واش عندك دوا ديال لي كيوجعو الكرش؟",
+        romanization: "Wash 3ndek dwa dyal lli kaywj3u l-kersh?",
+        translation: "Tu as un médicament contre les maux de ventre ?",
+        difficulty: "hard",
+        tags: ["pharmacie", "médicament", "santé"]
+      },
+      {
+        darija: "بغيت نحجز رندي-فو م-عند الطبيب",
+        romanization: "Bghit n7jez rendezvous m-3end t-tbib",
+        translation: "Je veux prendre rendez-vous chez le médecin",
+        difficulty: "hard",
+        tags: ["médecin", "rendez-vous", "santé"]
+      }
+    ]
+  },
+  {
+    id: 11,
+    category: "Fêtes & Traditions",
+    emoji: "🌙",
+    phrases: [
+      {
+        darija: "رمضان مبارك عليك وعلى الفاميليا",
+        romanization: "Ramadan mbarak 3lik w 3la l-familia",
+        translation: "Bon Ramadan à toi et ta famille",
+        difficulty: "easy",
+        tags: ["ramadan", "tradition", "vœux"]
+      },
+      {
+        darija: "عيد مبارك، كل عام وأنتم بخير",
+        romanization: "3id mbarak, koll 3am w antom b-kheir",
+        translation: "Bonne fête, que vous soyez en bonne santé chaque année",
+        difficulty: "medium",
+        tags: ["aïd", "tradition", "vœux"]
+      },
+      {
+        darija: "واش غادي تجي مع-اياتنا لفرح ديال الجيران؟",
+        romanization: "Wash ghadi tji m3-ayatna l-frah dyal l-jiran?",
+        translation: "Tu vas venir avec nous au mariage des voisins ?",
+        difficulty: "hard",
+        tags: ["mariage", "tradition", "voisins"]
+      },
+      {
+        darija: "الليلة ديال القدر مباركة على الجميع",
+        romanization: "L-lila dyal l-qadr mbaraka 3la l-jami3",
+        translation: "La nuit du destin est bénie pour tous",
+        difficulty: "hard",
+        tags: ["ramadan", "religion", "tradition"]
+      },
+      {
+        darija: "صيام مقبول إن شاء الله",
+        romanization: "Siyam maqbul inshallah",
+        translation: "Que ton jeûne soit accepté, inch'Allah",
+        difficulty: "easy",
+        tags: ["ramadan", "religion", "vœux"]
+      },
+      {
+        darija: "الزردة ديالنا غداً، خاصك تجي تاكل معاتنا",
+        romanization: "Z-zerda dyalna ghedda, khasek tji takol m3atna",
+        translation: "Notre fête de quartier est demain, tu dois venir manger avec nous",
+        difficulty: "hard",
+        tags: ["tradition", "fête", "invitation"]
+      }
+    ]
+  },
+  {
+    id: 12,
+    category: "Technologie & Moderne",
+    emoji: "📱",
+    phrases: [
+      {
+        darija: "الباطاريا ديال التيليفون ديالي خلاصة",
+        romanization: "L-batarya dyal t-tilifun dyali khalsa",
+        translation: "La batterie de mon téléphone est morte",
+        difficulty: "easy",
+        tags: ["téléphone", "technologie"]
+      },
+      {
+        darija: "واش عندك واي فاي؟ عطيني الكود",
+        romanization: "Wash 3ndek wi-fi? 3tini l-kod",
+        translation: "Tu as le WiFi ? Donne-moi le code",
+        difficulty: "easy",
+        tags: ["internet", "wifi", "technologie"]
+      },
+      {
+        darija: "حط ليا رقم التيليفون ديالك فالواتساب",
+        romanization: "Hett liya raqm t-tilifun dyalek f-l-whatsapp",
+        translation: "Mets-moi ton numéro de téléphone sur WhatsApp",
+        difficulty: "medium",
+        tags: ["téléphone", "réseaux sociaux", "contact"]
+      },
+      {
+        darija: "طلبت طاكسي من التطبيق، غادي يوصل دغية",
+        romanization: "Tlbt taxi men t-tatbiq, ghadi ywsel dghiya",
+        translation: "J'ai commandé un taxi via l'appli, il arrive bientôt",
+        difficulty: "hard",
+        tags: ["transport", "application", "technologie"]
+      },
+      {
+        darija: "شارك ليا اللوكاسيون ديالك على واتساب",
+        romanization: "Sharek liya l-lokasyon dyalek 3la whatsapp",
+        translation: "Partage-moi ta localisation sur WhatsApp",
+        difficulty: "medium",
+        tags: ["navigation", "réseaux sociaux", "technologie"]
+      },
+      {
+        darija: "الإنترنت مقطوع، ما قدرتش نرسل الفيديو",
+        romanization: "L-internet mqtou3, ma qdrtsh nrsol l-vidyu",
+        translation: "Internet est coupé, je n'ai pas pu envoyer la vidéo",
+        difficulty: "hard",
+        tags: ["internet", "technologie", "communication"]
+      }
+    ]
   }
 ];
 

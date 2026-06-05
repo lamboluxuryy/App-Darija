@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Noto+Sans+Arabic:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -12,26 +12,28 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: #0a0118;
+  background: #140800;
   color: #fff;
   overflow-x: hidden;
 }
 
-/* Rich gradient background */
+/* ── WARM MOROCCAN BACKGROUND ── */
 .app-bg {
-  background: linear-gradient(145deg, #0a0118 0%, #12012d 30%, #0d1840 60%, #080e2a 100%);
+  background: linear-gradient(160deg, #1e0900 0%, #2e1400 22%, #1c0c03 58%, #0e0700 100%);
   min-height: 100vh;
   position: relative;
 }
 
+/* Warm light orbs — simulate riad interior ambient light */
 .app-bg::before {
   content: '';
   position: fixed;
   inset: 0;
   background:
-    radial-gradient(ellipse 80% 60% at 10% 0%, rgba(139, 0, 50, 0.18) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 50% at 90% 10%, rgba(212, 140, 0, 0.15) 0%, transparent 55%),
-    radial-gradient(ellipse 50% 40% at 50% 100%, rgba(60, 0, 180, 0.2) 0%, transparent 60%);
+    radial-gradient(ellipse 80% 60% at 5% 0%, rgba(190, 55, 0, 0.28) 0%, transparent 55%),
+    radial-gradient(ellipse 65% 50% at 95% 5%, rgba(212, 140, 0, 0.22) 0%, transparent 52%),
+    radial-gradient(ellipse 55% 45% at 50% 100%, rgba(160, 30, 0, 0.25) 0%, transparent 58%),
+    radial-gradient(ellipse 40% 35% at 80% 65%, rgba(100, 40, 0, 0.18) 0%, transparent 50%);
   pointer-events: none;
   z-index: 0;
 }
@@ -50,98 +52,88 @@ body {
   direction: rtl;
 }
 
+.font-display {
+  font-family: 'Playfair Display', serif;
+}
+
 .dir-rtl {
   direction: rtl;
 }
 
-/* Scrollbar */
-::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-}
-::-webkit-scrollbar-track {
-  background: rgba(255,255,255,0.03);
-}
-::-webkit-scrollbar-thumb {
-  background: rgba(212, 175, 55, 0.4);
-  border-radius: 3px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(212, 175, 55, 0.7);
-}
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: rgba(255,100,0,0.03); }
+::-webkit-scrollbar-thumb { background: rgba(212, 140, 0, 0.4); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(212, 140, 0, 0.7); }
 
-/* Gradient text */
+/* ── GRADIENT TEXT ── */
 .gradient-text {
-  background: linear-gradient(135deg, #FFD700 0%, #F97316 50%, #FF6B35 100%);
+  background: linear-gradient(135deg, #FFD700 0%, #FF8C00 50%, #C0392B 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.gradient-text-cool {
-  background: linear-gradient(135deg, #a78bfa, #60a5fa, #34d399);
+.gradient-text-warm {
+  background: linear-gradient(135deg, #FFA500, #FF6B00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-/* Glass effects */
+/* ── GLASS (warm amber-tinted) ── */
 .glass {
-  background: rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: rgba(255, 130, 20, 0.06);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 140, 30, 0.10);
 }
 
 .glass-gold {
-  background: rgba(212, 175, 55, 0.12);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(212, 175, 55, 0.25);
+  background: rgba(212, 130, 0, 0.14);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(212, 175, 55, 0.30);
 }
 
-/* Moroccan pattern — richer, more visible */
+.glass-warm {
+  background: rgba(180, 60, 0, 0.12);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(220, 100, 0, 0.20);
+}
+
+/* ── MOROCCAN ZELLIGE PATTERN ── */
 .moroccan-pattern {
-  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4AF37' fill-opacity='0.08'%3E%3Cpath d='M40 0l10 30h30L57 48l10 30-27-19-27 19 10-30L0 30h30z'/%3E%3C/g%3E%3Cg fill='%23B22222' fill-opacity='0.04' transform='translate(40 40)'%3E%3Cpath d='M0 0l10 30h30L17 48 27 78 0 59l-27 19 10-30L-23 30H7z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none'%3E%3Cpath fill='%23D4AF37' fill-opacity='0.07' d='M40 0l10 15h15L52 24l5 17-17-10-17 10 5-17L15 15h15z'/%3E%3Cpath fill='%23C0392B' fill-opacity='0.05' transform='translate(40 40)' d='M0 0l10 15h15L12 24 17 41 0 31l-17 10 5-17L-15 15H0z'/%3E%3Crect x='37' y='37' width='6' height='6' fill='%23D4AF37' fill-opacity='0.06' transform='rotate(45 40 40)'/%3E%3C/g%3E%3C/svg%3E");
 }
 
-/* Pulse ring animation */
-@keyframes pulse-ring {
-  0% { transform: scale(0.8); opacity: 1; }
-  100% { transform: scale(2); opacity: 0; }
+/* ── ARCH PATTERN for hero ── */
+.moroccan-arch-bg {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%23D4AF37' stroke-opacity='0.06' stroke-width='1'%3E%3Ccircle cx='60' cy='60' r='55'/%3E%3Ccircle cx='60' cy='60' r='40'/%3E%3Ccircle cx='60' cy='60' r='25'/%3E%3Cline x1='5' y1='60' x2='115' y2='60'/%3E%3Cline x1='60' y1='5' x2='60' y2='115'/%3E%3Cline x1='21' y1='21' x2='99' y2='99'/%3E%3Cline x1='99' y1='21' x2='21' y2='99'/%3E%3C/g%3E%3C/svg%3E");
 }
 
-.pulse-ring::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  background: rgba(212, 175, 55, 0.4);
-  animation: pulse-ring 1.5s ease-out infinite;
-}
-
-/* Progress bar */
+/* ── PROGRESS BAR (gold shimmer) ── */
 .progress-bar {
-  background: linear-gradient(90deg, #FFD700, #F97316, #FF6B35);
-  background-size: 200% 100%;
+  background: linear-gradient(90deg, #D4AF37, #FF8C00, #FFD700, #FF8C00, #D4AF37);
+  background-size: 300% 100%;
   border-radius: 9999px;
   transition: width 0.6s ease;
-  animation: shimmer 2s linear infinite;
+  animation: shimmer 2.5s linear infinite;
 }
 
 @keyframes shimmer {
-  0% { background-position: 200% 0; }
-  100% { background-position: -200% 0; }
+  0% { background-position: 100% 0; }
+  100% { background-position: -100% 0; }
 }
 
-/* Card hover */
+/* ── CARD HOVER ── */
 .card-hover {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 .card-hover:hover {
   transform: translateY(-5px);
-  box-shadow: 0 24px 48px rgba(212, 100, 0, 0.25), 0 0 0 1px rgba(212, 175, 55, 0.1);
+  box-shadow: 0 24px 48px rgba(200, 100, 0, 0.25), 0 0 0 1px rgba(212, 140, 0, 0.12);
 }
 
-/* Button shine */
+/* ── BUTTON SHINE ── */
 .btn-shine {
   position: relative;
   overflow: hidden;
@@ -149,28 +141,22 @@ body {
 .btn-shine::after {
   content: '';
   position: absolute;
-  top: -50%;
-  left: -60%;
-  width: 35%;
-  height: 200%;
-  background: rgba(255, 255, 255, 0.2);
+  top: -50%; left: -60%;
+  width: 35%; height: 200%;
+  background: rgba(255, 255, 255, 0.22);
   transform: skewX(-20deg);
   transition: left 0.5s ease;
 }
-.btn-shine:hover::after {
-  left: 130%;
-}
+.btn-shine:hover::after { left: 130%; }
 
-/* Audio wave animation */
+/* ── AUDIO WAVE ── */
 @keyframes wave {
   0%, 100% { height: 6px; }
   50% { height: 26px; }
 }
-
 .wave-bar {
-  width: 3px;
-  border-radius: 2px;
-  background: linear-gradient(180deg, #FFD700, #F97316);
+  width: 3px; border-radius: 2px;
+  background: linear-gradient(180deg, #FFD700, #FF8C00);
   animation: wave 0.9s ease-in-out infinite;
 }
 .wave-bar:nth-child(2) { animation-delay: 0.1s; }
@@ -178,46 +164,31 @@ body {
 .wave-bar:nth-child(4) { animation-delay: 0.3s; }
 .wave-bar:nth-child(5) { animation-delay: 0.4s; }
 
-/* Float animation */
+/* ── ANIMATIONS ── */
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-8px); }
 }
+.animate-float { animation: float 3s ease-in-out infinite; }
 
-.animate-float {
-  animation: float 3s ease-in-out infinite;
-}
-
-/* Slide up animation */
 @keyframes slideUp {
   from { opacity: 0; transform: translateY(16px); }
   to { opacity: 1; transform: translateY(0); }
 }
+.animate-slide-up { animation: slideUp 0.35s ease-out forwards; }
 
-.animate-slide-up {
-  animation: slideUp 0.3s ease-out forwards;
-}
-
-/* Fade in */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+.animate-fade-in { animation: fadeIn 0.3s ease-out forwards; }
 
-.animate-fade-in {
-  animation: fadeIn 0.3s ease-out forwards;
-}
-
-/* Glow effect for special cards */
-.card-glow {
-  box-shadow: 0 0 30px rgba(212, 175, 55, 0.15), 0 0 60px rgba(212, 175, 55, 0.05);
+/* ── DECORATIVE MOROCCAN DIVIDER ── */
+.moroccan-divider {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(212,140,0,0.5), rgba(192,57,43,0.5), rgba(212,140,0,0.5), transparent);
 }
 
-/* Hide scrollbar while keeping scroll functionality */
-.no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
+/* ── HIDE SCROLLBAR ── */
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
