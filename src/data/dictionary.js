@@ -1245,5 +1245,617 @@ export const dictionaryWords = [
     example: "راه جاي دابا",
     exampleTranslation: "Il vient maintenant",
     tags: ["expression", "particule"]
+  },
+
+  // ── Couleurs ──────────────────────────────────────────────────────────────
+  {
+    id: 123,
+    darija: "أحمر",
+    romanization: "Ħmer",
+    translation: "Rouge",
+    category: "Couleurs",
+    example: "القميجة حمرا",
+    exampleTranslation: "La chemise est rouge",
+    tags: ["couleur", "base"]
+  },
+  {
+    id: 124,
+    darija: "أزرق",
+    romanization: "Zerq",
+    translation: "Bleu",
+    category: "Couleurs",
+    example: "البحر زرق",
+    exampleTranslation: "La mer est bleue",
+    tags: ["couleur", "base"]
+  },
+  {
+    id: 125,
+    darija: "أخضر",
+    romanization: "Khdar",
+    translation: "Vert",
+    category: "Couleurs",
+    example: "الحديقة خضرا",
+    exampleTranslation: "Le jardin est vert",
+    tags: ["couleur", "base"]
+  },
+  {
+    id: 126,
+    darija: "أصفر",
+    romanization: "Sfar",
+    translation: "Jaune",
+    category: "Couleurs",
+    example: "الليمون أصفر",
+    exampleTranslation: "Le citron est jaune",
+    tags: ["couleur", "base"]
+  },
+  {
+    id: 127,
+    darija: "كحل",
+    romanization: "Kħel",
+    translation: "Noir",
+    category: "Couleurs",
+    example: "الليل كحل",
+    exampleTranslation: "La nuit est noire",
+    tags: ["couleur", "base"]
+  },
+  {
+    id: 128,
+    darija: "أبيض",
+    romanization: "Biyd",
+    translation: "Blanc",
+    category: "Couleurs",
+    example: "الثلج أبيض",
+    exampleTranslation: "La neige est blanche",
+    tags: ["couleur", "base"]
+  },
+  {
+    id: 129,
+    darija: "رمادي",
+    romanization: "Rmaidi",
+    translation: "Gris",
+    category: "Couleurs",
+    example: "",
+    exampleTranslation: "",
+    tags: ["couleur", "nuance"]
+  },
+  {
+    id: 130,
+    darija: "بني",
+    romanization: "Bni",
+    translation: "Marron",
+    category: "Couleurs",
+    example: "",
+    exampleTranslation: "",
+    tags: ["couleur", "nuance"]
+  },
+  {
+    id: 131,
+    darija: "بنفسجي",
+    romanization: "Banafsaji",
+    translation: "Violet",
+    category: "Couleurs",
+    example: "",
+    exampleTranslation: "",
+    tags: ["couleur", "nuance"]
+  },
+  {
+    id: 132,
+    darija: "وردي",
+    romanization: "Wrdi",
+    translation: "Rose",
+    category: "Couleurs",
+    example: "",
+    exampleTranslation: "",
+    tags: ["couleur", "nuance"]
+  },
+
+  // ── Vêtements ─────────────────────────────────────────────────────────────
+  {
+    id: 133,
+    darija: "قميجة",
+    romanization: "Qamija",
+    translation: "T-shirt/Chemise",
+    category: "Vêtements",
+    example: "",
+    exampleTranslation: "",
+    tags: ["vêtement", "quotidien"]
+  },
+  {
+    id: 134,
+    darija: "سروال",
+    romanization: "Serwal",
+    translation: "Pantalon",
+    category: "Vêtements",
+    example: "",
+    exampleTranslation: "",
+    tags: ["vêtement", "quotidien"]
+  },
+  {
+    id: 135,
+    darija: "جلابة",
+    romanization: "Jellaba",
+    translation: "Djellaba (habit traditionnel)",
+    category: "Vêtements",
+    example: "",
+    exampleTranslation: "",
+    tags: ["vêtement", "traditionnel"]
+  },
+  {
+    id: 136,
+    darija: "صباط",
+    romanization: "Sabbat",
+    translation: "Chaussures",
+    category: "Vêtements",
+    example: "",
+    exampleTranslation: "",
+    tags: ["vêtement", "accessoire"]
+  },
+  {
+    id: 137,
+    darija: "شاشية",
+    romanization: "Shashiya",
+    translation: "Calotte/Bonnet",
+    category: "Vêtements",
+    example: "",
+    exampleTranslation: "",
+    tags: ["vêtement", "traditionnel"]
+  },
+  {
+    id: 138,
+    darija: "فوطة",
+    romanization: "Fouta",
+    translation: "Serviette/Pagne",
+    category: "Vêtements",
+    example: "",
+    exampleTranslation: "",
+    tags: ["vêtement", "hammam"]
+  },
+  {
+    id: 139,
+    darija: "قفطان",
+    romanization: "Qftan",
+    translation: "Caftan",
+    category: "Vêtements",
+    example: "",
+    exampleTranslation: "",
+    tags: ["vêtement", "traditionnel", "fête"]
+  },
+  {
+    id: 140,
+    darija: "حزام",
+    romanization: "Ħzam",
+    translation: "Ceinture",
+    category: "Vêtements",
+    example: "",
+    exampleTranslation: "",
+    tags: ["vêtement", "accessoire"]
+  },
+  {
+    id: 141,
+    darija: "فراجي",
+    romanization: "Faraji",
+    translation: "Manteau long traditionnel",
+    category: "Vêtements",
+    example: "",
+    exampleTranslation: "",
+    tags: ["vêtement", "traditionnel"]
+  },
+  {
+    id: 142,
+    darija: "بلغة",
+    romanization: "Belgha",
+    translation: "Babouches (pantoufles marocaines)",
+    category: "Vêtements",
+    example: "",
+    exampleTranslation: "",
+    tags: ["vêtement", "artisanat"]
+  },
+
+  // ── Fruits & Légumes ──────────────────────────────────────────────────────
+  {
+    id: 143,
+    darija: "تفاحة",
+    romanization: "Teffaħa",
+    translation: "Pomme",
+    category: "Fruits & Légumes",
+    example: "",
+    exampleTranslation: "",
+    tags: ["fruit", "souk"]
+  },
+  {
+    id: 144,
+    darija: "ليمو",
+    romanization: "Limo",
+    translation: "Citron/Orange",
+    category: "Fruits & Légumes",
+    example: "",
+    exampleTranslation: "",
+    tags: ["fruit", "souk"]
+  },
+  {
+    id: 145,
+    darija: "دلاح",
+    romanization: "Dellah",
+    translation: "Pastèque",
+    category: "Fruits & Légumes",
+    example: "",
+    exampleTranslation: "",
+    tags: ["fruit", "été"]
+  },
+  {
+    id: 146,
+    darija: "عنب",
+    romanization: "3nb",
+    translation: "Raisin",
+    category: "Fruits & Légumes",
+    example: "",
+    exampleTranslation: "",
+    tags: ["fruit", "souk"]
+  },
+  {
+    id: 147,
+    darija: "موز",
+    romanization: "Muz",
+    translation: "Banane",
+    category: "Fruits & Légumes",
+    example: "",
+    exampleTranslation: "",
+    tags: ["fruit", "souk"]
+  },
+  {
+    id: 148,
+    darija: "تين",
+    romanization: "Tin",
+    translation: "Figue",
+    category: "Fruits & Légumes",
+    example: "",
+    exampleTranslation: "",
+    tags: ["fruit", "traditionnel"]
+  },
+  {
+    id: 149,
+    darija: "خضرة",
+    romanization: "Khodra",
+    translation: "Légumes",
+    category: "Fruits & Légumes",
+    example: "",
+    exampleTranslation: "",
+    tags: ["légume", "générique"]
+  },
+  {
+    id: 150,
+    darija: "بطاطا",
+    romanization: "Betata",
+    translation: "Pomme de terre",
+    category: "Fruits & Légumes",
+    example: "",
+    exampleTranslation: "",
+    tags: ["légume", "cuisine"]
+  },
+  {
+    id: 151,
+    darija: "طماطم",
+    romanization: "Tomatis",
+    translation: "Tomate",
+    category: "Fruits & Légumes",
+    example: "",
+    exampleTranslation: "",
+    tags: ["légume", "cuisine"]
+  },
+  {
+    id: 152,
+    darija: "خيزو",
+    romanization: "Khizou",
+    translation: "Carotte",
+    category: "Fruits & Légumes",
+    example: "",
+    exampleTranslation: "",
+    tags: ["légume", "souk"]
+  },
+  {
+    id: 153,
+    darija: "زيتون",
+    romanization: "Zaytoun",
+    translation: "Olive",
+    category: "Fruits & Légumes",
+    example: "",
+    exampleTranslation: "",
+    tags: ["fruit", "traditionnel", "Maroc"]
+  },
+  {
+    id: 154,
+    darija: "بصل",
+    romanization: "Bsal",
+    translation: "Oignon",
+    category: "Fruits & Légumes",
+    example: "",
+    exampleTranslation: "",
+    tags: ["légume", "cuisine"]
+  },
+
+  // ── Verbes courants (nouveaux) ────────────────────────────────────────────
+  {
+    id: 155,
+    darija: "مشى",
+    romanization: "Msha",
+    translation: "Aller",
+    category: "Verbes courants",
+    example: "مشيت للسوق",
+    exampleTranslation: "Je suis allé au marché",
+    tags: ["verbe", "mouvement"]
+  },
+  {
+    id: 156,
+    darija: "جاء",
+    romanization: "Ja",
+    translation: "Venir",
+    category: "Verbes courants",
+    example: "جا بكري",
+    exampleTranslation: "Il est venu tôt",
+    tags: ["verbe", "mouvement"]
+  },
+  {
+    id: 157,
+    darija: "بغى",
+    romanization: "Bgha",
+    translation: "Vouloir",
+    category: "Verbes courants",
+    example: "بغيت أكل",
+    exampleTranslation: "Je veux manger",
+    tags: ["verbe", "désir"]
+  },
+  {
+    id: 158,
+    darija: "عرف",
+    romanization: "3ref",
+    translation: "Savoir/Connaître",
+    category: "Verbes courants",
+    example: "ما عرفتش",
+    exampleTranslation: "Je ne savais pas",
+    tags: ["verbe", "cognitif"]
+  },
+  {
+    id: 159,
+    darija: "قال",
+    romanization: "Gal",
+    translation: "Dire",
+    category: "Verbes courants",
+    example: "قالي لاباس",
+    exampleTranslation: "Il m'a dit que ça va",
+    tags: ["verbe", "communication"]
+  },
+  {
+    id: 160,
+    darija: "دار",
+    romanization: "Dir",
+    translation: "Faire/Mettre",
+    category: "Verbes courants",
+    example: "شنو دير هنا؟",
+    exampleTranslation: "Qu'est-ce qu'il fait là ?",
+    tags: ["verbe", "action"]
+  },
+  {
+    id: 161,
+    darija: "شاف",
+    romanization: "Shaf",
+    translation: "Voir",
+    category: "Verbes courants",
+    example: "شفتي الفيلم؟",
+    exampleTranslation: "Tu as vu le film ?",
+    tags: ["verbe", "perception"]
+  },
+  {
+    id: 162,
+    darija: "هدر",
+    romanization: "Hder",
+    translation: "Parler",
+    category: "Verbes courants",
+    example: "كيهدر بالدارجة",
+    exampleTranslation: "Il parle en Darija",
+    tags: ["verbe", "communication"]
+  },
+  {
+    id: 163,
+    darija: "خدم",
+    romanization: "Khdem",
+    translation: "Travailler",
+    category: "Verbes courants",
+    example: "كيخدم بزاف",
+    exampleTranslation: "Il travaille beaucoup",
+    tags: ["verbe", "travail"]
+  },
+  {
+    id: 164,
+    darija: "سمع",
+    romanization: "Sme3",
+    translation: "Entendre/Écouter",
+    category: "Verbes courants",
+    example: "سمعتيني؟",
+    exampleTranslation: "Tu m'as entendu ?",
+    tags: ["verbe", "perception"]
+  },
+  {
+    id: 165,
+    darija: "قرأ",
+    romanization: "Qra",
+    translation: "Lire/Étudier",
+    category: "Verbes courants",
+    example: "كتقرا فالجامعة",
+    exampleTranslation: "Elle étudie à l'université",
+    tags: ["verbe", "education"]
+  },
+  {
+    id: 166,
+    darija: "رجع",
+    romanization: "Rje3",
+    translation: "Revenir/Retourner",
+    category: "Verbes courants",
+    example: "متى ترجع؟",
+    exampleTranslation: "Quand reviens-tu ?",
+    tags: ["verbe", "mouvement"]
+  },
+
+  // ── Animaux ───────────────────────────────────────────────────────────────
+  {
+    id: 167,
+    darija: "كلب",
+    romanization: "Kelb",
+    translation: "Chien",
+    category: "Animaux",
+    example: "",
+    exampleTranslation: "",
+    tags: ["animal", "quotidien"]
+  },
+  {
+    id: 168,
+    darija: "قطة",
+    romanization: "Qetta",
+    translation: "Chat",
+    category: "Animaux",
+    example: "",
+    exampleTranslation: "",
+    tags: ["animal", "quotidien"]
+  },
+  {
+    id: 169,
+    darija: "حصان",
+    romanization: "Ħsan",
+    translation: "Cheval",
+    category: "Animaux",
+    example: "",
+    exampleTranslation: "",
+    tags: ["animal", "Maroc"]
+  },
+  {
+    id: 170,
+    darija: "حمار",
+    romanization: "Ħmar",
+    translation: "Âne",
+    category: "Animaux",
+    example: "الحمار فالبادية",
+    exampleTranslation: "L'âne à la campagne",
+    tags: ["animal", "Maroc"]
+  },
+  {
+    id: 171,
+    darija: "دجاج",
+    romanization: "Djaj",
+    translation: "Poulet/Poule",
+    category: "Animaux",
+    example: "",
+    exampleTranslation: "",
+    tags: ["animal", "cuisine"]
+  },
+  {
+    id: 172,
+    darija: "جمل",
+    romanization: "Jmal",
+    translation: "Chameau",
+    category: "Animaux",
+    example: "",
+    exampleTranslation: "",
+    tags: ["animal", "désert"]
+  },
+  {
+    id: 173,
+    darija: "نعجة",
+    romanization: "N3ja",
+    translation: "Brebis/Mouton",
+    category: "Animaux",
+    example: "",
+    exampleTranslation: "",
+    tags: ["animal", "Aïd"]
+  },
+  {
+    id: 174,
+    darija: "حوت",
+    romanization: "Ħut",
+    translation: "Poisson",
+    category: "Animaux",
+    example: "",
+    exampleTranslation: "",
+    tags: ["animal", "mer"]
+  },
+
+  // ── Adjectifs courants ────────────────────────────────────────────────────
+  {
+    id: 175,
+    darija: "كبير",
+    romanization: "Kbir",
+    translation: "Grand/Gros",
+    category: "Adjectifs courants",
+    example: "الدار كبيرة",
+    exampleTranslation: "La maison est grande",
+    tags: ["adjectif", "taille"]
+  },
+  {
+    id: 176,
+    darija: "صغير",
+    romanization: "Sghir",
+    translation: "Petit/Jeune",
+    category: "Adjectifs courants",
+    example: "",
+    exampleTranslation: "",
+    tags: ["adjectif", "taille"]
+  },
+  {
+    id: 177,
+    darija: "جديد",
+    romanization: "Jdid",
+    translation: "Nouveau",
+    category: "Adjectifs courants",
+    example: "",
+    exampleTranslation: "",
+    tags: ["adjectif", "état"]
+  },
+  {
+    id: 178,
+    darija: "قديم",
+    romanization: "Qdim",
+    translation: "Vieux/Ancien",
+    category: "Adjectifs courants",
+    example: "",
+    exampleTranslation: "",
+    tags: ["adjectif", "état"]
+  },
+  {
+    id: 179,
+    darija: "مليح",
+    romanization: "Mlih",
+    translation: "Beau/Bien (dialectal)",
+    category: "Adjectifs courants",
+    example: "",
+    exampleTranslation: "",
+    tags: ["adjectif", "qualité"]
+  },
+  {
+    id: 180,
+    darija: "قاصح",
+    romanization: "Qaseh",
+    translation: "Dur/Difficile",
+    category: "Adjectifs courants",
+    example: "",
+    exampleTranslation: "",
+    tags: ["adjectif", "difficulté"]
+  },
+  {
+    id: 181,
+    darija: "سريع",
+    romanization: "Sri3",
+    translation: "Rapide",
+    category: "Adjectifs courants",
+    example: "",
+    exampleTranslation: "",
+    tags: ["adjectif", "vitesse"]
+  },
+  {
+    id: 182,
+    darija: "بطي",
+    romanization: "Bti",
+    translation: "Lent",
+    category: "Adjectifs courants",
+    example: "",
+    exampleTranslation: "",
+    tags: ["adjectif", "vitesse"]
   }
 ];
