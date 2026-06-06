@@ -1664,5 +1664,1827 @@ export const quizzes = [
         explanation: "'M3qqed' = compliqué/prise de tête/ennuyeux. 'Ma bghitsh nshuf-h' = je ne veux pas le voir."
       }
     ]
+  },
+  {
+    id: 26,
+    courseId: 20,
+    title: "Quiz : Chiffres Avancés",
+    emoji: "🔢",
+    difficulty: "Débutant",
+    questions: [
+      {
+        id: 1,
+        type: "translate-to-french",
+        question: "Que signifie '3shrin' ?",
+        correct: "20",
+        options: ["12", "20", "22", "30"],
+        explanation: "'3shrin' = vingt (20). Le '3' représente la lettre arabe 'aïn'."
+      },
+      {
+        id: 2,
+        type: "translate-to-french",
+        question: "Que signifie 'Miya' ?",
+        correct: "100",
+        options: ["10", "50", "100", "1000"],
+        explanation: "'Miya' = cent (100). 'Miyatayn' = deux cents, 'tlata miya' = trois cents."
+      },
+      {
+        id: 3,
+        type: "translate-to-french",
+        question: "Que signifie 'Alf' ?",
+        correct: "1000",
+        options: ["100", "500", "1000", "10000"],
+        explanation: "'Alf' = mille (1000). 'Jouj alaf' = deux mille, 'khemsa alaf' = cinq mille."
+      },
+      {
+        id: 4,
+        type: "fill-blank",
+        question: "'3ndi _____ 3am' (J'ai 30 ans)",
+        correct: "tlatin",
+        options: ["3shrin", "tlatin", "rb3in", "khemsin"],
+        explanation: "'Tlatin' = trente (30). Les dizaines : 3shrin=20, tlatin=30, rb3in=40, khemsin=50."
+      },
+      {
+        id: 5,
+        type: "translate-to-darija",
+        question: "Comment dit-on '80 dirhams' en Darija ?",
+        correct: "Tmanin dirham",
+        options: ["Tmanin dirham", "Tmanya dirham", "Sb3in dirham", "Ts3in dirham"],
+        explanation: "'Tmanin' = quatre-vingts (80). 'Sb3in' = soixante-dix, 'ts3in' = quatre-vingt-dix."
+      },
+      {
+        id: 6,
+        type: "match-pairs",
+        question: "Associe chaque nombre Darija à sa valeur française",
+        correct: '[["3shrin","20"],["Tlatin","30"],["Miya","100"],["Alf","1000"]]',
+        options: [],
+        explanation: "Nombres importants : 3shrin=20, Tlatin=30, Miya=100, Alf=1000."
+      },
+      {
+        id: 7,
+        type: "choose-meaning",
+        question: "Que signifie 'Shħal f-3amrek?' ?",
+        correct: "Quel âge as-tu ?",
+        options: ["Comment tu t'appelles ?", "Quel âge as-tu ?", "D'où viens-tu ?", "Où habites-tu ?"],
+        explanation: "'Shħal f-3amrek?' = littéralement 'combien dans ton âge ?' = quel âge as-tu ?"
+      },
+      {
+        id: 8,
+        type: "translate-to-french",
+        question: "Que signifie 'S-sa3a khmsa' ?",
+        correct: "Il est 5h",
+        options: ["Il est 3h", "Il est 5h", "Il est 50h", "Il est midi"],
+        explanation: "'S-sa3a khmsa' = l'heure cinq = il est 5h. 'S-sa3a' = l'heure, 'khmsa' = cinq."
+      },
+      {
+        id: 9,
+        type: "fill-blank",
+        question: "'Had l-qamija _____ dirham' (Cette chemise coûte 150 dirhams)",
+        correct: "miya w khemsin",
+        options: ["miya w 3shrin", "miya w khemsin", "miyatayn", "rb3a miya"],
+        explanation: "'Miya w khemsin' = cent cinquante (150). En Darija on dit 'miya w' puis la dizaine."
+      },
+      {
+        id: 10,
+        type: "translate-to-darija",
+        question: "Comment dit-on '40' en Darija ?",
+        correct: "Rb3in",
+        options: ["Rb3a", "Rb3in", "Arb3in", "Arb3a w 3shrin"],
+        explanation: "'Rb3in' = quarante (40). Vient de 'rb3a' (4). Les dizaines se forment avec le suffixe '-in'."
+      }
+    ]
+  },
+  {
+    id: 27,
+    courseId: 22,
+    title: "Quiz : Religion & Expressions",
+    emoji: "🕌",
+    difficulty: "Débutant",
+    questions: [
+      {
+        id: 1,
+        type: "choose-meaning",
+        question: "Dans quel contexte dit-on 'Bismillah' ?",
+        correct: "Avant de commencer à manger ou une activité importante",
+        options: [
+          "Uniquement avant de manger",
+          "Avant de commencer à manger ou une activité importante",
+          "Uniquement avant de prier",
+          "Pour dire au revoir"
+        ],
+        explanation: "'Bismillah' = au nom de Dieu. Se dit avant de manger, de conduire, de commencer toute activité."
+      },
+      {
+        id: 2,
+        type: "translate-to-french",
+        question: "Que signifie 'Alħamdoulillah' ?",
+        correct: "Grâce à Dieu / Ça va bien",
+        options: ["Au nom de Dieu", "Grâce à Dieu / Ça va bien", "Si Dieu le veut", "Que Dieu bénisse"],
+        explanation: "'Alħamdoulillah' = grâce à Dieu. Réponse courante à 'comment tu vas ?' signifiant 'ça va'."
+      },
+      {
+        id: 3,
+        type: "match-pairs",
+        question: "Associe chaque expression religieuse à sa traduction",
+        correct: '[["Inshallah","Si Dieu le veut"],["Mshallah","Dieu a voulu"],["Bismillah","Au nom de Dieu"],["Rbi ybarek","Que Dieu bénisse"]]',
+        options: [],
+        explanation: "Expressions fondamentales de la culture marocaine musulmane. Très utilisées dans la vie quotidienne."
+      },
+      {
+        id: 4,
+        type: "fill-blank",
+        question: "'Mshallah, weldk _____ bzzaf!' (Ton fils a beaucoup grandi !)",
+        correct: "kbir",
+        options: ["sghir", "kbir", "zwine", "mzyan"],
+        explanation: "'Mshallah' précède les compliments pour protéger de l'envie. 'Kbir' = grand, 'weldk' = ton fils."
+      },
+      {
+        id: 5,
+        type: "choose-meaning",
+        question: "Pourquoi dit-on 'Mshallah' quand on fait un compliment ?",
+        correct: "Pour protéger la personne du mauvais œil (l-3in)",
+        options: [
+          "Pour montrer qu'on est surpris",
+          "Pour protéger la personne du mauvais œil (l-3in)",
+          "Par politesse formelle uniquement",
+          "Pour exprimer l'incertitude"
+        ],
+        explanation: "'Mshallah' (ce que Dieu a voulu) protège contre 'l-3in' (le mauvais œil). Croyance culturelle très répandue."
+      },
+      {
+        id: 6,
+        type: "word-order",
+        question: "Remets les mots dans le bon ordre : 'Que Dieu te facilite le travail'",
+        correct: "Allah ysaħħel 3lik l-khedma",
+        options: ["l-khedma", "3lik", "Allah", "ysaħħel"],
+        explanation: "'Allah ysaħħel 3lik l-khedma' = que Dieu te facilite le travail. Expression de bienveillance."
+      },
+      {
+        id: 7,
+        type: "translate-to-french",
+        question: "Que signifie 'Inshallah' ?",
+        correct: "Si Dieu le veut / J'espère",
+        options: [
+          "C'est certain",
+          "Si Dieu le veut / J'espère",
+          "Peut-être pas",
+          "Non merci"
+        ],
+        explanation: "'Inshallah' = si Dieu le veut. Peut exprimer l'espoir sincère ou, de façon informelle, une réponse évasive."
+      },
+      {
+        id: 8,
+        type: "fill-blank",
+        question: "'_____ 3lik, kliti mezyan?' (Grâce à Dieu, tu as bien mangé ?)",
+        correct: "Alħamdoulillah",
+        options: ["Bismillah", "Inshallah", "Alħamdoulillah", "Mshallah"],
+        explanation: "'Alħamdoulillah 3lik' = grâce à Dieu pour toi. Façon affectueuse de s'enquérir de quelqu'un."
+      },
+      {
+        id: 9,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'Que Dieu te bénisse' en réponse à un compliment ?",
+        correct: "Rbi ybarek fik",
+        options: ["Rbi ybarek fik", "Alħamdoulillah", "Inshallah", "Bismillah"],
+        explanation: "'Rbi ybarek fik' = que Dieu te bénisse. Réponse polie à un compliment ou un service rendu."
+      },
+      {
+        id: 10,
+        type: "choose-meaning",
+        question: "Que signifie 'L-3in' dans la culture marocaine ?",
+        correct: "Le mauvais œil (envie qui porte malheur)",
+        options: [
+          "Un regard bienveillant",
+          "Le mauvais œil (envie qui porte malheur)",
+          "La chance",
+          "La protection divine"
+        ],
+        explanation: "'L-3in' = le mauvais œil. Croyance que certains regards d'envie ou de jalousie peuvent porter malheur."
+      }
+    ]
+  },
+  {
+    id: 28,
+    courseId: 23,
+    title: "Quiz : L'École & Les Études",
+    emoji: "📚",
+    difficulty: "Débutant",
+    questions: [
+      {
+        id: 1,
+        type: "translate-to-french",
+        question: "Que signifie 'Madrasa' ?",
+        correct: "École",
+        options: ["Université", "École", "Bibliothèque", "Classe"],
+        explanation: "'Madrasa' = école. 'Jami3a' = université. 'Qism' = classe/salle."
+      },
+      {
+        id: 2,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'professeur' en Darija ?",
+        correct: "Ustad",
+        options: ["Talmid", "Ustad", "Mdir", "Katib"],
+        explanation: "'Ustad' = professeur/maître. 'Ustada' = professeure (féminin). 'Talmid' = élève."
+      },
+      {
+        id: 3,
+        type: "translate-to-french",
+        question: "Que signifie 'Imtiħan' ?",
+        correct: "Examen",
+        options: ["Cours", "Examen", "Devoir", "Note"],
+        explanation: "'Imtiħan' = examen. 'Njħ f-l-imtiħan' = réussir l'examen."
+      },
+      {
+        id: 4,
+        type: "match-pairs",
+        question: "Associe chaque mot scolaire Darija à sa traduction française",
+        correct: '[["Madrasa","École"],["Ustad","Professeur"],["Imtihan","Examen"],["Jami3a","Université"]]',
+        options: [],
+        explanation: "Vocabulaire scolaire essentiel : Madrasa=École, Ustad=Professeur, Imtihan=Examen, Jami3a=Université."
+      },
+      {
+        id: 5,
+        type: "fill-blank",
+        question: "'Ghadi n_____ mezyan l-imtiħan' (Je vais bien étudier pour l'examen)",
+        correct: "qra",
+        options: ["mshi", "qra", "ktb", "hdr"],
+        explanation: "'Nqra' = étudier/lire (1ère personne). 'Ghadi nqra' = je vais étudier. 'Qra' = lire/étudier."
+      },
+      {
+        id: 6,
+        type: "word-order",
+        question: "Remets les mots dans le bon ordre : 'Le professeur est très bien à l'école'",
+        correct: "L-ustad mzyan bzzaf f-l-madrasa",
+        options: ["f-l-madrasa", "mzyan", "L-ustad", "bzzaf"],
+        explanation: "'L-ustad mzyan bzzaf f-l-madrasa' = le professeur est très bien à l'école."
+      },
+      {
+        id: 7,
+        type: "choose-meaning",
+        question: "Que signifie 'Njħ' ?",
+        correct: "Réussir",
+        options: ["Réussir", "Rater", "Étudier", "Partir"],
+        explanation: "'Njħ' = réussir (un examen, dans la vie). 'Ma njħ-sh' = il n'a pas réussi. 'Njħ f-l-imtiħan' = réussir l'examen."
+      },
+      {
+        id: 8,
+        type: "translate-to-french",
+        question: "Que signifie 'Talmid' ?",
+        correct: "Élève",
+        options: ["Professeur", "Directeur", "Élève", "Parent"],
+        explanation: "'Talmid' = élève (masculin), 'talmida' = élève (féminin). 'Talamiyd' = les élèves."
+      },
+      {
+        id: 9,
+        type: "fill-blank",
+        question: "'L-_____ d-l-madrasa ghadi ybda ghda' (La rentrée scolaire commence demain)",
+        correct: "3am",
+        options: ["3am", "imtiħan", "kitab", "qism"],
+        explanation: "'L-3am d-l-madrasa' = l'année scolaire. 'Bda' = commencer. Expression utile en septembre."
+      },
+      {
+        id: 10,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'Je dois étudier ce soir' ?",
+        correct: "Kħessni nqra l-lila",
+        options: ["Kħessni nqra l-lila", "Ghadi nmshi l-madrasa", "Bghit nktb", "3ndi imtiħan ghda"],
+        explanation: "'Kħessni' = je dois/il me faut, 'nqra' = étudier, 'l-lila' = ce soir. Construction avec obligation."
+      }
+    ]
+  },
+  {
+    id: 29,
+    courseId: 24,
+    title: "Quiz : La Nature & Paysages",
+    emoji: "🏔️",
+    difficulty: "Débutant",
+    questions: [
+      {
+        id: 1,
+        type: "translate-to-french",
+        question: "Que signifie 'Jbal' ?",
+        correct: "Montagne",
+        options: ["Mer", "Montagne", "Désert", "Forêt"],
+        explanation: "'Jbal' = montagne. 'Jbal l-atlas' = les montagnes de l'Atlas. Pluriel de 'jbel'."
+      },
+      {
+        id: 2,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'mer' en Darija ?",
+        correct: "Bħar",
+        options: ["Bħar", "Nhr", "Ghdir", "Wadi"],
+        explanation: "'Bħar' = mer/océan. 'Nhr' = fleuve/rivière. Le Maroc est bordé par l'Atlantique et la Méditerranée."
+      },
+      {
+        id: 3,
+        type: "translate-to-french",
+        question: "Que signifie 'Saħra' ?",
+        correct: "Désert",
+        options: ["Plaine", "Désert", "Montagne", "Oasis"],
+        explanation: "'Saħra' = désert. Le Sahara marocain (région de Merzouga/Zagora) est une destination touristique majeure."
+      },
+      {
+        id: 4,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'soleil' en Darija ?",
+        correct: "Shemsh",
+        options: ["Shemsh", "Qmar", "Njem", "Rih"],
+        explanation: "'Shemsh' = soleil. 'Qmar' = lune, 'njem' = étoile, 'rih' = vent."
+      },
+      {
+        id: 5,
+        type: "translate-to-french",
+        question: "Que signifie 'Berd' ?",
+        correct: "Froid",
+        options: ["Chaud", "Froid", "Pluie", "Vent"],
+        explanation: "'Berd' = froid. 'Shkhoun' = chaud. 'L-jaw berd' = il fait froid."
+      },
+      {
+        id: 6,
+        type: "match-pairs",
+        question: "Associe chaque mot de nature Darija à sa traduction française",
+        correct: '[["Jbal","Montagne"],["Bhar","Mer"],["Sahra","Désert"],["Ghaba","Forêt"]]',
+        options: [],
+        explanation: "Paysages marocains : Jbal=Montagne, Bhar=Mer, Sahra=Désert, Ghaba=Forêt."
+      },
+      {
+        id: 7,
+        type: "fill-blank",
+        question: "'L-jbal d-l-atlas _____ bzzaf' (Les montagnes de l'Atlas sont très hautes)",
+        correct: "3alyin",
+        options: ["kbirin", "3alyin", "zwinin", "b3idin"],
+        explanation: "'3alyin' = hautes/élevées (pluriel). '3ali' = haut (singulier masculin). Les plus hauts sommets du Maroc dépassent 4000m."
+      },
+      {
+        id: 8,
+        type: "choose-meaning",
+        question: "Le Maroc est bordé par combien de mers/océans ?",
+        correct: "Deux : l'Atlantique et la Méditerranée",
+        options: [
+          "Un seul : l'Atlantique",
+          "Deux : l'Atlantique et la Méditerranée",
+          "Trois : Atlantique, Méditerranée et mer Rouge",
+          "Aucun, le Maroc est enclavé"
+        ],
+        explanation: "Le Maroc a une double façade maritime : l'océan Atlantique à l'ouest et la mer Méditerranée au nord."
+      },
+      {
+        id: 9,
+        type: "word-order",
+        question: "Remets les mots dans le bon ordre : 'Je veux aller dans le désert'",
+        correct: "Bghit nmshi l-s-saħra",
+        options: ["nmshi", "l-s-saħra", "Bghit"],
+        explanation: "'Bghit nmshi l-s-saħra' = je veux aller dans le désert. 'l-s-' = à la/au."
+      },
+      {
+        id: 10,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'Il pleut' en Darija ?",
+        correct: "Kat-tih sh-shta",
+        options: ["Kat-tih sh-shta", "L-jaw berd", "Kay-hb r-rih", "Shemsh kayna"],
+        explanation: "'Kat-tih sh-shta' = la pluie tombe = il pleut. 'Sh-shta' = la pluie."
+      }
+    ]
+  },
+  {
+    id: 30,
+    courseId: 25,
+    title: "Quiz : Les Métiers",
+    emoji: "👨‍💼",
+    difficulty: "Intermédiaire",
+    questions: [
+      {
+        id: 1,
+        type: "translate-to-french",
+        question: "Que signifie 'Tbib' ?",
+        correct: "Médecin",
+        options: ["Infirmier", "Médecin", "Pharmacien", "Dentiste"],
+        explanation: "'Tbib' = médecin/docteur. 'Tbib l-asnan' = dentiste. 'Mumarrid' = infirmier."
+      },
+      {
+        id: 2,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'avocat' en Darija ?",
+        correct: "Muħami",
+        options: ["Muħandis", "Muħami", "Mudarris", "Katib"],
+        explanation: "'Muħami' = avocat. 'Muħandis' = ingénieur, 'mudarris' = enseignant (formel)."
+      },
+      {
+        id: 3,
+        type: "translate-to-french",
+        question: "Que signifie 'Muħandis' ?",
+        correct: "Ingénieur",
+        options: ["Architecte", "Technicien", "Ingénieur", "Comptable"],
+        explanation: "'Muħandis' = ingénieur. Profession très valorisée au Maroc, souvent associée aux grandes écoles."
+      },
+      {
+        id: 4,
+        type: "match-pairs",
+        question: "Associe chaque métier Darija à sa traduction française",
+        correct: '[["Tbib","Médecin"],["Muhami","Avocat"],["Muhandis","Ingénieur"],["Tjar","Commerçant"]]',
+        options: [],
+        explanation: "Métiers courants : Tbib=Médecin, Muhami=Avocat, Muhandis=Ingénieur, Tjar=Commerçant."
+      },
+      {
+        id: 5,
+        type: "fill-blank",
+        question: "'Weld-i _____ f-Casablanca' (Mon fils est ingénieur à Casablanca)",
+        correct: "muħandis",
+        options: ["tbib", "muħandis", "muħami", "tjar"],
+        explanation: "En Darija, on omet souvent le verbe 'être' : 'weld-i muħandis' = mon fils [est] ingénieur."
+      },
+      {
+        id: 6,
+        type: "choose-meaning",
+        question: "Que signifie 'Fallah' ?",
+        correct: "Agriculteur",
+        options: ["Agriculteur", "Policier", "Médecin", "Professeur"],
+        explanation: "'Fallah' = agriculteur/paysan. Vient de 'falaħa' = cultiver la terre. Métier très répandu au Maroc rural."
+      },
+      {
+        id: 7,
+        type: "word-order",
+        question: "Remets les mots dans le bon ordre : 'Le médecin m'a dit de prendre le médicament'",
+        correct: "L-tbib gal-li shreb dawa",
+        options: ["gal-li", "dawa", "L-tbib", "shreb"],
+        explanation: "'L-tbib gal-li' = le médecin m'a dit, 'shreb dawa' = prends le médicament."
+      },
+      {
+        id: 8,
+        type: "translate-to-french",
+        question: "Que signifie 'Mudarris' ?",
+        correct: "Enseignant / Professeur",
+        options: ["Directeur", "Enseignant / Professeur", "Proviseur", "Assistant"],
+        explanation: "'Mudarris' = enseignant (terme formel). 'Ustad' est plus courant en Darija pour professeur."
+      },
+      {
+        id: 9,
+        type: "fill-blank",
+        question: "'Ash tayt-khdem ?' veut dire...",
+        correct: "Quel est ton métier ?",
+        options: [
+          "Où travailles-tu ?",
+          "Quel est ton métier ?",
+          "Depuis quand travailles-tu ?",
+          "Tu aimes ton travail ?"
+        ],
+        explanation: "'Ash tayt-khdem ?' = qu'est-ce que tu fais comme travail ? Question courante pour demander la profession."
+      },
+      {
+        id: 10,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'Je travaille dans un hôpital' ?",
+        correct: "Kankhdem f-l-mustashfa",
+        options: ["Kankhdem f-l-mustashfa", "Bghit nkhdem f-s-sbitar", "3ndi khedma zwina", "L-mustashfa b3id"],
+        explanation: "'Kankhdem' = je travaille (présent), 'f-l-mustashfa' = dans l'hôpital. 'Mustashfa' = hôpital (formel)."
+      }
+    ]
+  },
+  {
+    id: 31,
+    courseId: 26,
+    title: "Quiz : La Ville & Les Lieux",
+    emoji: "🏙️",
+    difficulty: "Débutant",
+    questions: [
+      {
+        id: 1,
+        type: "translate-to-french",
+        question: "Que signifie 'Mdina' ?",
+        correct: "Médina / Vieille ville",
+        options: ["Ville moderne", "Médina / Vieille ville", "Quartier", "Banlieue"],
+        explanation: "'Mdina' = médina, la vieille ville historique. Chaque grande ville marocaine possède sa médina."
+      },
+      {
+        id: 2,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'mosquée' en Darija ?",
+        correct: "Jame3",
+        options: ["Jame3", "Kniisa", "Msjid", "Qbba"],
+        explanation: "'Jame3' = grande mosquée. 'Msjid' = petite mosquée de quartier. La distinction est importante."
+      },
+      {
+        id: 3,
+        type: "translate-to-french",
+        question: "Que signifie 'Funduq' ?",
+        correct: "Hôtel",
+        options: ["Auberge de jeunesse", "Hôtel", "Riad", "Camping"],
+        explanation: "'Funduq' = hôtel. Historiquement, c'était une caravansérail (lieu d'hébergement des marchands)."
+      },
+      {
+        id: 4,
+        type: "translate-to-french",
+        question: "Que signifie 'Ħanout' ?",
+        correct: "Épicerie / Petit commerce",
+        options: ["Supermarché", "Épicerie / Petit commerce", "Boulangerie", "Restaurant"],
+        explanation: "'Ħanout' = épicerie, petit magasin de quartier. Lieu social très important dans les quartiers marocains."
+      },
+      {
+        id: 5,
+        type: "match-pairs",
+        question: "Associe chaque lieu Darija à sa traduction française",
+        correct: '[["Mdina","Médina/Vieille ville"],["Jame3","Mosquée"],["Funduq","Hôtel"],["Hanout","Épicerie"]]',
+        options: [],
+        explanation: "Lieux typiques de la ville marocaine : Mdina=Médina, Jame3=Mosquée, Funduq=Hôtel, Hanout=Épicerie."
+      },
+      {
+        id: 6,
+        type: "choose-meaning",
+        question: "Qu'est-ce qu'un 'Riad' ?",
+        correct: "Maison traditionnelle marocaine avec patio central",
+        options: [
+          "Grand hôtel de luxe",
+          "Maison traditionnelle marocaine avec patio central",
+          "Type de mosquée",
+          "Souk couvert"
+        ],
+        explanation: "Un riad est une maison traditionnelle marocaine organisée autour d'un patio intérieur. Très prisé comme hébergement touristique."
+      },
+      {
+        id: 7,
+        type: "fill-blank",
+        question: "'Dribt rasi f-d-_____ d-l-mdina' (Je me suis perdu dans les ruelles de la médina)",
+        correct: "drub",
+        options: ["zuqaq", "drub", "shwar3", "triqa"],
+        explanation: "'Drub' = ruelles (pluriel de 'derb'). Les drub de la médina sont les petites rues labyrinthiques traditionnelles."
+      },
+      {
+        id: 8,
+        type: "word-order",
+        question: "Remets les mots dans le bon ordre : 'Il est allé à l'épicerie acheter du pain'",
+        correct: "Msha l-l-ħanout yshri l-khobz",
+        options: ["yshri", "l-khobz", "Msha", "l-l-ħanout"],
+        explanation: "'Msha l-l-ħanout' = il est allé à l'épicerie, 'yshri l-khobz' = acheter le pain."
+      },
+      {
+        id: 9,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'la place publique' en Darija ?",
+        correct: "Jima3",
+        options: ["Jima3", "Mdina", "Derb", "Bab"],
+        explanation: "'Jima3' = la place publique (comme Jemaa el-Fna à Marrakech). 'Bab' = porte de la ville."
+      },
+      {
+        id: 10,
+        type: "translate-to-french",
+        question: "Que signifie 'Derb' dans le contexte de la médina ?",
+        correct: "Ruelle / Impasse",
+        options: ["Grande avenue", "Ruelle / Impasse", "Place publique", "Quartier entier"],
+        explanation: "'Derb' = petite ruelle ou impasse dans la médina. Les derbs forment le réseau de circulation piétonne traditionnel."
+      }
+    ]
+  },
+  {
+    id: 32,
+    courseId: 28,
+    title: "Quiz : La Conjugaison",
+    emoji: "📖",
+    difficulty: "Avancé",
+    questions: [
+      {
+        id: 1,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'Je suis allé' en Darija ?",
+        correct: "Mshit",
+        options: ["Msha", "Mshit", "Mshat", "Mshaw"],
+        explanation: "'Mshit' = je suis allé(e). Conjugaison passé 1ère personne singulier du verbe 'msha' (aller)."
+      },
+      {
+        id: 2,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'Ils sont allés' en Darija ?",
+        correct: "Mshaw",
+        options: ["Mshiw", "Mshaw", "Mshitw", "Mshaw"],
+        explanation: "'Mshaw' = ils/elles sont allés. Le suffixe '-aw' marque le pluriel passé."
+      },
+      {
+        id: 3,
+        type: "fill-blank",
+        question: "'Hiya kat-_____ f-l-jami3a' (Elle étudie à l'université)",
+        correct: "qra",
+        options: ["tqra", "qra", "nqra", "yqra"],
+        explanation: "'Kat-qra' = elle étudie/lit (présent féminin). Forme complète : 'kat-qra'. Le radical est 'qra'."
+      },
+      {
+        id: 4,
+        type: "fill-blank",
+        question: "'Ghadi _____ l-Marrakesh ghda' (Nous allons aller à Marrakech demain)",
+        correct: "nmshiw",
+        options: ["nmshi", "nmshiw", "mshiw", "ghadi"],
+        explanation: "'Ghadi nmshiw' = nous allons aller. 'Nmshiw' = forme présent/futur 1ère personne pluriel."
+      },
+      {
+        id: 5,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'Il n'est pas venu' en Darija ?",
+        correct: "Ma ja-sh",
+        options: ["Ma msha-sh", "Ma ja-sh", "Ma kan-sh", "Ma jiw-sh"],
+        explanation: "'Ma ja-sh' = il n'est pas venu. Négation : ma + verbe + sh. 'Ja' = il est venu."
+      },
+      {
+        id: 6,
+        type: "choose-meaning",
+        question: "Comment dit-on 'Va !' (impératif) en Darija ?",
+        correct: "Mshi!",
+        options: ["Msha!", "Mshi!", "Mshit!", "Nmshi!"],
+        explanation: "'Mshi' = l'impératif de 'msha' (aller). 'Kol' = mange (impératif de 'kla')."
+      },
+      {
+        id: 7,
+        type: "match-pairs",
+        question: "Associe chaque forme conjuguée à sa traduction",
+        correct: '[["Mshit","Je suis allé"],["Msha","Il est allé"],["Mshat","Elle est allée"],["Mshaw","Ils sont allés"]]',
+        options: [],
+        explanation: "Conjugaison passé de 'msha' (aller) : Mshit=1ère sg, Msha=3ème sg m, Mshat=3ème sg f, Mshaw=3ème pl."
+      },
+      {
+        id: 8,
+        type: "word-order",
+        question: "Remets les mots dans le bon ordre : 'Je vais aller au marché et acheter des légumes'",
+        correct: "Ana ghadi nmshi l-s-souq w n-shri khodra",
+        options: ["n-shri", "l-s-souq", "Ana", "khodra", "ghadi", "nmshi", "w"],
+        explanation: "'Ana ghadi nmshi l-s-souq' = je vais aller au marché, 'w n-shri khodra' = et acheter des légumes."
+      },
+      {
+        id: 9,
+        type: "fill-blank",
+        question: "'Kant _____ mlli skent f-Rabat' (J'étais jeune quand j'habitais à Rabat)",
+        correct: "sghir",
+        options: ["kbir", "sghir", "mzyan", "ferhan"],
+        explanation: "'Kant sghir' = j'étais jeune (féminin). 'Kont sghir' = j'étais jeune (masculin). 'Mlli' = quand/lorsque."
+      },
+      {
+        id: 10,
+        type: "translate-to-french",
+        question: "Que signifie 'Kan kay-kħdem walakin daba ma bqa-sh kaykhdem' ?",
+        correct: "Il travaillait mais maintenant il ne travaille plus",
+        options: [
+          "Il cherche du travail",
+          "Il travaillait mais maintenant il ne travaille plus",
+          "Il va travailler demain",
+          "Il n'a jamais travaillé"
+        ],
+        explanation: "'Kan kay-kħdem' = il travaillait (imparfait), 'walakin' = mais, 'daba ma bqa-sh kaykhdem' = maintenant il ne travaille plus."
+      },
+      {
+        id: 11,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'Tu n'as pas mangé' en Darija ?",
+        correct: "Ma klitish",
+        options: ["Ma klitish", "Ma kla-sh", "Ma taklish", "Kliti ?"],
+        explanation: "'Ma kliti-sh' = tu n'as pas mangé. 'Kliti' = tu as mangé (passé 2ème sg). 'Ma...sh' = négation."
+      },
+      {
+        id: 12,
+        type: "translate-to-french",
+        question: "Que signifie 'Ma mshitsh l-7afla ħit ma kont-sh mezyan' ?",
+        correct: "Je ne suis pas allé à la fête car je n'allais pas bien",
+        options: [
+          "Je suis allé à la fête malgré la maladie",
+          "Je ne suis pas allé à la fête car je n'allais pas bien",
+          "La fête était annulée à cause de la maladie",
+          "Je voulais aller à la fête mais j'étais occupé"
+        ],
+        explanation: "'Ma mshitsh' = je ne suis pas allé, 'l-7afla' = à la fête, 'ħit' = parce que, 'ma kont-sh mezyan' = je n'allais pas bien."
+      },
+      {
+        id: 13,
+        type: "fill-blank",
+        question: "'Ghadi _____ mezyan f-l-imtiħan' (Elle va réussir à l'examen)",
+        correct: "tnjħ",
+        options: ["ynjħ", "tnjħ", "nnjħ", "njħw"],
+        explanation: "'Tnjħ' = elle va réussir (féminin 3ème sg). 'Ynjħ' = il va réussir (masculin). 'Ghadi' = futur proche."
+      },
+      {
+        id: 14,
+        type: "choose-meaning",
+        question: "Quel est le rôle du préfixe 'Kat-' dans 'Kat-mshi' ?",
+        correct: "Indique le présent progressif féminin",
+        options: [
+          "Indique le futur",
+          "Indique le présent progressif féminin",
+          "Indique le passé récent",
+          "Indique l'impératif féminin"
+        ],
+        explanation: "'Kat-' est le préfixe du présent féminin (elle/tu-féminin). 'Kay-' est le masculin. Ex: 'Kay-mshi' = il va, 'Kat-mshi' = elle va."
+      },
+      {
+        id: 15,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'Nous n'avons pas encore mangé' en Darija ?",
+        correct: "Ma klina-sh mazal",
+        options: ["Ma klina-sh mazal", "Klinaw mezyan", "Ghadi naklu", "Ma bghina-sh naklu"],
+        explanation: "'Ma klina-sh' = nous n'avons pas mangé, 'mazal' = encore/pas encore. 'Mazal ma...sh' = pas encore."
+      }
+    ]
+  },
+  {
+    id: 33,
+    courseId: 27,
+    title: "Quiz : Santé & Corps",
+    emoji: "🏥",
+    difficulty: "Avancé",
+    questions: [
+      {
+        id: 1,
+        type: "translate-to-french",
+        question: "Que signifie 'Kħaydini ras' ?",
+        correct: "J'ai mal à la tête",
+        options: ["J'ai de la fièvre", "J'ai mal à la tête", "J'ai la nausée", "Je suis fatigué"],
+        explanation: "'Kħaydini ras' = littéralement 'ma tête me fait mal'. 'Kħaydini' = me fait mal, 'ras' = tête."
+      },
+      {
+        id: 2,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'fièvre' en Darija ?",
+        correct: "Ħrara",
+        options: ["Ħrara", "Kankoh", "Dawa", "Daba"],
+        explanation: "'Ħrara' = fièvre (littéralement chaleur). '3ndi ħrara' = j'ai de la fièvre."
+      },
+      {
+        id: 3,
+        type: "translate-to-french",
+        question: "Que signifie 'Kankoh' ?",
+        correct: "Toux",
+        options: ["Grippe", "Toux", "Rhume", "Maux de gorge"],
+        explanation: "'Kankoh' = toux. '3ndi kankoh' = j'ai la toux. Associé souvent à 'rih' (froid/rhume)."
+      },
+      {
+        id: 4,
+        type: "fill-blank",
+        question: "'Kħessni _____, 3ndi ħrara' (J'ai besoin d'un médecin, j'ai de la fièvre)",
+        correct: "tbib",
+        options: ["dawa", "tbib", "mustashfa", "kankoh"],
+        explanation: "'Kħessni tbib' = j'ai besoin d'un médecin. 'Kħessni' = il me faut/j'ai besoin de."
+      },
+      {
+        id: 5,
+        type: "match-pairs",
+        question: "Associe chaque symptôme Darija à sa traduction française",
+        correct: '[["Khaydini ras","Mal de tête"],["Hrara","Fièvre"],["Kankoh","Toux"],["Dawa","Médicament"]]',
+        options: [],
+        explanation: "Santé essentielle : Khaydini ras=Mal de tête, Hrara=Fièvre, Kankoh=Toux, Dawa=Médicament."
+      },
+      {
+        id: 6,
+        type: "word-order",
+        question: "Remets les mots dans le bon ordre : 'J'ai beaucoup de fièvre, j'ai besoin d'un médecin'",
+        correct: "3ndi ħrara 3aliya kħessni tbib",
+        options: ["tbib", "3ndi", "kħessni", "3aliya", "ħrara"],
+        explanation: "'3ndi ħrara 3aliya' = j'ai une forte fièvre, 'kħessni tbib' = j'ai besoin d'un médecin."
+      },
+      {
+        id: 7,
+        type: "choose-meaning",
+        question: "Que signifie 'Mustashfa' ?",
+        correct: "Hôpital",
+        options: ["Hôpital", "Pharmacie", "Médecin", "Ambulance"],
+        explanation: "'Mustashfa' = hôpital. 'Farmashiya' = pharmacie. 'Sbitar' est aussi utilisé familièrement pour hôpital."
+      },
+      {
+        id: 8,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'Je dois aller à la pharmacie acheter un médicament contre la fièvre' ?",
+        correct: "Kħessni nmshi l-l-farmashiya nshri dawa d-l-ħrara",
+        options: [
+          "Kħessni nmshi l-l-farmashiya nshri dawa d-l-ħrara",
+          "Bghit nmshi l-mustashfa",
+          "3ndi ħrara bzzaf kħessni tbib",
+          "Mshit l-farmashiya w shreyt dawa"
+        ],
+        explanation: "'Kħessni nmshi l-l-farmashiya' = je dois aller à la pharmacie, 'nshri dawa d-l-ħrara' = acheter un médicament contre la fièvre."
+      },
+      {
+        id: 9,
+        type: "translate-to-french",
+        question: "Que signifie 'Sħħa w raha' ?",
+        correct: "Bonne santé et repos (toast marocain)",
+        options: [
+          "Bon appétit",
+          "Bonne santé et repos (toast marocain)",
+          "Prends soin de toi",
+          "Guérissez vite"
+        ],
+        explanation: "'Sħħa w raha' = santé et repos. Formule utilisée comme toast ou pour souhaiter du bien à quelqu'un."
+      },
+      {
+        id: 10,
+        type: "fill-blank",
+        question: "'Ras-i _____ bzzaf, ma qdarsh nmshi l-l-khedma' (J'ai très mal à la tête, je ne peux pas aller au travail)",
+        correct: "kay-derni",
+        options: ["mzyan", "kay-derni", "ferhan", "bard"],
+        explanation: "'Ras-i kay-derni' = ma tête me fait mal. 'Ma qdar-sh' = je ne peux pas."
+      },
+      {
+        id: 11,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'Je me sens mieux maintenant' ?",
+        correct: "Daba ħsit b-rasi mzyan",
+        options: ["Daba ħsit b-rasi mzyan", "3ndi ħrara mazal", "Ma nqdar-sh nmshi", "Kħessni dawa"],
+        explanation: "'Ħsit b-rasi mzyan' = je me sens bien/mieux. 'Ħssa' = sentir/ressentir."
+      },
+      {
+        id: 12,
+        type: "choose-meaning",
+        question: "Que signifie '3ndi wja3 f-kersh' ?",
+        correct: "J'ai mal au ventre",
+        options: ["J'ai mal au dos", "J'ai mal au ventre", "J'ai mal aux jambes", "J'ai mal à la gorge"],
+        explanation: "'Wja3' = douleur/mal, 'kersh' = ventre/estomac. '3ndi wja3 f-kersh' = j'ai mal au ventre."
+      }
+    ]
+  },
+  {
+    id: 34,
+    courseId: null,
+    title: "Grand Quiz Semaine 1 — Débutant",
+    emoji: "🎯",
+    difficulty: "Débutant",
+    questions: [
+      {
+        id: 1,
+        type: "translate-to-french",
+        question: "Que signifie 'Salam 3alikum' ?",
+        correct: "Bonjour / La paix soit sur vous",
+        options: ["Au revoir", "Bonjour / La paix soit sur vous", "Merci", "Comment tu vas ?"],
+        explanation: "'Salam 3alikum' = la paix soit sur vous. Salutation musulmane universelle."
+      },
+      {
+        id: 2,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'Au revoir' en Darija ?",
+        correct: "Bslama",
+        options: ["Salam", "Bslama", "Labas", "Mzyan"],
+        explanation: "'Bslama' = au revoir, littéralement 'en sécurité'."
+      },
+      {
+        id: 3,
+        type: "choose-meaning",
+        question: "Que répond-on à 'Labas 3lik ?' ?",
+        correct: "Labas, alħamdoulillah",
+        options: ["Bslama", "Labas, alħamdoulillah", "Inshallah", "Shukran"],
+        explanation: "'Labas, alħamdoulillah' = ça va, grâce à Dieu. Réponse standard à 'comment tu vas ?'"
+      },
+      {
+        id: 4,
+        type: "translate-to-french",
+        question: "Que signifie 'Wahd, jouj, tlata' ?",
+        correct: "Un, deux, trois",
+        options: ["Un, deux, trois", "Deux, trois, quatre", "Un, trois, cinq", "Trois, six, neuf"],
+        explanation: "'Wahd' = 1, 'jouj' = 2, 'tlata' = 3. Les trois premiers chiffres en Darija."
+      },
+      {
+        id: 5,
+        type: "translate-to-darija",
+        question: "Comment dit-on '10' en Darija ?",
+        correct: "3shra",
+        options: ["Ts3oud", "3shra", "Hdash", "Rb3a"],
+        explanation: "'3shra' = dix (10). '3' représente la lettre arabe 'aïn'."
+      },
+      {
+        id: 6,
+        type: "translate-to-french",
+        question: "Que signifie 'Khouya' dans le contexte familial ?",
+        correct: "Mon frère",
+        options: ["Mon père", "Mon oncle", "Mon frère", "Mon cousin"],
+        explanation: "'Khouya' = mon frère. 'Khti' = ma sœur, 'bba' = mon père, 'mmi' = ma mère."
+      },
+      {
+        id: 7,
+        type: "fill-blank",
+        question: "'Weld-i w _____ -i mshiw l-l-madrasa' (Mon fils et ma fille sont allés à l'école)",
+        correct: "bent",
+        options: ["khouya", "bent", "mmi", "3ammi"],
+        explanation: "'Bent-i' = ma fille (féminin de 'weld' = fils). 'Bent' = fille, 'weld' = fils/garçon."
+      },
+      {
+        id: 8,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'Combien ça coûte ?' au marché ?",
+        correct: "B-shhal had sh-shi ?",
+        options: ["Wash kayn ?", "B-shhal had sh-shi ?", "Bghit nshri", "3tini wahd"],
+        explanation: "'B-shhal had sh-shi?' = combien coûte cette chose ? Formule indispensable au souk."
+      },
+      {
+        id: 9,
+        type: "match-pairs",
+        question: "Associe chaque expression à sa traduction française",
+        correct: '[["Salam 3alikum","Bonjour"],["Bslama","Au revoir"],["Shukran","Merci"],["Men fadlak","S il vous plaît"]]',
+        options: [],
+        explanation: "Expressions de politesse essentielles en Darija. La base de toute interaction."
+      },
+      {
+        id: 10,
+        type: "translate-to-french",
+        question: "Que signifie 'L-ysar' ?",
+        correct: "À gauche",
+        options: ["À droite", "À gauche", "Tout droit", "Derrière"],
+        explanation: "'L-ysar' = à gauche. 'L-limin' = à droite. 'Negda' = tout droit."
+      },
+      {
+        id: 11,
+        type: "fill-blank",
+        question: "'Mshi _____, men b3d dir l-ysar' (Va tout droit, puis tourne à gauche)",
+        correct: "negda",
+        options: ["l-limin", "negda", "lura", "qdam"],
+        explanation: "'Negda' = tout droit. Instructions de navigation essentielles."
+      },
+      {
+        id: 12,
+        type: "choose-meaning",
+        question: "Que signifie 'Khssk tkheddem' ?",
+        correct: "Tu dois travailler",
+        options: ["Tu veux travailler ?", "Tu dois travailler", "Tu travailles ?", "Tu as travaillé"],
+        explanation: "'Khssk' = tu dois/il te faut (2ème personne singulier de 'kħess'). Construction d'obligation."
+      },
+      {
+        id: 13,
+        type: "translate-to-french",
+        question: "Que signifie 'Bnin' ?",
+        correct: "Délicieux",
+        options: ["Cher", "Délicieux", "Chaud", "Grand"],
+        explanation: "'Bnin' = délicieux/bon au goût. 'Bnin bzzaf' = très délicieux. Utilisé pour la nourriture."
+      },
+      {
+        id: 14,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'Je m'appelle Youssef' ?",
+        correct: "Smiti Youssef",
+        options: ["Ana Youssef", "Smiti Youssef", "Bghit Youssef", "Khouya Youssef"],
+        explanation: "'Smiti' = je m'appelle (mon nom est). 'Ash smitik ?' = comment tu t'appelles ?"
+      },
+      {
+        id: 15,
+        type: "word-order",
+        question: "Remets les mots dans le bon ordre : 'Bonjour, je veux aller au marché, combien le taxi ?'",
+        correct: "Salam, bghit nmshi l-s-souq b-shhal taxi?",
+        options: ["nmshi", "Salam,", "l-s-souq", "bghit", "b-shhal", "taxi?"],
+        explanation: "Phrase complète de la vie quotidienne : salutation + destination + question de prix."
+      }
+    ]
+  },
+  {
+    id: 35,
+    courseId: null,
+    title: "Grand Quiz Semaine 2 — Intermédiaire",
+    emoji: "🎯",
+    difficulty: "Intermédiaire",
+    questions: [
+      {
+        id: 1,
+        type: "translate-to-french",
+        question: "Que signifie 'Ferħan' ?",
+        correct: "Content / Heureux",
+        options: ["Triste", "Content / Heureux", "En colère", "Effrayé"],
+        explanation: "'Ferħan' = content/heureux. 'Ferħana' = heureuse (féminin)."
+      },
+      {
+        id: 2,
+        type: "translate-to-french",
+        question: "Que signifie 'Ħzin' ?",
+        correct: "Triste",
+        options: ["Fatigué", "Triste", "Malade", "Nerveux"],
+        explanation: "'Ħzin' = triste. 'Ħzina' = triste (féminin). '3ndi ħzin' = j'ai de la tristesse."
+      },
+      {
+        id: 3,
+        type: "choose-meaning",
+        question: "Que signifie 'Kħaif' ?",
+        correct: "Effrayé / Il a peur",
+        options: ["Il est fatigué", "Effrayé / Il a peur", "Il est content", "Il est en colère"],
+        explanation: "'Kħaif' = il a peur / effrayé. 'Kħaifa' = elle a peur. '3ndi kħif' = j'ai peur."
+      },
+      {
+        id: 4,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'Il fait beau' en Darija ?",
+        correct: "L-jaw mezyan",
+        options: ["L-jaw berd", "L-jaw mezyan", "Kat-tih sh-shta", "Shkhoun bzzaf"],
+        explanation: "'L-jaw mezyan' = le temps est beau. 'L-jaw' = le temps/l'atmosphère."
+      },
+      {
+        id: 5,
+        type: "fill-blank",
+        question: "'L-jaw _____ bzzaf l-yum' (Il fait très froid aujourd'hui)",
+        correct: "berd",
+        options: ["shkhoun", "berd", "mezyan", "ħlu"],
+        explanation: "'L-jaw berd' = il fait froid. 'Berd' = froid, 'shkhoun' = chaud, 'mezyan' = beau."
+      },
+      {
+        id: 6,
+        type: "translate-to-french",
+        question: "Que signifie 'Ras' dans un contexte médical ?",
+        correct: "Tête",
+        options: ["Dos", "Tête", "Ventre", "Jambe"],
+        explanation: "'Ras' = tête. 'Kħaydini ras' = j'ai mal à la tête. 'Ras' désigne aussi le chef/la tête d'un groupe."
+      },
+      {
+        id: 7,
+        type: "fill-blank",
+        question: "'3ndi _____ f-l-kersh' (J'ai mal au ventre)",
+        correct: "wja3",
+        options: ["ħrara", "wja3", "kankoh", "dawa"],
+        explanation: "'Wja3' = douleur/mal. '3ndi wja3 f-l-kersh' = j'ai mal au ventre."
+      },
+      {
+        id: 8,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'le bureau' en Darija ?",
+        correct: "Maktab",
+        options: ["Maktab", "Khedma", "Sharika", "Irfada"],
+        explanation: "'Maktab' = bureau. 'Khedma' = travail, 'sharika' = entreprise/société."
+      },
+      {
+        id: 9,
+        type: "choose-meaning",
+        question: "Que signifie 'Bghit nkhdem' ?",
+        correct: "Je veux travailler",
+        options: ["Je travaille", "Je veux travailler", "J'ai travaillé", "Je dois travailler"],
+        explanation: "'Bghit' = je veux, 'nkhdem' = travailler (1ère pers. sg présent). 'Bghit nkhdem' = je veux travailler."
+      },
+      {
+        id: 10,
+        type: "match-pairs",
+        question: "Associe chaque émotion Darija à sa traduction française",
+        correct: '[["Ferhan","Content"],["Hzin","Triste"],["Khaif","Effrayé"],["3yyad","Malade"]]',
+        options: [],
+        explanation: "Émotions et états : Ferhan=Content, Hzin=Triste, Khaif=Effrayé, 3yyad=Malade."
+      },
+      {
+        id: 11,
+        type: "translate-to-french",
+        question: "Que signifie 'Tren' ?",
+        correct: "Train",
+        options: ["Bus", "Train", "Avion", "Taxi"],
+        explanation: "'Tren' = train. 'Autobis' = bus, 'tiran' = avion, 'taxi' = taxi (même mot)."
+      },
+      {
+        id: 12,
+        type: "fill-blank",
+        question: "'S-sa3a _____ f-s-sbah' (Il est 9h du matin)",
+        correct: "ts3oud",
+        options: ["tmanya", "ts3oud", "3ashra", "hdash"],
+        explanation: "'Ts3oud' = neuf (9). 'F-s-sbah' = du matin. 'S-sa3a ts3oud' = il est 9h."
+      },
+      {
+        id: 13,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'Le matin' en Darija ?",
+        correct: "S-sbah",
+        options: ["S-sbah", "L-3shiya", "L-lil", "D-dhor"],
+        explanation: "'S-sbah' = le matin. 'L-3shiya' = le soir, 'l-lil' = la nuit, 'd-dhor' = midi."
+      },
+      {
+        id: 14,
+        type: "choose-meaning",
+        question: "Que signifie 'B3id' ?",
+        correct: "Loin",
+        options: ["Proche", "Loin", "À droite", "En face"],
+        explanation: "'B3id' = loin. 'Qrib' = proche/près. 'B3id bzzaf' = très loin."
+      },
+      {
+        id: 15,
+        type: "word-order",
+        question: "Remets les mots dans le bon ordre : 'J'ai besoin d'aller chez le médecin parce que j'ai beaucoup de fièvre'",
+        correct: "Kħessni nmshi l-l-tbib ħit 3ndi ħrara bzzaf",
+        options: ["l-l-tbib", "3ndi", "Kħessni", "nmshi", "ħit", "bzzaf", "ħrara"],
+        explanation: "'Kħessni nmshi' = je dois aller, 'l-l-tbib' = chez le médecin, 'ħit' = parce que, '3ndi ħrara bzzaf' = j'ai beaucoup de fièvre."
+      }
+    ]
+  },
+  {
+    id: 36,
+    courseId: null,
+    title: "Grand Quiz Semaine 3 — Intermédiaire",
+    emoji: "🎯",
+    difficulty: "Intermédiaire",
+    questions: [
+      {
+        id: 1,
+        type: "translate-to-french",
+        question: "Quelle est la forme féminine de 'Khdar' (vert) ?",
+        correct: "Khdra",
+        options: ["Khdari", "Khdra", "Khadra", "Khdar"],
+        explanation: "En Darija, les adjectifs de couleur s'accordent : Khdar (m) → Khdra (f). Ex: 'qamija khdra' = chemise verte."
+      },
+      {
+        id: 2,
+        type: "fill-blank",
+        question: "'L-kuzina _____ zwina f-dar-na' (La cuisine bleue est belle dans notre maison)",
+        correct: "zerqa",
+        options: ["zerq", "zerqa", "ħmra", "sfra"],
+        explanation: "'Zerqa' = bleu (féminin). 'L-kuzina' = la cuisine (féminin), donc l'adjectif s'accorde."
+      },
+      {
+        id: 3,
+        type: "choose-meaning",
+        question: "Quelle couleur est associée à la ville de Chefchaouen ?",
+        correct: "Zerq (bleu)",
+        options: ["Ħmer (rouge)", "Zerq (bleu)", "Sfar (jaune)", "Khdar (vert)"],
+        explanation: "Chefchaouen est célèbre pour ses ruelles peintes en bleu (zerq). Ville emblématique du nord du Maroc."
+      },
+      {
+        id: 4,
+        type: "translate-to-french",
+        question: "Que signifie 'Kabout' ?",
+        correct: "Veste / Manteau",
+        options: ["Chapeau", "Veste / Manteau", "Chaussures", "Ceinture"],
+        explanation: "'Kabout' = veste ou manteau. 'Qftan' = caftan (vêtement traditionnel). 'Chchia' = bonnet traditionnel."
+      },
+      {
+        id: 5,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'Je cherche des chaussures' ?",
+        correct: "Kanqllb 3la sabbat",
+        options: ["Bghit nshri qamija", "Kanqllb 3la sabbat", "3ndi sabbat jdid", "Sabbat ghali bzzaf"],
+        explanation: "'Kanqllb 3la' = je cherche. 'Sabbat' = chaussures. Expression utile pour faire du shopping."
+      },
+      {
+        id: 6,
+        type: "translate-to-french",
+        question: "Que signifie 'Brtqal' ?",
+        correct: "Orange (fruit)",
+        options: ["Citron", "Orange (fruit)", "Pamplemousse", "Mandarine"],
+        explanation: "'Brtqal' = orange. Le nom du fruit vient du portugais 'Portugal', d'où les oranges étaient importées."
+      },
+      {
+        id: 7,
+        type: "fill-blank",
+        question: "Au souk : 'Bghit _____ kilo d-l-limo' (Je veux deux kilos de citrons)",
+        correct: "jouj",
+        options: ["wahd", "jouj", "tlata", "rb3a"],
+        explanation: "'Jouj' = deux. 'Jouj kilo d-l-limo' = deux kilos de citrons. 'Jouj' remplace 'tnin' en Darija."
+      },
+      {
+        id: 8,
+        type: "match-pairs",
+        question: "Associe chaque mot à sa traduction",
+        correct: '[["Teffah","Pomme"],["Qamija","Chemise"],["Khdar","Vert"],["3shrin","20"]]',
+        options: [],
+        explanation: "Révision croisée : fruits, vêtements, couleurs et nombres."
+      },
+      {
+        id: 9,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'Elle mange' (présent) en Darija ?",
+        correct: "Kat-takul",
+        options: ["Kay-yakul", "Kat-takul", "Klat", "Ghadi takul"],
+        explanation: "'Kat-takul' = elle mange (présent féminin). 'Kay-yakul' = il mange (présent masculin)."
+      },
+      {
+        id: 10,
+        type: "choose-meaning",
+        question: "Que signifie 'Ma klayt-sh l-ftour' ?",
+        correct: "Je n'ai pas mangé le petit-déjeuner",
+        options: [
+          "Je veux manger le déjeuner",
+          "Je n'ai pas mangé le petit-déjeuner",
+          "J'ai déjà mangé",
+          "Le petit-déjeuner est prêt"
+        ],
+        explanation: "'Ma klayt-sh' = je n'ai pas mangé (négatif passé). 'L-ftour' = le petit-déjeuner."
+      },
+      {
+        id: 11,
+        type: "fill-blank",
+        question: "'3ndi _____ w khemsa w 3shrin 3am' (J'ai 45 ans)",
+        correct: "rb3in",
+        options: ["3shrin", "tlatin", "rb3in", "khemsin"],
+        explanation: "'Rb3in w khemsa w 3shrin' = 40+5 = 45. En Darija les dizaines viennent avant les unités."
+      },
+      {
+        id: 12,
+        type: "translate-to-french",
+        question: "Que signifie '3shrin w wahd dirham' ?",
+        correct: "21 dirhams",
+        options: ["12 dirhams", "21 dirhams", "20 dirhams", "201 dirhams"],
+        explanation: "'3shrin w wahd' = vingt et un (21). En Darija : dizaine + 'w' + unité."
+      },
+      {
+        id: 13,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'Nous mangeons du couscous le vendredi' ?",
+        correct: "Kanaklu kseksou nhar l-jm3a",
+        options: ["Bghina naklu kseksou", "Kanaklu kseksou nhar l-jm3a", "Klina kseksou lbareh", "Kseksou bnin bzzaf"],
+        explanation: "'Kanaklu' = nous mangeons (présent), 'nhar l-jm3a' = le jour du vendredi. Tradition marocaine."
+      },
+      {
+        id: 14,
+        type: "choose-meaning",
+        question: "Que signifie 'Tbghi tatay ?' ?",
+        correct: "Tu veux du thé ?",
+        options: ["Tu as du thé ?", "Tu veux du thé ?", "Tu achètes du thé ?", "Le thé est prêt ?"],
+        explanation: "'Tbghi' = tu veux (2ème sg). 'Tatay/Atay' = thé. Offrir du thé est un geste d'hospitalité."
+      },
+      {
+        id: 15,
+        type: "word-order",
+        question: "Remets les mots dans le bon ordre : 'Je vais aller acheter un kilo de pommes et un nouveau pantalon'",
+        correct: "Ghadi nmshi nshri kilo teffah w serwal jdid",
+        options: ["teffah", "nshri", "jdid", "Ghadi", "nmshi", "serwal", "kilo", "w"],
+        explanation: "Phrase de shopping combinant fruits et vêtements. Structure : Ghadi + verbe + compléments."
+      }
+    ]
+  },
+  {
+    id: 37,
+    courseId: null,
+    title: "Grand Quiz Semaine 4 — Avancé",
+    emoji: "🏆",
+    difficulty: "Avancé",
+    questions: [
+      {
+        id: 1,
+        type: "choose-meaning",
+        question: "Dans quel contexte dit-on 'Bismillah' avant de commencer ?",
+        correct: "Avant de manger, conduire, ou commencer toute action importante",
+        options: [
+          "Uniquement avant de prier",
+          "Avant de manger, conduire, ou commencer toute action importante",
+          "Seulement lors des fêtes religieuses",
+          "Pour remercier quelqu'un"
+        ],
+        explanation: "'Bismillah' = au nom de Dieu. S'utilise avant toute action pour se placer sous la protection divine."
+      },
+      {
+        id: 2,
+        type: "translate-to-french",
+        question: "Que signifie 'Rbi ybarek fik' ?",
+        correct: "Que Dieu te bénisse",
+        options: ["Si Dieu le veut", "Que Dieu te bénisse", "Grâce à Dieu", "Au nom de Dieu"],
+        explanation: "'Rbi ybarek fik' = que Dieu te bénisse. Réponse à un compliment ou expression de gratitude."
+      },
+      {
+        id: 3,
+        type: "fill-blank",
+        question: "'L-_____ d-l-madrasa kayna f-had l-ħay' (L'école se trouve dans ce quartier)",
+        correct: "madrasa",
+        options: ["jami3a", "madrasa", "ustad", "imtiħan"],
+        explanation: "'L-madrasa kayna' = l'école se trouve. 'F-had l-ħay' = dans ce quartier."
+      },
+      {
+        id: 4,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'Mon fils est étudiant à l'université' ?",
+        correct: "Weld-i talib f-l-jami3a",
+        options: ["Weld-i talmid f-l-madrasa", "Weld-i talib f-l-jami3a", "Weld-i ustad f-l-jami3a", "Weld-i f-l-imtiħan"],
+        explanation: "'Talib' = étudiant (universitaire). 'Talmid' = élève (école). 'Jami3a' = université."
+      },
+      {
+        id: 5,
+        type: "translate-to-french",
+        question: "Que signifie 'Jbal l-atlas' ?",
+        correct: "Les montagnes de l'Atlas",
+        options: ["Le désert du Sahara", "Les montagnes de l'Atlas", "La forêt du Rif", "La mer Méditerranée"],
+        explanation: "'Jbal l-atlas' = les montagnes de l'Atlas. Le plus haut sommet, Toubkal, culmine à 4167m."
+      },
+      {
+        id: 6,
+        type: "choose-meaning",
+        question: "Combien de façades maritimes le Maroc possède-t-il ?",
+        correct: "Deux : Atlantique à l'ouest, Méditerranée au nord",
+        options: [
+          "Une seule : l'Atlantique",
+          "Deux : Atlantique à l'ouest, Méditerranée au nord",
+          "Trois : Atlantique, Méditerranée et mer Rouge",
+          "Aucune, le Maroc est enclavé"
+        ],
+        explanation: "Le Maroc borde deux mers : l'Atlantique (ouest) et la Méditerranée (nord). Géographie unique en Afrique du Nord."
+      },
+      {
+        id: 7,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'Le médecin m'a prescrit des médicaments' ?",
+        correct: "L-tbib 3tani dawa",
+        options: ["L-tbib msha l-mustashfa", "L-tbib 3tani dawa", "Kħessni tbib mezyan", "L-farmashiya b3ida"],
+        explanation: "'L-tbib 3tani dawa' = le médecin m'a donné des médicaments. '3ta' = donner (passé)."
+      },
+      {
+        id: 8,
+        type: "fill-blank",
+        question: "'Kont _____ mlli kont sghir f-l-mdina' (J'habitais dans la médina quand j'étais enfant)",
+        correct: "kansken",
+        options: ["kankhdem", "kansken", "kanqra", "kanhder"],
+        explanation: "'Kansken' = j'habitais (imparfait de 'sken'). 'Mlli' = quand/lorsque. Construction de l'imparfait avec 'k-' + verbe présent."
+      },
+      {
+        id: 9,
+        type: "match-pairs",
+        question: "Associe chaque expression à sa traduction",
+        correct: '[["Bismillah","Au nom de Dieu"],["Tbib","Médecin"],["Jbal","Montagne"],["Mustashfa","Hôpital"]]',
+        options: [],
+        explanation: "Révision des semaines 3-4 : religion, santé, nature."
+      },
+      {
+        id: 10,
+        type: "translate-to-french",
+        question: "Que signifie 'Kan kaykhdem f-sharika kbira' ?",
+        correct: "Il travaillait dans une grande entreprise",
+        options: [
+          "Il cherche une grande entreprise",
+          "Il travaillait dans une grande entreprise",
+          "Il va travailler dans une grande entreprise",
+          "Il a créé une grande entreprise"
+        ],
+        explanation: "'Kan kaykhdem' = il travaillait (imparfait). 'F-sharika kbira' = dans une grande entreprise."
+      },
+      {
+        id: 11,
+        type: "fill-blank",
+        question: "'Ghadi _____ l-imtiħan ghda' (Elle va passer l'examen demain)",
+        correct: "tjri 3liha",
+        options: ["ynjħ", "tjri 3liha", "tqra", "tja"],
+        explanation: "'Tjri 3liha l-imtiħan' = l'examen lui sera soumis / elle va passer l'examen. 'Jra 3la' = concerner/se passer pour."
+      },
+      {
+        id: 12,
+        type: "word-order",
+        question: "Remets les mots dans le bon ordre : 'Je ne suis pas allé à l'école parce que j'étais malade et j'avais mal à la tête'",
+        correct: "Ma mshitsh l-l-madrasa ħit kont 3yyad w kħaydini rasi",
+        options: ["kont", "ħit", "Ma", "rasi", "mshitsh", "l-l-madrasa", "3yyad", "kħaydini", "w"],
+        explanation: "'Ma mshitsh' = je ne suis pas allé, 'l-l-madrasa' = à l'école, 'ħit kont 3yyad' = parce que j'étais malade."
+      },
+      {
+        id: 13,
+        type: "translate-to-french",
+        question: "Que signifie '3ndi wja3 f-dhri w ma qdar-sh nmshi' ?",
+        correct: "J'ai mal au dos et je ne peux pas marcher",
+        options: [
+          "J'ai mal à la tête et je suis fatigué",
+          "J'ai mal au dos et je ne peux pas marcher",
+          "J'ai la fièvre et je dois rester",
+          "Je suis malade et je vais à l'hôpital"
+        ],
+        explanation: "'Wja3 f-dhri' = mal au dos, 'ma qdar-sh nmshi' = je ne peux pas marcher/aller."
+      },
+      {
+        id: 14,
+        type: "choose-meaning",
+        question: "Que signifie 'Njħ f-l-imtiħan' ?",
+        correct: "Réussir l'examen",
+        options: ["Passer un examen", "Réussir l'examen", "Rater l'examen", "Réviser pour l'examen"],
+        explanation: "'Njħ f-' = réussir dans/à. 'Ma njħ-sh' = il n'a pas réussi. 'Rshq' = rater (examen)."
+      },
+      {
+        id: 15,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'Mon ami est commerçant dans la médina de Fès' ?",
+        correct: "Sħabi tjar f-mdina d-Fas",
+        options: [
+          "Khouya tbib f-l-mustashfa",
+          "Sħabi tjar f-mdina d-Fas",
+          "L-ustad mzyan f-l-madrasa",
+          "Weld-i muħandis f-Casablanca"
+        ],
+        explanation: "'Sħabi' = mon ami, 'tjar' = commerçant, 'f-mdina d-Fas' = dans la médina de Fès."
+      }
+    ]
+  },
+  {
+    id: 38,
+    courseId: null,
+    title: "Quiz Vitesse — Vocabulaire Complet",
+    emoji: "⚡",
+    difficulty: "Intermédiaire",
+    questions: [
+      {
+        id: 1,
+        type: "choose-meaning",
+        question: "Zerq = ?",
+        correct: "Bleu",
+        options: ["Rouge", "Bleu", "Vert", "Jaune"],
+        explanation: "'Zerq' = bleu. Couleur emblématique de Chefchaouen."
+      },
+      {
+        id: 2,
+        type: "choose-meaning",
+        question: "Sabbat = ?",
+        correct: "Chaussures",
+        options: ["Pantalon", "Chemise", "Chaussures", "Veste"],
+        explanation: "'Sabbat' = chaussures. 'Belgha' = babouches traditionnelles."
+      },
+      {
+        id: 3,
+        type: "choose-meaning",
+        question: "Teffah = ?",
+        correct: "Pomme",
+        options: ["Citron", "Pastèque", "Pomme", "Orange"],
+        explanation: "'Teffah' = pomme. Fruit populaire des régions montagneuses du Maroc."
+      },
+      {
+        id: 4,
+        type: "choose-meaning",
+        question: "Msha = ?",
+        correct: "Aller / Il est allé",
+        options: ["Venir", "Manger", "Aller / Il est allé", "Dormir"],
+        explanation: "'Msha' = aller (infinitif) ou il est allé (passé 3ème sg masculin)."
+      },
+      {
+        id: 5,
+        type: "translate-to-french",
+        question: "3shrin = ?",
+        correct: "20",
+        options: ["10", "12", "20", "30"],
+        explanation: "'3shrin' = vingt (20). '3' représente la lettre arabe 'aïn'."
+      },
+      {
+        id: 6,
+        type: "translate-to-french",
+        question: "Salam 3alikum = ?",
+        correct: "Bonjour",
+        options: ["Au revoir", "Merci", "Bonjour", "Excuse-moi"],
+        explanation: "'Salam 3alikum' = la paix soit sur vous. Salutation principale en Darija."
+      },
+      {
+        id: 7,
+        type: "choose-meaning",
+        question: "Mmi = ?",
+        correct: "Ma mère",
+        options: ["Ma sœur", "Ma grand-mère", "Ma mère", "Ma tante"],
+        explanation: "'Mmi' = ma mère. 'Bba' = mon père, 'jdda' = ma grand-mère."
+      },
+      {
+        id: 8,
+        type: "choose-meaning",
+        question: "Kseksou = ?",
+        correct: "Couscous",
+        options: ["Tajine", "Couscous", "Harira", "Pastilla"],
+        explanation: "'Kseksou' = couscous. Plat traditionnel marocain, souvent mangé le vendredi."
+      },
+      {
+        id: 9,
+        type: "translate-to-french",
+        question: "Negda = ?",
+        correct: "Tout droit",
+        options: ["À gauche", "À droite", "Tout droit", "En face"],
+        explanation: "'Negda' = tout droit. Direction essentielle pour se repérer."
+      },
+      {
+        id: 10,
+        type: "choose-meaning",
+        question: "Ferħan = ?",
+        correct: "Content",
+        options: ["Triste", "Content", "Fatigué", "Malade"],
+        explanation: "'Ferħan' = content/heureux. État émotionnel positif."
+      },
+      {
+        id: 11,
+        type: "choose-meaning",
+        question: "Ras = ?",
+        correct: "Tête",
+        options: ["Main", "Pied", "Tête", "Dos"],
+        explanation: "'Ras' = tête. 'Kħaydini ras' = j'ai mal à la tête."
+      },
+      {
+        id: 12,
+        type: "translate-to-french",
+        question: "Tbib = ?",
+        correct: "Médecin",
+        options: ["Pharmacien", "Médecin", "Infirmier", "Dentiste"],
+        explanation: "'Tbib' = médecin/docteur. 'Kħessni tbib' = j'ai besoin d'un médecin."
+      },
+      {
+        id: 13,
+        type: "match-pairs",
+        question: "Associe chaque mot à sa traduction",
+        correct: '[["Zerq","Bleu"],["Sabbat","Chaussures"],["Msha","Aller"],["Jame3","Mosquée"]]',
+        options: [],
+        explanation: "Révision rapide : couleur, vêtement, verbe, lieu."
+      },
+      {
+        id: 14,
+        type: "choose-meaning",
+        question: "Inshallah = ?",
+        correct: "Si Dieu le veut",
+        options: ["Au nom de Dieu", "Grâce à Dieu", "Si Dieu le veut", "Que Dieu bénisse"],
+        explanation: "'Inshallah' = si Dieu le veut. Expression d'espoir ou de condition."
+      },
+      {
+        id: 15,
+        type: "choose-meaning",
+        question: "Jbal = ?",
+        correct: "Montagne",
+        options: ["Mer", "Désert", "Montagne", "Forêt"],
+        explanation: "'Jbal' = montagne. 'Jbal l-atlas' = les montagnes de l'Atlas."
+      }
+    ]
+  },
+  {
+    id: 39,
+    courseId: null,
+    title: "Quiz Culture Marocaine",
+    emoji: "🇲🇦",
+    difficulty: "Intermédiaire",
+    questions: [
+      {
+        id: 1,
+        type: "choose-meaning",
+        question: "'Mshallah' se dit lors d'un compliment pour protéger de...",
+        correct: "L-3in (le mauvais œil)",
+        options: [
+          "La jalousie générale",
+          "L-3in (le mauvais œil)",
+          "La malchance naturelle",
+          "Les maladies"
+        ],
+        explanation: "'Mshallah' protège contre 'l-3in' (le mauvais œil). Croyance que l'envie ou l'admiration excessive peut porter malheur."
+      },
+      {
+        id: 2,
+        type: "choose-meaning",
+        question: "Qu'est-ce qu'un 'Riad' ?",
+        correct: "Maison traditionnelle marocaine avec patio central",
+        options: [
+          "Un grand hôtel de luxe",
+          "Maison traditionnelle marocaine avec patio central",
+          "Un type de mosquée",
+          "Un souk couvert"
+        ],
+        explanation: "Le riad est une demeure traditionnelle organisée autour d'un jardin ou patio intérieur. Le mot vient de l'arabe 'rawdha' (jardin)."
+      },
+      {
+        id: 3,
+        type: "translate-to-darija",
+        question: "Comment appelle-t-on les montagnes de l'Atlas en Darija ?",
+        correct: "Jbal l-atlas",
+        options: ["S-saħra", "Jbal l-atlas", "L-bħar", "L-ghaba"],
+        explanation: "'Jbal l-atlas' = les montagnes de l'Atlas. Chaîne principale du Maroc, avec le Toubkal à 4167m."
+      },
+      {
+        id: 4,
+        type: "choose-meaning",
+        question: "'L-khmsa' (5) est aussi le nom de...",
+        correct: "L'amulette en forme de main (main de Fatima)",
+        options: [
+          "Un plat traditionnel",
+          "L'amulette en forme de main (main de Fatima)",
+          "Un type de tissu",
+          "Une danse traditionnelle"
+        ],
+        explanation: "'L-khmsa' = la main à cinq doigts, amulette protectrice très répandue au Maghreb. Aussi appelée 'main de Fatima'."
+      },
+      {
+        id: 5,
+        type: "translate-to-french",
+        question: "Que signifie 'Ftour' selon le contexte ?",
+        correct: "Petit-déjeuner et aussi rupture du jeûne (iftar)",
+        options: [
+          "Uniquement le petit-déjeuner",
+          "Petit-déjeuner et aussi rupture du jeûne (iftar)",
+          "Le déjeuner uniquement",
+          "Un repas de fête"
+        ],
+        explanation: "'Ftour' = petit-déjeuner en usage quotidien. Pendant Ramadan, 'ftour' désigne aussi l'iftar (repas de rupture du jeûne au coucher du soleil)."
+      },
+      {
+        id: 6,
+        type: "choose-meaning",
+        question: "Le Maroc est bordé par quelles étendues d'eau ?",
+        correct: "L'Atlantique et la Méditerranée",
+        options: [
+          "Uniquement l'Atlantique",
+          "L'Atlantique et la Méditerranée",
+          "La Méditerranée et la mer Rouge",
+          "L'Atlantique et la mer Noire"
+        ],
+        explanation: "Le Maroc a une double façade maritime unique : l'océan Atlantique (côte ouest) et la mer Méditerranée (côte nord)."
+      },
+      {
+        id: 7,
+        type: "translate-to-french",
+        question: "Que désigne 'Derb' dans la médina ?",
+        correct: "Ruelle ou impasse de la vieille ville",
+        options: [
+          "Une grande avenue",
+          "Ruelle ou impasse de la vieille ville",
+          "La place principale",
+          "Le marché couvert"
+        ],
+        explanation: "'Derb' = ruelle/impasse dans la médina. Ces petites rues tortueuses forment le tissu urbain traditionnel."
+      },
+      {
+        id: 8,
+        type: "choose-meaning",
+        question: "La tradition du 'Hammam' est particulièrement observée...",
+        correct: "Avant la prière du vendredi et pour les occasions spéciales",
+        options: [
+          "Uniquement lors du Ramadan",
+          "Avant la prière du vendredi et pour les occasions spéciales",
+          "Chaque matin",
+          "Uniquement en hiver"
+        ],
+        explanation: "Le hammam (bain public) est une pratique sociale et religieuse. La purification avant la prière du vendredi est une tradition importante."
+      },
+      {
+        id: 9,
+        type: "translate-to-french",
+        question: "Que signifie 'L-argan' dans la culture marocaine ?",
+        correct: "L'arganier et son huile, trésor endémique du Maroc",
+        options: [
+          "Un type de tapis artisanal",
+          "L'arganier et son huile, trésor endémique du Maroc",
+          "Une épice traditionnelle",
+          "Un instrument de musique gnaoui"
+        ],
+        explanation: "L'arganier (argania spinosa) pousse uniquement au Maroc (région de Souss). L'UNESCO a classé cette forêt biosphère en 1998."
+      },
+      {
+        id: 10,
+        type: "choose-meaning",
+        question: "Que sont les 'Belgha' ?",
+        correct: "Babouches / chaussures traditionnelles marocaines",
+        options: [
+          "Un type de vêtement traditionnel",
+          "Babouches / chaussures traditionnelles marocaines",
+          "Un plat traditionnel",
+          "Des bijoux traditionnels"
+        ],
+        explanation: "'Belgha' = babouches marocaines en cuir, sans talon, souvent jaunes ou blanches. Symbole de l'artisanat marocain."
+      },
+      {
+        id: 11,
+        type: "match-pairs",
+        question: "Associe chaque symbole culturel à sa description",
+        correct: '[["Khmsa","Main de Fatima"],["Riad","Maison à patio"],["Belgha","Babouches"],["Kseksou","Couscous"]]',
+        options: [],
+        explanation: "Culture marocaine : Khmsa=amulette, Riad=demeure traditionnelle, Belgha=babouches, Kseksou=couscous."
+      },
+      {
+        id: 12,
+        type: "word-order",
+        question: "Remets les mots dans le bon ordre : 'Dieu merci, ton fils a beaucoup grandi, que Dieu te bénisse'",
+        correct: "Mshallah, weldk kbir bzzaf, rbi ybarek fik",
+        options: ["kbir", "Mshallah,", "rbi", "weldk", "ybarek", "fik", "bzzaf,"],
+        explanation: "'Mshallah' protège du mauvais œil lors du compliment. 'Rbi ybarek fik' = que Dieu te bénisse."
+      }
+    ]
+  },
+  {
+    id: 40,
+    courseId: null,
+    title: "Grand Quiz Final du Mois",
+    emoji: "👑",
+    difficulty: "Avancé",
+    questions: [
+      {
+        id: 1,
+        type: "translate-to-french",
+        question: "Que signifie 'Mshit l-s-souq w shreyt khodra w lħem' ?",
+        correct: "Je suis allé au marché et j'ai acheté des légumes et de la viande",
+        options: [
+          "Je veux aller au marché acheter des légumes",
+          "Je suis allé au marché et j'ai acheté des légumes et de la viande",
+          "J'ai besoin d'aller au marché demain",
+          "Le marché est fermé, je n'ai pas pu acheter"
+        ],
+        explanation: "'Mshit' = je suis allé (passé), 'shreyt' = j'ai acheté (passé), 'khodra w lħem' = légumes et viande."
+      },
+      {
+        id: 2,
+        type: "translate-to-french",
+        question: "Que signifie 'Kan kaykhdem f-s-sbah walakin l-3shiya kankhdm f-d-dar' ?",
+        correct: "Il travaillait le matin mais le soir il travaille à la maison",
+        options: [
+          "Il travaille matin et soir à la maison",
+          "Il travaillait le matin mais le soir il travaille à la maison",
+          "Il voulait travailler le matin et le soir",
+          "Il a travaillé toute la journée à la maison"
+        ],
+        explanation: "'Kan kaykhdem' = il travaillait (imparfait), 'kankhdm' = je travaille (présent) — attention au changement de sujet."
+      },
+      {
+        id: 3,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'Je ne suis pas allé à la fête hier soir parce que j'étais fatigué' ?",
+        correct: "Ma mshitsh l-l-ħafla lbareh l-lil ħit kont 3yyad",
+        options: [
+          "Mshit l-l-ħafla lbareh ħit kont ferħan",
+          "Ma mshitsh l-l-ħafla lbareh l-lil ħit kont 3yyad",
+          "Ghadi nmshi l-l-ħafla l-lila",
+          "Ma bghitsh nmshi l-l-ħafla"
+        ],
+        explanation: "'Ma mshitsh' = je ne suis pas allé (négatif passé), 'lbareh l-lil' = hier soir, 'ħit kont 3yyad' = parce que j'étais fatigué."
+      },
+      {
+        id: 4,
+        type: "translate-to-darija",
+        question: "Conjugue au passé : 'Nous avons mangé du couscous vendredi'",
+        correct: "Klina kseksou nhar l-jm3a",
+        options: ["Kanaklu kseksou nhar l-jm3a", "Klina kseksou nhar l-jm3a", "Ghadi naklu kseksou", "Bghinа naklu kseksou"],
+        explanation: "'Klina' = nous avons mangé (passé 1ère pl). 'Kanaklu' = nous mangeons (présent). 'Nhar l-jm3a' = le vendredi."
+      },
+      {
+        id: 5,
+        type: "fill-blank",
+        question: "Mets au futur : 'Ghadi _____ l-Fes l-jm3a l-jayya' (Nous allons aller à Fès la semaine prochaine)",
+        correct: "nmshiw",
+        options: ["nmshi", "nmshiw", "mshaw", "mshiw"],
+        explanation: "'Nmshiw' = nous allons (futur 1ère pl). 'Ghadi nmshiw' = nous allons aller. 'L-jm3a l-jayya' = la semaine prochaine."
+      },
+      {
+        id: 6,
+        type: "match-pairs",
+        question: "Associe chaque expression complexe à sa traduction",
+        correct: '[["Ma mshitsh","Je ne suis pas allé"],["Ghadi yji","Il va venir"],["Kan kaykhdem","Il travaillait"],["Ma bqa-sh","Ne plus"]]',
+        options: [],
+        explanation: "Structures avancées : passé négatif, futur, imparfait, et négation de continuité."
+      },
+      {
+        id: 7,
+        type: "choose-meaning",
+        question: "Quel est le plat national marocain servi traditionnellement le vendredi ?",
+        correct: "Kseksou (couscous)",
+        options: ["Tajine", "Kseksou (couscous)", "Harira", "Pastilla"],
+        explanation: "'Kseksou' = couscous. La tradition du couscous du vendredi réunit la famille après la prière."
+      },
+      {
+        id: 8,
+        type: "translate-to-french",
+        question: "Que représente 'L-khmsa' comme amulette ?",
+        correct: "La main à cinq doigts pour protéger du mauvais œil",
+        options: [
+          "La lune croissante islamique",
+          "La main à cinq doigts pour protéger du mauvais œil",
+          "L'étoile à cinq branches du drapeau",
+          "Le chiffre 5 sacré dans la tradition berbère"
+        ],
+        explanation: "'L-khmsa' = la main (5 doigts). Amulette contre 'l-3in' (mauvais œil). Très présente dans la décoration et les bijoux marocains."
+      },
+      {
+        id: 9,
+        type: "fill-blank",
+        question: "'Ma _____ ħta ħaja mn l-imtiħan' (Je n'ai rien compris de l'examen)",
+        correct: "fhemtsh",
+        options: ["3reftsh", "fhemtsh", "klitsh", "mshitsh"],
+        explanation: "'Ma fhemtsh ħta ħaja' = je n'ai rien compris. 'Fhem' = comprendre, 'ħta ħaja' = rien/quoi que ce soit (négatif)."
+      },
+      {
+        id: 10,
+        type: "fill-blank",
+        question: "'Bghit _____ l-s-souq nshri khodra w lħem bash ndir tajine' (Je veux aller au marché acheter des légumes et de la viande pour faire un tajine)",
+        correct: "nmshi",
+        options: ["mshi", "nmshi", "ghadi", "msha"],
+        explanation: "'Bghit nmshi' = je veux aller. 'Bash' = pour (but). 'Ndir' = faire/préparer."
+      },
+      {
+        id: 11,
+        type: "word-order",
+        question: "Remets les mots dans le bon ordre : 'J'étais jeune quand j'habitais à Fès et j'étudiais à l'école'",
+        correct: "Kant sghir mlli skent f-Fes w kont katqra f-l-madrasa",
+        options: ["f-Fes", "sghir", "mlli", "Kant", "w", "kont", "skent", "katqra", "f-l-madrasa"],
+        explanation: "'Kant sghir' = j'étais jeune (féminin), 'mlli skent f-Fes' = quand j'habitais à Fès, 'kont katqra' = j'étudiais."
+      },
+      {
+        id: 12,
+        type: "translate-to-french",
+        question: "Que signifie le proverbe 'Sber w sber, ghir Allah lli y3awnek' ?",
+        correct: "Patience, patience, seul Dieu peut t'aider",
+        options: [
+          "Travaille dur et Dieu t'aidera",
+          "Patience, patience, seul Dieu peut t'aider",
+          "La prière vient avant tout effort",
+          "Fais confiance à Dieu et agis"
+        ],
+        explanation: "'Sber' = patience (impératif), 'ghir' = seulement/juste, 'y3awnek' = t'aide. Proverbe marocain sur l'endurance."
+      },
+      {
+        id: 13,
+        type: "choose-meaning",
+        question: "Que signifie l'expression 'Zwine dyal l-3in' ?",
+        correct: "Si beau que ça peut attirer le mauvais œil",
+        options: [
+          "Très beau mais mauvais caractère",
+          "Si beau que ça peut attirer le mauvais œil",
+          "Beau à l'extérieur mais vide à l'intérieur",
+          "Belle apparence trompeuse"
+        ],
+        explanation: "'Zwine dyal l-3in' = beau à en attirer le mauvais œil. Expression qui mêle admiration et mise en garde culturelle."
+      },
+      {
+        id: 14,
+        type: "choose-meaning",
+        question: "Dans un contexte formel (travail, administration), quel registre utilise-t-on ?",
+        correct: "L'arabe classique (fusha) ou le français, pas la Darija",
+        options: [
+          "La Darija avec les formules de politesse",
+          "L'arabe classique (fusha) ou le français, pas la Darija",
+          "L'amazigh/berbère selon la région",
+          "L'anglais dans les entreprises modernes"
+        ],
+        explanation: "La Darija est informelle. Dans les contextes officiels (administration, éducation formelle, discours), l'arabe classique (fusha) ou le français sont utilisés au Maroc."
+      },
+      {
+        id: 15,
+        type: "translate-to-darija",
+        question: "Traduire : 'Je veux aller au marché acheter des légumes et de la viande pour faire un tajine'",
+        correct: "Bghit nmshi l-s-souq nshri khodra w lħem bash ndir tajine",
+        options: [
+          "Mshit l-s-souq w shreyt khodra w lħem",
+          "Bghit nmshi l-s-souq nshri khodra w lħem bash ndir tajine",
+          "Kħessni nmshi nshri khodra w lħem",
+          "Ghadi nmshi l-s-souq w nshri tajine"
+        ],
+        explanation: "'Bghit nmshi' = je veux aller, 'l-s-souq' = au marché, 'nshri khodra w lħem' = acheter légumes et viande, 'bash ndir tajine' = pour faire un tajine."
+      }
+    ]
   }
 ];
