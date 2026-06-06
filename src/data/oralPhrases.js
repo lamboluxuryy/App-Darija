@@ -586,6 +586,104 @@ export const oralPhrases = [
         tags: ["internet", "technologie", "communication"]
       }
     ]
+  },
+  {
+    id: 13,
+    category: "Slang & Expressions des Jeunes",
+    emoji: "🔥",
+    phrases: [
+      {
+        darija: "هدا زوين بزاف!",
+        romanization: "Hda zwine bzzaf!",
+        translation: "C'est trop cool !",
+        difficulty: "facile",
+        tags: ["slang", "approbation"]
+      },
+      {
+        darija: "صافي، مفاهم!",
+        romanization: "Safi, mfahem!",
+        translation: "Ok, j'ai compris !",
+        difficulty: "facile",
+        tags: ["slang", "accord"]
+      },
+      {
+        darija: "واخا، مشينا!",
+        romanization: "Wakha, mchina!",
+        translation: "D'accord, on y va !",
+        difficulty: "facile",
+        tags: ["slang", "action"]
+      },
+      {
+        darija: "عندي نية نمشي للبحر",
+        romanization: "3andi niya nmshi l-l-bħer",
+        translation: "J'ai envie d'aller à la mer",
+        difficulty: "moyen",
+        tags: ["slang", "envie"]
+      },
+      {
+        darija: "عيب عليك تدير هكداك",
+        romanization: "3ayb 3lik tdir hkdak",
+        translation: "C'est honteux de faire comme ça",
+        difficulty: "moyen",
+        tags: ["slang", "réprimande"]
+      },
+      {
+        darija: "واش؟ ما صدقتش!",
+        romanization: "Wach? Ma sdaqts!",
+        translation: "Quoi ?! Je n'y crois pas !",
+        difficulty: "difficile",
+        tags: ["slang", "surprise"]
+      }
+    ]
+  },
+  {
+    id: 14,
+    category: "Proverbes & Sagesses",
+    emoji: "📜",
+    phrases: [
+      {
+        darija: "اللي فات مات",
+        romanization: "Lli fat mat",
+        translation: "Ce qui est passé est mort (Oublie le passé)",
+        difficulty: "moyen",
+        tags: ["proverbe", "sagesse"]
+      },
+      {
+        darija: "عطي الخبز لخبازه",
+        romanization: "3ti l-khobz l-kħbazu",
+        translation: "Donne le pain au boulanger (Fais confiance aux experts)",
+        difficulty: "moyen",
+        tags: ["proverbe", "sagesse"]
+      },
+      {
+        darija: "الدار دار بابا والبرا برا",
+        romanization: "D-dar dar baba w l-bra bra",
+        translation: "Rien ne vaut la maison",
+        difficulty: "difficile",
+        tags: ["proverbe", "famille"]
+      },
+      {
+        darija: "العقل مسوس",
+        romanization: "L-3ql msous",
+        translation: "La sagesse est amère (L'expérience coûte cher)",
+        difficulty: "difficile",
+        tags: ["proverbe", "vie"]
+      },
+      {
+        darija: "اللي عندو عقل يربح",
+        romanization: "Lli 3ndu 3ql yrbeh",
+        translation: "Celui qui a de la sagesse gagne",
+        difficulty: "difficile",
+        tags: ["proverbe", "sagesse"]
+      },
+      {
+        darija: "صاحب مية ولا تكون مسكين",
+        romanization: "Saħeb miya wla tkun meskin",
+        translation: "Aie cent amis plutôt que d'être pauvre (la richesse sociale vaut plus que l'argent)",
+        difficulty: "difficile",
+        tags: ["proverbe", "amitié"]
+      }
+    ]
   }
 ];
 
