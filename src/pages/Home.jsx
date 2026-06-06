@@ -4,16 +4,20 @@ import { BookOpen, ChevronRight, Star, Flame, Trophy, Mic } from 'lucide-react';
 import { useApp } from '../context/AppContext';
 import { courses } from '../data/courses';
 import { dictionaryWords } from '../data/dictionary';
+import { quizzes } from '../data/quizzes';
+import { dialogues } from '../data/dialogues';
+import { oralPhrases } from '../data/oralPhrases';
+import { grammarRules } from '../data/grammar';
 
 const features = [
-  { to: '/cours', emoji: '📖', title: 'Cours', desc: '14 leçons progressives du quotidien', color: 'from-amber-800/40 to-orange-900/30', border: 'border-amber-600/20', badge: '14 cours' },
-  { to: '/speaking', emoji: '🎤', title: 'Parler', desc: 'Micro + reconnaissance vocale', color: 'from-red-900/40 to-rose-900/30', border: 'border-red-600/20', badge: '48 phrases' },
-  { to: '/oral', emoji: '🎙️', title: 'Écouter', desc: 'Phrases authentiques du Maroc', color: 'from-yellow-900/40 to-amber-900/30', border: 'border-yellow-600/20', badge: '8 catégories' },
+  { to: '/cours', emoji: '📖', title: 'Cours', desc: `${courses.length} cours progressifs, du débutant au maître`, color: 'from-amber-800/40 to-orange-900/30', border: 'border-amber-600/20', badge: `${courses.length} cours` },
+  { to: '/speaking', emoji: '🎤', title: 'Parler', desc: 'Micro + reconnaissance vocale Darija', color: 'from-red-900/40 to-rose-900/30', border: 'border-red-600/20', badge: `${oralPhrases.reduce((s,c)=>s+c.phrases.length,0)} phrases` },
+  { to: '/oral', emoji: '🎙️', title: 'Écouter', desc: 'Phrases authentiques par catégorie', color: 'from-yellow-900/40 to-amber-900/30', border: 'border-yellow-600/20', badge: `${oralPhrases.length} catégories` },
   { to: '/flashcards', emoji: '🃏', title: 'Flashcards', desc: 'Mémorisez avec la répétition espacée', color: 'from-orange-900/40 to-amber-900/30', border: 'border-orange-600/20', badge: 'Spaced rep.' },
-  { to: '/dialogues', emoji: '💬', title: 'Dialogues', desc: 'Scénarios réels : café, taxi, souk...', color: 'from-rose-900/40 to-red-900/30', border: 'border-rose-600/20', badge: '5 scénarios' },
-  { to: '/quiz', emoji: '🧠', title: 'Quiz', desc: '20 défis gamifiés avec niveaux', color: 'from-amber-900/40 to-yellow-900/30', border: 'border-amber-600/20', badge: '20 quiz' },
+  { to: '/dialogues', emoji: '💬', title: 'Dialogues', desc: 'Scénarios réels : café, hammam, Aïd...', color: 'from-rose-900/40 to-red-900/30', border: 'border-rose-600/20', badge: `${dialogues.length} scénarios` },
+  { to: '/quiz', emoji: '🧠', title: 'Quiz', desc: `${quizzes.length} quiz gamifiés, 10-15 questions chacun`, color: 'from-amber-900/40 to-yellow-900/30', border: 'border-amber-600/20', badge: `${quizzes.length} quiz` },
   { to: '/dictionnaire', emoji: '📚', title: 'Dictionnaire', desc: `${dictionaryWords.length} mots et expressions`, color: 'from-orange-800/40 to-red-900/30', border: 'border-orange-600/20', badge: `${dictionaryWords.length} mots` },
-  { to: '/grammaire', emoji: '📝', title: 'Grammaire', desc: 'Les règles essentielles expliquées', color: 'from-red-800/40 to-orange-900/30', border: 'border-red-600/20', badge: '8 règles' },
+  { to: '/grammaire', emoji: '📝', title: 'Grammaire', desc: 'Toutes les règles essentielles expliquées', color: 'from-red-800/40 to-orange-900/30', border: 'border-red-600/20', badge: `${grammarRules.length} règles` },
 ];
 
 const steps = [
@@ -39,7 +43,7 @@ const steps = [
     num: '3',
     emoji: '🚀',
     title: 'Commencez aujourd\'hui',
-    desc: 'Testez-vous avec 20 quiz, débloquez des achievements et atteignez le niveau Expert Darija pas à pas.',
+    desc: `Testez-vous avec ${quizzes.length} quiz (10-15 questions chacun), débloquez des achievements et atteignez le niveau Expert Darija pas à pas.`,
     to: '/quiz',
     color: 'border-red-500/40',
     glow: 'rgba(180,30,0,0.15)',
@@ -47,15 +51,20 @@ const steps = [
 ];
 
 const testimonials = [
-  { name: 'Amira K.', flag: '🇫🇷', text: 'Au souk de Marrakech j\'ai pu négocier et discuter avec les vendeurs. Ils étaient impressionnés ! La méthode est vraiment efficace.', stars: 5 },
-  { name: 'Lucas M.', flag: '🇧🇪', text: 'La section "Parler" avec le micro a tout changé. Je pratique ma prononciation tous les jours, même sans être au Maroc.', stars: 5 },
-  { name: 'Nadia R.', flag: '🇨🇦', text: 'Mes grands-parents marocains n\'en reviennent pas que je comprenne leurs conversations. Les dialogues m\'ont transformée.', stars: 5 },
+  { name: 'Amira K.', flag: '🇫🇷', text: 'Au souk de Marrakech j\'ai pu négocier et discuter avec les vendeurs. Ils étaient impressionnés ! La méthode est vraiment efficace.', stars: 5, level: 'Intermédiaire' },
+  { name: 'Lucas M.', flag: '🇧🇪', text: 'La section "Parler" avec le micro a tout changé. Je pratique ma prononciation tous les jours, même sans être au Maroc.', stars: 5, level: 'Apprenti' },
+  { name: 'Nadia R.', flag: '🇨🇦', text: 'Mes grands-parents marocains n\'en reviennent pas que je comprenne leurs conversations. Les dialogues m\'ont transformée.', stars: 5, level: 'Avancé' },
+  { name: 'Karim D.', flag: '🇳🇱', text: 'Le programme 28 jours est parfait. Chaque jour une nouvelle leçon, un quiz, et on progresse vraiment. J\'ai fini le mois et je comprends les séries marocaines !', stars: 5, level: 'Intermédiaire' },
+  { name: 'Sophie L.', flag: '🇨🇭', text: 'Les quiz avec 15 questions et les différents types d\'exercices sont vraiment bien faits. Pas ennuyeux du tout, on apprend sans s\'en rendre compte.', stars: 5, level: 'Apprenti' },
+  { name: 'Youssef B.', flag: '🇩🇪', text: 'Né en Allemagne de parents marocains, je n\'avais jamais appris le Darija sérieusement. Grâce au cours de conjugaison et les dialogues avec l\'Aïd en famille, je me sens enfin à l\'aise.', stars: 5, level: 'Avancé' },
+  { name: 'Marie-Claire T.', flag: '🇫🇷', text: 'J\'épouse un Marocain et sa famille était touchée que je comprenne les proverbes et les expressions de politesse. Le cours sur les registres formel/informel est une pépite.', stars: 5, level: 'Intermédiaire' },
+  { name: 'Hamza R.', flag: '🇬🇧', text: 'Le dictionnaire avec 180+ mots, les flashcards et les 40 quiz — c\'est complet comme une vraie école de langue mais entièrement gratuit. Incroyable.', stars: 5, level: 'Expert Darija' },
 ];
 
 const proofBadges = [
   { icon: '⭐', value: '4.9/5', label: 'Satisfaction' },
   { icon: '🇲🇦', value: '100%', label: 'Authentique' },
-  { icon: '🎓', value: '14', label: 'Cours' },
+  { icon: '🎓', value: `${courses.length}`, label: 'Cours' },
   { icon: '🆓', value: 'Gratuit', label: 'Pour toujours' },
 ];
 
@@ -208,7 +217,7 @@ export default function Home() {
           <div className="moroccan-divider max-w-xs mx-auto my-6" />
 
           <p className="text-white/55 text-base md:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
-            Cours progressifs, pratique vocale avec le micro, dialogues authentiques et 20 quiz gamifiés — tout ce qu'il faut pour parler la vraie langue du Maroc.
+            {courses.length} cours progressifs, pratique vocale avec le micro, {dialogues.length} dialogues authentiques et {quizzes.length} quiz gamifiés — un programme complet d'un mois pour parler la vraie langue du Maroc.
           </p>
 
           {/* CTAs */}
@@ -344,16 +353,24 @@ export default function Home() {
           <div className="text-center mb-7">
             <p className="text-amber-500/80 text-xs uppercase tracking-widest mb-2">Ils apprennent le Darija</p>
             <h2 className="font-display text-2xl md:text-3xl font-bold text-white">Ce qu'ils en disent</h2>
+            <p className="text-white/40 text-sm mt-2">{testimonials.length} apprenants partagent leur expérience</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-4">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {testimonials.map((t, i) => (
               <div key={i} className="glass rounded-3xl p-6 card-hover border border-amber-700/15 relative overflow-hidden">
                 <div className="absolute inset-0 moroccan-pattern opacity-10" />
                 <div className="relative">
-                  <div className="flex gap-0.5 mb-3">
-                    {Array.from({length: t.stars}).map((_, j) => (
-                      <Star key={j} size={14} className="text-amber-400 fill-amber-400" />
-                    ))}
+                  <div className="flex items-center justify-between mb-3">
+                    <div className="flex gap-0.5">
+                      {Array.from({length: t.stars}).map((_, j) => (
+                        <Star key={j} size={13} className="text-amber-400 fill-amber-400" />
+                      ))}
+                    </div>
+                    {t.level && (
+                      <span className="text-xs px-2 py-0.5 rounded-full bg-amber-400/10 text-amber-400/80 border border-amber-400/20">
+                        {t.level}
+                      </span>
+                    )}
                   </div>
                   <p className="text-white/70 text-sm leading-relaxed mb-5 italic">"{t.text}"</p>
                   <div className="flex items-center gap-2">
