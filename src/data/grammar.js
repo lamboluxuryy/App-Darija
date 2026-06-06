@@ -206,5 +206,161 @@ export const grammarRules = [
       }
     ],
     tip: "Quelques adjectifs courants avec leur féminin : كبير/كبيرة (kbir/kbira), صغير/صغيرة (sghir/sghira), جديد/جديدة (jdid/jdida), مليح/مليحة (mlih/mliha = beau/belle)."
+  },
+  {
+    id: 9,
+    title: "Le présent progressif (kay-/kat-)",
+    emoji: "🔄",
+    level: "Intermédiaire",
+    explanation:
+      "En darija, les actions présentes en cours ou habituelles utilisent le préfixe « kay- » (masculin) ou « kat- » (féminin) devant la racine verbale. Au pluriel, « kay- » devient « kay-...-u ». C'est l'équivalent de « être en train de » en français. Le préfixe « ta- » est aussi entendu dans certaines régions.",
+    examples: [
+      {
+        darija: "كيكتب",
+        romanization: "Kay-kteb",
+        translation: "Il écrit / Il est en train d'écrire"
+      },
+      {
+        darija: "كتقرأ",
+        romanization: "Kat-qra",
+        translation: "Elle lit / Elle étudie"
+      },
+      {
+        darija: "كيلعبو فالدار",
+        romanization: "Kay-l3ebbu f-d-dar",
+        translation: "Ils jouent à la maison"
+      }
+    ],
+    tip: "Schéma : kay- + radical verbal (masc.) / kat- + radical verbal (fém.) / kay-...-u (pluriel). Le radical supprime la voyelle initiale de l'infinitif. Ex : klam → kay-klem."
+  },
+  {
+    id: 10,
+    title: "Le futur proche (ghadi + verbe)",
+    emoji: "🔮",
+    level: "Intermédiaire",
+    explanation:
+      "Pour exprimer une action future proche en darija, on utilise « ghadi » (aller) + le verbe conjugué au présent. « Ghadi » vient de la racine « msha » (partir/aller) et fonctionne exactement comme « aller + infinitif » en français. Négation : « ma ghadi...sh n-mshy » = je ne vais pas partir.",
+    examples: [
+      {
+        darija: "غادي نمشي غدا",
+        romanization: "Ghadi nmshi ghda",
+        translation: "Je vais partir demain"
+      },
+      {
+        darija: "غادي تاكل هنا؟",
+        romanization: "Ghadi takol hna?",
+        translation: "Tu vas manger ici ?"
+      },
+      {
+        darija: "ما غاديش يجي",
+        romanization: "Ma ghadi-sh yji",
+        translation: "Il ne va pas venir"
+      }
+    ],
+    tip: "« Ghadi » est invariable comme marqueur de futur — il reste le même pour toutes les personnes. Il suffit de conjuguer normalement le verbe principal qui le suit."
+  },
+  {
+    id: 11,
+    title: "La négation avancée",
+    emoji: "🚫",
+    level: "Avancé",
+    explanation:
+      "Au-delà du « ma...sh » de base, le darija possède des schémas négatifs plus riches. « 3mmr...ma » = jamais, « walo » = rien, « htta wa7d/ħaja » = personne/rien (combiné avec ma), « ma bqa-sh » = ne plus. Ces formes correspondent au français « ne...jamais », « ne...rien », « ne...plus », « ne...personne ».",
+    examples: [
+      {
+        darija: "عمرو ما كلا طاجين",
+        romanization: "3mmru ma kla tajin",
+        translation: "Il n'a jamais mangé de tajine"
+      },
+      {
+        darija: "ما قال والو",
+        romanization: "Ma gal walo",
+        translation: "Il n'a rien dit"
+      },
+      {
+        darija: "ما بقاش كيجي",
+        romanization: "Ma bqa-sh kayji",
+        translation: "Il ne vient plus"
+      }
+    ],
+    tip: "« 3mmr + pronom + ma + verbe au passé » = jamais. « Walo » = rien du tout. « Htta wa7d » = personne. « Ma bqa-sh » = ne plus (rupture avec une habitude passée)."
+  },
+  {
+    id: 12,
+    title: "Les verbes courants — passé et présent",
+    emoji: "⚡",
+    level: "Intermédiaire",
+    explanation:
+      "Le passé en darija se forme en ajoutant des suffixes personnels directement à la racine verbale. Les suffixes clés sont : -t (je), -ti (tu masc.), -tiy (tu fém.), ø (il), -at (elle), -na (nous), -tou (vous), -u (ils/elles). Il n'y a pas de verbe auxiliaire — seul le radical + suffixe suffit.",
+    examples: [
+      {
+        darija: "كليت واجب",
+        romanization: "Klit wajib",
+        translation: "J'ai tout mangé (J'ai mangé complètement)"
+      },
+      {
+        darija: "مشات للسوق",
+        romanization: "Mshat l-s-souq",
+        translation: "Elle est allée au marché"
+      },
+      {
+        darija: "شربنا أتاي مع الجيران",
+        romanization: "Shrebna atay m3a l-jiran",
+        translation: "Nous avons bu le thé avec les voisins"
+      }
+    ],
+    tip: "Suffixes du passé : -t (ana/je), -ti (nta/tu), -tiy (nti/tu fém.), [ø] (hwa/il), -at (hiya/elle), -na (hna/nous), -tou (ntuma/vous), -u (huma/ils). La racine verbale se contracte souvent."
+  },
+  {
+    id: 13,
+    title: "Registre formel vs. informel",
+    emoji: "🎩",
+    level: "Avancé",
+    explanation:
+      "Le darija possède des registres formels et informels distincts. Lorsqu'on s'adresse à des aînés, des inconnus ou dans un contexte professionnel, on utilise des formules plus formelles. Au lieu de « nta » (tu, familier), on dit « hadrat-ek » ou simplement le pluriel « ntuma » comme forme de politesse. Ajouter « men fadlak/men fadlkom » (s'il vous plaît) marque le respect. Le choix du registre témoigne d'une intelligence culturelle.",
+    examples: [
+      {
+        darija: "حضرتك كيف حالك؟",
+        romanization: "Hadrat-ek, kifash ħalek?",
+        translation: "Vous, comment allez-vous ? [formel]"
+      },
+      {
+        darija: "عفاك، واش يمكن تعاونني؟",
+        romanization: "3fak, wash ymken t3awenni?",
+        translation: "S'il vous plaît, pouvez-vous m'aider ? [formel]"
+      },
+      {
+        darija: "ياك مزيان سيدي",
+        romanization: "Yakk mzyan, sidi?",
+        translation: "Ça va bien, monsieur ? [très respectueux]"
+      }
+    ],
+    tip: "Marqueurs formels clés : « sidi » (monsieur, respectueux), « lalla » (madame, respectueux), « 3fak/3fakom » (s'il vous plaît, formel), « hadratek » (vouvoiement). Dans les contextes professionnels, mélanger du français ajoute de la formalité."
+  },
+  {
+    id: 14,
+    title: "Les proverbes marocains",
+    emoji: "📜",
+    level: "Avancé",
+    explanation:
+      "Les proverbes marocains (l-amtal) sont un pilier de la culture darija. Ils s'emploient dans la conversation quotidienne pour transmettre une sagesse, donner un conseil ou commenter une situation. Connaître des proverbes témoigne d'une intégration culturelle profonde et impressionne les locuteurs natifs. Ils utilisent souvent la rime, la métaphore et une structure concise.",
+    examples: [
+      {
+        darija: "اللي فات مات",
+        romanization: "Li fat mat",
+        translation: "Ce qui est passé est mort → Oublie le passé"
+      },
+      {
+        darija: "الدار دار بابا والبرا برا",
+        romanization: "D-dar dar baba w l-bra bra",
+        translation: "La maison est la maison du père, et l'extérieur c'est l'extérieur → Rien ne vaut chez soi"
+      },
+      {
+        darija: "اعطي الخبز لخبازه",
+        romanization: "3ti l-khobz l-khhbazu",
+        translation: "Donne le pain au boulanger → Fais confiance aux experts"
+      }
+    ],
+    tip: "Autres proverbes célèbres : « L-3ql msous » (La sagesse est amère → L'expérience coûte cher), « Shi-yji-lik shi-ymshi-lak » (Ce qui vient à toi peut aussi partir → Rien n'est permanent). Utilise les proverbes avec parcimonie pour ne pas paraître prétentieux !"
   }
 ];

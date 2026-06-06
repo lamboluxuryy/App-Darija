@@ -1035,6 +1035,617 @@ export const courses = [
         audio: "ghda"
       }
     ]
+  },
+  {
+    id: 15,
+    title: "Les Couleurs",
+    titleAr: "الألوان",
+    emoji: "🎨",
+    level: "Débutant",
+    duration: "12 min",
+    xp: 55,
+    color: "from-pink-500 to-purple-600",
+    lessons: [
+      {
+        id: 1,
+        phrase: "أحمر",
+        romanization: "Ħmer",
+        translation: "Rouge",
+        pronunciation: "ħ-mer",
+        example: "T-qamija l-ħmra zwina.",
+        exampleTranslation: "La chemise rouge est belle.",
+        tip: "Pour le féminin, ajoutez '-a' : ħmra. La couleur rouge porte bonheur au Maroc, on la retrouve dans le drapeau national.",
+        audio: "hmer"
+      },
+      {
+        id: 2,
+        phrase: "كحل",
+        romanization: "Kħel",
+        translation: "Noir",
+        pronunciation: "kħel",
+        example: "L-ferrari kħel.",
+        exampleTranslation: "La Ferrari est noire.",
+        tip: "Féminin : kħla. 'Kħel' vient du mot 'kuhl', le fard à paupières noir traditionnel utilisé depuis l'Antiquité.",
+        audio: "khel"
+      },
+      {
+        id: 3,
+        phrase: "أبيض",
+        romanization: "Biyed",
+        translation: "Blanc",
+        pronunciation: "bi-yed",
+        example: "L-jellaba l-biyd a mlih.",
+        exampleTranslation: "La djellaba blanche est belle.",
+        tip: "Féminin : biyda. Le blanc est très prisé pour les vêtements traditionnels et les cérémonies religieuses.",
+        audio: "biyed"
+      },
+      {
+        id: 4,
+        phrase: "أزرق",
+        romanization: "Zerq",
+        translation: "Bleu",
+        pronunciation: "zerq",
+        example: "L-bħer zerq.",
+        exampleTranslation: "La mer est bleue.",
+        tip: "Féminin : zerqa. Chefchaouen, la ville bleue du Maroc, doit son surnom à ses murs peints en 'zerq'.",
+        audio: "zerq"
+      },
+      {
+        id: 5,
+        phrase: "أخضر",
+        romanization: "Khdar",
+        translation: "Vert",
+        pronunciation: "kh-dar",
+        example: "L-ghlaf akhdar.",
+        exampleTranslation: "La couverture est verte.",
+        tip: "Féminin : khdra. Le vert est la couleur de l'Islam et orne le drapeau marocain.",
+        audio: "khdar"
+      },
+      {
+        id: 6,
+        phrase: "أصفر",
+        romanization: "Sfar",
+        translation: "Jaune",
+        pronunciation: "sfar",
+        example: "L-limoun sfar.",
+        exampleTranslation: "Le citron est jaune.",
+        tip: "Féminin : sfra. Les taxis de Casablanca sont rouges, mais ceux de Marrakech sont beiges-safran, une nuance de 'sfar'.",
+        audio: "sfar"
+      },
+      {
+        id: 7,
+        phrase: "رمادي",
+        romanization: "Rmaidi",
+        translation: "Gris",
+        pronunciation: "rma-i-di",
+        example: "S-sama rmaidi lyoum.",
+        exampleTranslation: "Le ciel est gris aujourd'hui.",
+        tip: "Féminin : rmaidiya. 'Rmaidi' vient de 'ramad' (cendre), décrivant la couleur des braises refroidies.",
+        audio: "rmaidi"
+      },
+      {
+        id: 8,
+        phrase: "بني",
+        romanization: "Bni",
+        translation: "Marron",
+        pronunciation: "bni",
+        example: "L-khobz bni.",
+        exampleTranslation: "Le pain est marron.",
+        tip: "Féminin : bniya. Accord de genre essentiel : ħmer (m.) → ħmra (f.), kħel → kħla, biyed → biyda, zerq → zerqa, khdar → khdra, sfar → sfra.",
+        audio: "bni"
+      }
+    ]
+  },
+  {
+    id: 16,
+    title: "Les Vêtements",
+    titleAr: "الملابس",
+    emoji: "👗",
+    level: "Débutant",
+    duration: "15 min",
+    xp: 60,
+    color: "from-violet-500 to-purple-600",
+    lessons: [
+      {
+        id: 1,
+        phrase: "قميجة",
+        romanization: "Qamija",
+        translation: "Chemise / T-shirt",
+        pronunciation: "qa-mi-ja",
+        example: "Bghit nshri qamija jdida.",
+        exampleTranslation: "Je veux acheter une nouvelle chemise.",
+        tip: "Du mot arabe 'qamis'. En Darija, 'qamija' désigne aussi bien une chemise classique qu'un simple t-shirt.",
+        audio: "qamija"
+      },
+      {
+        id: 2,
+        phrase: "سروال",
+        romanization: "Serwal",
+        translation: "Pantalon",
+        pronunciation: "ser-wal",
+        example: "S-serwal ghali bzzaf.",
+        exampleTranslation: "Le pantalon est très cher.",
+        tip: "Mot d'origine perse passé en arabe. Le 'serwal' traditionnel est large et confortable, parfait pour le quotidien.",
+        audio: "serwal"
+      },
+      {
+        id: 3,
+        phrase: "جلابة",
+        romanization: "Jellaba",
+        translation: "Djellaba - vêtement traditionnel",
+        pronunciation: "jel-la-ba",
+        example: "Lblast jellaba l-3id.",
+        exampleTranslation: "J'ai mis la djellaba pour l'Aïd.",
+        tip: "La jellaba est le vêtement traditionnel marocain par excellence, portée par les hommes et les femmes. Indispensable pour les fêtes et cérémonies.",
+        audio: "jellaba"
+      },
+      {
+        id: 4,
+        phrase: "صباط",
+        romanization: "Sabbat",
+        translation: "Chaussures",
+        pronunciation: "sab-bat",
+        example: "Hadi s-sabbat dyal Hicham.",
+        exampleTranslation: "Ces chaussures sont à Hicham.",
+        tip: "'Dyal' est le mot de possession en Darija (= de / appartenant à). 'S-sabbat dyal-i' = mes chaussures.",
+        audio: "sabbat"
+      },
+      {
+        id: 5,
+        phrase: "شاشية",
+        romanization: "Shashiya",
+        translation: "Bonnet / Calotte",
+        pronunciation: "sha-shi-ya",
+        example: "Lblas shashiya f-sh-shta.",
+        exampleTranslation: "Mets le bonnet en hiver.",
+        tip: "La 'shashiya' est aussi le nom de la calotte traditionnelle marocaine en feutre rouge. Artisanat emblématique de Fès.",
+        audio: "shashiya"
+      },
+      {
+        id: 6,
+        phrase: "فوطة",
+        romanization: "Fouta",
+        translation: "Serviette / Pagne de hammam",
+        pronunciation: "fou-ta",
+        example: "Khod l-fouta m3ak l-hammam.",
+        exampleTranslation: "Prends la serviette pour le hammam.",
+        tip: "La 'fouta' est indispensable au hammam, le bain maure traditionnel. Aller au hammam est un rituel social important au Maroc.",
+        audio: "fouta"
+      },
+      {
+        id: 7,
+        phrase: "قفطان",
+        romanization: "Qftan",
+        translation: "Caftan - robe traditionnelle",
+        pronunciation: "qef-tan",
+        example: "L-3arusa lblsat qftan.",
+        exampleTranslation: "La mariée a mis le caftan.",
+        tip: "Le caftan marocain est une robe longue brodée portée lors des grandes occasions. Chaque région du Maroc a son style de caftan propre.",
+        audio: "qftan"
+      }
+    ]
+  },
+  {
+    id: 17,
+    title: "Les Fruits & Légumes",
+    titleAr: "الخضر والفواكه",
+    emoji: "🥦",
+    level: "Débutant",
+    duration: "15 min",
+    xp: 60,
+    color: "from-green-500 to-emerald-600",
+    lessons: [
+      {
+        id: 1,
+        phrase: "تفاح",
+        romanization: "Teffah",
+        translation: "Pomme",
+        pronunciation: "tef-fah",
+        example: "3tini kilo d-teffah.",
+        exampleTranslation: "Donne-moi un kilo de pommes.",
+        tip: "Au souk, on dit 'd-' pour 'de' devant le produit. '3tini kilo d-...' est la formule standard pour acheter au marché.",
+        audio: "teffah"
+      },
+      {
+        id: 2,
+        phrase: "ليمو",
+        romanization: "Limo",
+        translation: "Citron",
+        pronunciation: "li-mo",
+        example: "3sir l-limo b-shhal?",
+        exampleTranslation: "Le jus de citron à combien ?",
+        tip: "'3sir' = jus (pressé). '3sir l-limo' est très populaire au Maroc, vendu dans les souks et les cafés. Le Maroc est un grand producteur d'agrumes.",
+        audio: "limo"
+      },
+      {
+        id: 3,
+        phrase: "دلاح",
+        romanization: "Dellah",
+        translation: "Pastèque",
+        pronunciation: "del-lah",
+        example: "F-s-sif bghit ndaz l-dellah.",
+        exampleTranslation: "En été je veux manger de la pastèque.",
+        tip: "'Dellah' est le terme standard, 'debbah' est plus familier. En été au Maroc, les vendeurs de pastèques envahissent les rues. Symbole de la saison chaude.",
+        audio: "dellah"
+      },
+      {
+        id: 4,
+        phrase: "خضرة",
+        romanization: "Khodra",
+        translation: "Légumes",
+        pronunciation: "khod-ra",
+        example: "Shri lik shwiya khodra.",
+        exampleTranslation: "Achète-toi quelques légumes.",
+        tip: "'Khodra' signifie à la fois 'légumes' et la couleur 'verte'. La même racine donne 'khdar' (vert). Les 'khdari' sont les marchands de légumes du souk.",
+        audio: "khodra"
+      },
+      {
+        id: 5,
+        phrase: "بطاطا",
+        romanization: "Betata",
+        translation: "Pomme de terre",
+        pronunciation: "be-ta-ta",
+        example: "Dir l-betata f-l-mrqa.",
+        exampleTranslation: "Mets les pommes de terre dans le ragoût.",
+        tip: "'Mrqa' = bouillon / ragoût. La 'betata' est un ingrédient de base des tajines. Les 'betata mqliya' (frites) sont adorées des enfants marocains.",
+        audio: "betata"
+      },
+      {
+        id: 6,
+        phrase: "طماطم",
+        romanization: "Tomatis",
+        translation: "Tomates",
+        pronunciation: "to-ma-tis",
+        example: "Haja tomatis ma kaynash.",
+        exampleTranslation: "Il n'y a pas de tomates.",
+        tip: "'Ma kaynash' = il n'y en a pas / ça n'existe pas. La 'tomatis' est indispensable dans la cuisine marocaine, notamment pour la harira et les salades.",
+        audio: "tomatis"
+      },
+      {
+        id: 7,
+        phrase: "زيتون",
+        romanization: "Zaytoun",
+        translation: "Olives",
+        pronunciation: "zay-toun",
+        example: "Nass l-maghrib kayaklo bzzaf zaytoun.",
+        exampleTranslation: "Les Marocains mangent beaucoup d'olives.",
+        tip: "Le Maroc est l'un des plus grands producteurs d'olives au monde. On en trouve de multiples variétés marinées dans les souks. Servies à chaque repas.",
+        audio: "zaytoun"
+      },
+      {
+        id: 8,
+        phrase: "عنب",
+        romanization: "3nb",
+        translation: "Raisin",
+        pronunciation: "3nb",
+        example: "L-3nb bin hlou.",
+        exampleTranslation: "Le raisin est doux.",
+        tip: "Au souk marocain (s-souq), négocier le prix est courant et apprécié. Dites 'ghali bzzaf' (trop cher) pour commencer à marchander. C'est une pratique sociale normale !",
+        audio: "3nb"
+      }
+    ]
+  },
+  {
+    id: 18,
+    title: "Les Verbes Essentiels",
+    titleAr: "الأفعال الأساسية",
+    emoji: "⚡",
+    level: "Intermédiaire",
+    duration: "20 min",
+    xp: 80,
+    color: "from-cyan-500 to-blue-600",
+    lessons: [
+      {
+        id: 1,
+        phrase: "مشى",
+        romanization: "Msha",
+        translation: "Aller",
+        pronunciation: "msha",
+        example: "Fin ghadi tmshi ghda?",
+        exampleTranslation: "Où vas-tu demain ?",
+        tip: "Conjugaison : ana nmshy / nta tmshi / nti tmshiy / hwa ymshi / hiya tmshi / hna nmshiw / ntuma tmshiw / huma ymshiw. Verbe irrégulier très fréquent.",
+        audio: "msha"
+      },
+      {
+        id: 2,
+        phrase: "جا",
+        romanization: "Ja",
+        translation: "Venir",
+        pronunciation: "ja",
+        example: "Imta ghadi tji?",
+        exampleTranslation: "Quand vas-tu venir ?",
+        tip: "Conjugaison : ana nji / nta tji / nti tjiy / hwa yji / hiya tji / hna njiwu / ntuma tjiwu / huma yjiwu. 'Ja' au passé = il est venu. Verbe irrégulier essentiel.",
+        audio: "ja"
+      },
+      {
+        id: 3,
+        phrase: "بغى",
+        romanization: "Bgha",
+        translation: "Vouloir",
+        pronunciation: "bgha",
+        example: "Wash tbghi atay?",
+        exampleTranslation: "Tu veux du thé ?",
+        tip: "Conjugaison : ana nbghi / nta tbghi / nti tbghiy / hwa ybghi / hiya tbghi / hna nbghiw / ntuma tbghiw / huma ybghiw. Exprime le désir et la volonté.",
+        audio: "bgha"
+      },
+      {
+        id: 4,
+        phrase: "كلا",
+        romanization: "Kla",
+        translation: "Manger",
+        pronunciation: "kla",
+        example: "Wash kleeti?",
+        exampleTranslation: "Tu as mangé ?",
+        tip: "Conjugaison : ana nakol / nta takol / nti takli / hwa yakol / hiya takol / hna nakolw / ntuma takolw / huma yakolw. 'Kleeti?' = as-tu mangé ? Question sociale fréquente.",
+        audio: "kla"
+      },
+      {
+        id: 5,
+        phrase: "شرب",
+        romanization: "Shreb",
+        translation: "Boire",
+        pronunciation: "shreb",
+        example: "Shreb l-ma mezyan.",
+        exampleTranslation: "Bois bien l'eau.",
+        tip: "Conjugaison : ana nshreb / nta tshreb / nti tshrbi / hwa yshreb / hiya tshreb / hna nshrebw / ntuma tshrebw / huma yshrebw. 'Shreb atay' = boire le thé, activité sociale centrale.",
+        audio: "shreb"
+      },
+      {
+        id: 6,
+        phrase: "عرف",
+        romanization: "3ref",
+        translation: "Savoir / Connaître",
+        pronunciation: "3ref",
+        example: "Ma t3refsh wesh hwa mezyan.",
+        exampleTranslation: "Tu ne sais pas si c'est bien.",
+        tip: "Conjugaison : ana n3ref / nta t3ref / nti t3rfi / hwa y3ref / hiya t3ref / hna n3refw / ntuma t3refw / huma y3refw. 'Ma...sh' = la négation en Darija (encadre le verbe).",
+        audio: "3ref"
+      },
+      {
+        id: 7,
+        phrase: "قال",
+        romanization: "Gal",
+        translation: "Dire",
+        pronunciation: "gal",
+        example: "Sh-nu gal lik?",
+        exampleTranslation: "Qu'est-ce qu'il t'a dit ?",
+        tip: "Conjugaison : ana ngol / nta tgol / nti tgoli / hwa ygol / hiya tgol / hna ngoliw / ntuma tgoliw / huma ygoliw. Verbe irrégulier. 'Gal-lia' = il m'a dit, 'gal-lik' = il t'a dit.",
+        audio: "gal"
+      },
+      {
+        id: 8,
+        phrase: "دار",
+        romanization: "Dir",
+        translation: "Faire / Mettre",
+        pronunciation: "dir",
+        example: "Sh-nu dir hna?",
+        exampleTranslation: "Qu'est-ce qu'il fait là ?",
+        tip: "Conjugaison : ana ndir / nta tdir / nti tdiri / hwa ydir / hiya tdir / hna ndirw / ntuma tdirw / huma ydirw. 'Dir' est polyvalent : faire, mettre, poser. Très courant.",
+        audio: "dir"
+      },
+      {
+        id: 9,
+        phrase: "شاف",
+        romanization: "Shaf",
+        translation: "Voir",
+        pronunciation: "shaf",
+        example: "Shefti film mezyan mln?",
+        exampleTranslation: "Tu as vu un bon film récemment ?",
+        tip: "Conjugaison : ana nshuf / nta tshuf / nti tshufi / hwa yshuf / hiya tshuf / hna nshufw / ntuma tshufw / huma yshufw. 'Shefti' = as-tu vu (passé). 'Mln' = récemment.",
+        audio: "shaf"
+      },
+      {
+        id: 10,
+        phrase: "هدر",
+        romanization: "Hder",
+        translation: "Parler",
+        pronunciation: "hder",
+        example: "Thder bsh-shwiya.",
+        exampleTranslation: "Parle doucement / lentement.",
+        tip: "Conjugaison : ana nhder / nta thder / nti thderi / hwa yhder / hiya thder / hna nhderw / ntuma thderw / huma yhderw. 'Hder b-darija' = parler en darija. Félicitations, vous le faites !",
+        audio: "hder"
+      }
+    ]
+  },
+  {
+    id: 19,
+    title: "Slang & Darija des Jeunes",
+    titleAr: "دارجة الشباب",
+    emoji: "🔥",
+    level: "Avancé",
+    duration: "15 min",
+    xp: 90,
+    color: "from-orange-500 to-rose-600",
+    lessons: [
+      {
+        id: 1,
+        phrase: "زوينة",
+        romanization: "Zwina",
+        translation: "Belle / Top / Super",
+        pronunciation: "zwi-na",
+        example: "Hadi zwina bzzaf!",
+        exampleTranslation: "C'est trop bien !",
+        tip: "'Zwina' (féminin) / 'zwine' (masculin). Utilisé pour la beauté physique, une bonne situation, quelque chose de cool. Compliment universel au Maroc.",
+        audio: "zwina"
+      },
+      {
+        id: 2,
+        phrase: "صافي",
+        romanization: "Safi",
+        translation: "Ok / C'est bon / Ça suffit",
+        pronunciation: "sa-fi",
+        example: "Safi, mfahem, bghit mshi!",
+        exampleTranslation: "Ok, j'ai compris, je veux partir !",
+        tip: "Mot extrêmement polyvalent : accord (ok), fin (ça suffit), résignation (bon, c'est comme ça). Indispensable dans toute conversation en Darija.",
+        audio: "safi"
+      },
+      {
+        id: 3,
+        phrase: "عندي نية",
+        romanization: "3andi niya",
+        translation: "J'ai envie / Je suis motivé(e)",
+        pronunciation: "3an-di ni-ya",
+        example: "3andi niya nmshi l-beach.",
+        exampleTranslation: "J'ai envie d'aller à la plage.",
+        tip: "'Niya' = intention, envie sincère. Exprime une motivation plus forte et authentique que 'bghit' (je veux). Vient de l'arabe 'niyya' (intention).",
+        audio: "3andi_niya"
+      },
+      {
+        id: 4,
+        phrase: "مشينا",
+        romanization: "Mchina",
+        translation: "On y va / Let's go",
+        pronunciation: "mchi-na",
+        example: "Mchina! Yallah bina!",
+        exampleTranslation: "On y va ! Allez !",
+        tip: "Littéralement 'on est partis' (passé), utilisé pour exprimer une décision immédiate. 'Yallah bina' renforce l'élan. Énergie et dynamisme garantis.",
+        audio: "mchina"
+      },
+      {
+        id: 5,
+        phrase: "واش",
+        romanization: "Wach",
+        translation: "Quoi ?! / Vraiment ?",
+        pronunciation: "wach",
+        example: "Wach?! Goulili mn jdid!",
+        exampleTranslation: "Quoi ?! Redis-moi ça !",
+        tip: "'Wach' en début de phrase = est-ce que (question). Mais seul avec intonation montante = expression de surprise ou d'incrédulité. Contexte crucial !",
+        audio: "wach"
+      },
+      {
+        id: 6,
+        phrase: "عيب",
+        romanization: "3ayb",
+        translation: "C'est honteux / Pas bien",
+        pronunciation: "3ayb",
+        example: "3ayb 3lik hak.",
+        exampleTranslation: "C'est honteux de ta part de faire ça.",
+        tip: "'3ayb' exprime la désapprobation sociale forte. Vient de l'arabe 'aib' (défaut, honte). Dans la culture marocaine, l'honneur social est très important.",
+        audio: "3ayb"
+      },
+      {
+        id: 7,
+        phrase: "خويا",
+        romanization: "Khouya",
+        translation: "Mon frère / Mon ami (familier)",
+        pronunciation: "khoo-ya",
+        example: "Khouya, kifash rak?",
+        exampleTranslation: "Mon frère, comment tu vas ?",
+        tip: "Utilisé couramment entre amis, pas nécessairement en famille. Terme d'adresse affectueux entre hommes. Équivalent féminin : 'khti' (ma sœur). Renforce la solidarité.",
+        audio: "khouya_slang"
+      },
+      {
+        id: 8,
+        phrase: "نتا واش؟",
+        romanization: "Nta wach?",
+        translation: "T'es quoi ? / T'es sérieux ?",
+        pronunciation: "nta wach",
+        example: "Nta wach?! Had l-khdma mzyana bzzaf!",
+        exampleTranslation: "T'es sérieux ?! Ce boulot est trop bien !",
+        tip: "Expression d'incrédulité ou d'admiration intense. Peut exprimer la surprise positive ou négative. 'Khdma' = travail/boulot. Très utilisée par les jeunes Marocains.",
+        audio: "nta_wach"
+      }
+    ]
+  },
+  {
+    id: 20,
+    title: "Les Chiffres Avancés",
+    titleAr: "الأرقام المتقدمة",
+    emoji: "🔢",
+    level: "Débutant",
+    duration: "20 min",
+    xp: 70,
+    color: "from-teal-500 to-cyan-600",
+    lessons: [
+      {
+        id: 1,
+        phrase: "حداش - تسعطاش",
+        romanization: "Ħdasħ - Ts3tasħ",
+        translation: "11 à 19",
+        pronunciation: "ħ-dash / ts3-tash",
+        example: "3ndi ħdasħ weld w-tnash bnt.",
+        exampleTranslation: "J'ai onze garçons et douze filles.",
+        tip: "11=Ħdasħ, 12=Tnash, 13=Tlatasħ, 14=Rb3atasħ, 15=Khmstasħ, 16=Sttasħ, 17=Sb3tasħ, 18=Tmntasħ, 19=Ts3tasħ. Le suffixe '-tasħ' / '-ash' vient de 'tashar' (dix).",
+        audio: "hdash_ts3tash"
+      },
+      {
+        id: 2,
+        phrase: "عشرين - تسعة وعشرين",
+        romanization: "3shrin - Ts3a w-3shrin",
+        translation: "20 à 29",
+        pronunciation: "3sh-rin",
+        example: "3ndi 3shrin 3am.",
+        exampleTranslation: "J'ai vingt ans.",
+        tip: "20=3shrin. Pour 21-29 : unité + 'w' + 3shrin. Ex: 21=Wahd w-3shrin, 22=Jouj w-3shrin, 25=Khmsa w-3shrin. Le 'w' = et (relie unité et dizaine).",
+        audio: "3shrin"
+      },
+      {
+        id: 3,
+        phrase: "تلاتين - خمسين",
+        romanization: "Tlatin - Khmsin",
+        translation: "30 à 50",
+        pronunciation: "tla-tin / khem-sin",
+        example: "L-bab yftaħ f-tlatin dqiqa.",
+        exampleTranslation: "La porte ouvre dans trente minutes.",
+        tip: "30=Tlatin, 40=Rb3in, 50=Khmsin. Le suffixe '-in' marque les dizaines. Pour les intermédiaires : 35=Khmsa w-tlatin, 47=Sb3a w-rb3in.",
+        audio: "tlatin_khmsin"
+      },
+      {
+        id: 4,
+        phrase: "ستين - تسعين",
+        romanization: "Sittin - Ts3in",
+        translation: "60 à 90",
+        pronunciation: "sit-tin / ts3-in",
+        example: "Jddi 3ndu sb3in 3am.",
+        exampleTranslation: "Mon grand-père a soixante-dix ans.",
+        tip: "60=Sittin, 70=Sb3in, 80=Tmanin, 90=Ts3in. Même logique : suffixe '-in'. 75=Khmsa w-sb3in, 88=Tmnya w-tmanin.",
+        audio: "sittin_ts3in"
+      },
+      {
+        id: 5,
+        phrase: "مية",
+        romanization: "Mya",
+        translation: "100 / 200 / 300",
+        pronunciation: "mya",
+        example: "Hadi mya dirham.",
+        exampleTranslation: "C'est cent dirhams.",
+        tip: "100=Mya, 200=Miyatayn (double), 300=Tlatmiya, 400=Rb3umiya, 500=Khmsmiya. Le suffixe '-tayn' = deux (duel arabe). 'Miyatayn' = deux cents.",
+        audio: "mya"
+      },
+      {
+        id: 6,
+        phrase: "ألف",
+        romanization: "Alf",
+        translation: "1000 / 2000 / 3000",
+        pronunciation: "alf",
+        example: "L-kra dyal ddar alf w-khmsmiya dirham.",
+        exampleTranslation: "Le loyer de la maison est mille cinq cents dirhams.",
+        tip: "1000=Alf, 2000=Alfayn (duel), 3000=Tlata alaf, 5000=Khmsa alaf. Au-delà de 2000, on dit chiffre + 'alaf'. Très utile pour les prix immobiliers !",
+        audio: "alf"
+      },
+      {
+        id: 7,
+        phrase: "الأول - الرابع",
+        romanization: "L-luwwel - Rrab3",
+        translation: "Les ordinaux : 1er à 4ème",
+        pronunciation: "el-luw-wel / rra-b3",
+        example: "Ana l-luwwel f-l-qism.",
+        exampleTranslation: "Je suis premier de la classe.",
+        tip: "1er=L-luwwel, 2ème=T-tani, 3ème=T-talt, 4ème=Rrab3, 5ème=L-khamis. Les ordinaux s'accordent en genre : t-tania (2ème fém.), t-talta (3ème fém.).",
+        audio: "l_luwwel"
+      },
+      {
+        id: 8,
+        phrase: "الأرقام في السياق",
+        romanization: "L-arqam f-s-siyaq",
+        translation: "Les chiffres en contexte",
+        pronunciation: "el-ar-qam",
+        example: "3ndi tlatin 3am w-kanskon f-tbiq tani.",
+        exampleTranslation: "J'ai trente ans et j'habite au deuxième étage.",
+        tip: "Prix : Smenin dirham = 80 DH. Âge : 3ndi + chiffre + 3am (j'ai X ans). Heure : s-sa3a khmsa = il est 5h. s-sa3a khmsa w-nos = 5h30.",
+        audio: "arqam_siyaq"
+      }
+    ]
   }
 ];
 
