@@ -21,7 +21,7 @@ import ParcoursPage from './pages/ParcoursPage';
 export default function App() {
   return (
     <AppProvider>
-      <BrowserRouter basename="/App-Darija">
+      <BrowserRouter>
         <div className="min-h-screen app-bg">
           <Navbar />
           <AchievementToast />
