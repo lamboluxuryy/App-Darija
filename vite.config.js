@@ -45,5 +45,5 @@ export default defineConfig({
       }
     })
   ],
-  base: '/App-Darija/',
+  base: '/',
 })
