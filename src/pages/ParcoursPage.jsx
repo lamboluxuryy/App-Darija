@@ -1,286 +1,594 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { CheckCircle, Lock, ChevronRight, BookOpen, Mic, HelpCircle, MessageSquare } from 'lucide-react';
+import {
+  CheckCircle, Lock, BookOpen, HelpCircle, Clock, Star,
+  ChevronDown, ChevronUp, Trophy, Calendar, Flame, Zap
+} from 'lucide-react';
 import { useApp } from '../context/AppContext';
 import { courses } from '../data/courses';
 
-const programme = [
+// ---------------------------------------------------------------------------
+// Programme data — 4 weeks × 7 days
+// ---------------------------------------------------------------------------
+
+const weeks = [
   {
     week: 1,
-    title: 'Les Bases & Salutations',
-    subtitle: 'Dites bonjour, présentez-vous, comptez',
-    emoji: '👋',
-    color: 'from-amber-800/40 to-orange-900/30',
-    border: 'border-amber-600/25',
-    courseIds: [1, 2],
-    quizIds: [1, 2],
-    dialogueId: null,
-    phrases: ['Salam 3alikum', 'Labas?', 'Smiyti...', 'Wahd, jouj, tlata'],
-    goal: 'Pouvoir saluer et compter jusqu\'à 100',
-    xp: 120,
+    title: 'Les Bases',
+    subtitle: 'Salutations, chiffres, famille, couleurs',
+    emoji: '🌱',
+    color: 'from-emerald-800/40 to-green-900/30',
+    border: 'border-emerald-600/25',
+    headerGradient: 'from-emerald-500 to-teal-600',
+    accentColor: 'text-emerald-400',
+    accentBg: 'bg-emerald-500/20 border-emerald-500/40',
+    totalXp: 460,
+    days: [
+      { day: 1,  title: 'Les Salutations',      emoji: '👋', courseId: 1,    quizId: 1,    duration: '20 min', xp: 60,  isReview: false },
+      { day: 2,  title: 'Les Chiffres 1-10',     emoji: '🔢', courseId: 2,    quizId: 2,    duration: '20 min', xp: 60,  isReview: false },
+      { day: 3,  title: 'La Famille',             emoji: '👨‍👩‍👧‍👦', courseId: 4,    quizId: 4,    duration: '20 min', xp: 60,  isReview: false },
+      { day: 4,  title: 'Les Couleurs',           emoji: '🎨', courseId: 15,   quizId: null, duration: '25 min', xp: 65,  isReview: false },
+      { day: 5,  title: 'Les Vêtements',          emoji: '👗', courseId: 16,   quizId: null, duration: '25 min', xp: 65,  isReview: false },
+      { day: 6,  title: 'Les Chiffres Avancés',   emoji: '📊', courseId: 20,   quizId: null, duration: '25 min', xp: 70,  isReview: false },
+      { day: 7,  title: 'Grand Quiz Semaine 1',   emoji: '🎯', courseId: null, quizId: null, duration: '30 min', xp: 80,  isReview: true  },
+    ],
   },
   {
     week: 2,
-    title: 'Au Marché & Les Achats',
-    subtitle: 'Négociez, demandez les prix, achetez',
-    emoji: '🛒',
-    color: 'from-orange-800/40 to-red-900/30',
-    border: 'border-orange-600/25',
-    courseIds: [3],
-    quizIds: [3],
-    dialogueId: 2,
-    phrases: ['B-shhal?', 'Ghali bzzaf', 'Khfed shwiya', '3tini wahd kilo'],
-    goal: 'Faire ses courses au souk sans difficulté',
-    xp: 100,
+    title: 'Vie Quotidienne',
+    subtitle: 'Marché, nourriture, maison, religion',
+    emoji: '🏡',
+    color: 'from-amber-800/40 to-orange-900/30',
+    border: 'border-amber-600/25',
+    headerGradient: 'from-amber-500 to-orange-600',
+    accentColor: 'text-amber-400',
+    accentBg: 'bg-amber-500/20 border-amber-500/40',
+    totalXp: 465,
+    days: [
+      { day: 8,  title: 'Au Marché',               emoji: '🛒', courseId: 3,    quizId: 3,    duration: '20 min', xp: 60,  isReview: false },
+      { day: 9,  title: 'La Nourriture',            emoji: '🍽️', courseId: 5,    quizId: 5,    duration: '20 min', xp: 65,  isReview: false },
+      { day: 10, title: 'Fruits & Légumes',         emoji: '🥦', courseId: 17,   quizId: null, duration: '25 min', xp: 65,  isReview: false },
+      { day: 11, title: 'La Maison',                emoji: '🏠', courseId: 12,   quizId: 11,   duration: '20 min', xp: 60,  isReview: false },
+      { day: 12, title: 'Expressions du Quotidien', emoji: '💬', courseId: 6,    quizId: 4,    duration: '20 min', xp: 60,  isReview: false },
+      { day: 13, title: 'Religion & Expressions',   emoji: '🕌', courseId: null, quizId: null, duration: '25 min', xp: 70,  isReview: false },
+      { day: 14, title: 'Grand Quiz Semaine 2',     emoji: '🎯', courseId: null, quizId: null, duration: '30 min', xp: 85,  isReview: true  },
+    ],
   },
   {
     week: 3,
-    title: 'Famille & Relations',
-    subtitle: 'Parlez de votre famille, vos proches',
-    emoji: '👨‍👩‍👧',
-    color: 'from-red-800/40 to-rose-900/30',
-    border: 'border-red-600/25',
-    courseIds: [4, 6],
-    quizIds: [4],
-    dialogueId: 3,
-    phrases: ['Khwak', 'Mmk', 'Weld 3ammi', 'Kifash dayr l-3a\'ila?'],
-    goal: 'Présenter votre famille et parler de vos proches',
-    xp: 120,
+    title: 'En Ville & Interaction',
+    subtitle: 'Directions, transports, ville, école, métiers',
+    emoji: '🏙️',
+    color: 'from-blue-800/40 to-cyan-900/30',
+    border: 'border-blue-600/25',
+    headerGradient: 'from-blue-500 to-cyan-600',
+    accentColor: 'text-blue-400',
+    accentBg: 'bg-blue-500/20 border-blue-500/40',
+    totalXp: 450,
+    days: [
+      { day: 15, title: 'Les Directions',         emoji: '🗺️', courseId: 7,    quizId: 7,    duration: '20 min', xp: 65,  isReview: false },
+      { day: 16, title: 'Les Transports',          emoji: '🚌', courseId: 13,   quizId: 12,   duration: '20 min', xp: 65,  isReview: false },
+      { day: 17, title: 'La Ville & Les Lieux',   emoji: '🏛️', courseId: null, quizId: null, duration: '25 min', xp: 70,  isReview: false },
+      { day: 18, title: 'Les Sports & Loisirs',   emoji: '⚽', courseId: null, quizId: null, duration: '25 min', xp: 65,  isReview: false },
+      { day: 19, title: "L'École & Les Études",   emoji: '📚', courseId: null, quizId: null, duration: '25 min', xp: 65,  isReview: false },
+      { day: 20, title: 'Les Métiers',             emoji: '💼', courseId: null, quizId: null, duration: '25 min', xp: 70,  isReview: false },
+      { day: 21, title: 'Grand Quiz Semaine 3',   emoji: '🎯', courseId: null, quizId: null, duration: '30 min', xp: 90,  isReview: true  },
+    ],
   },
   {
     week: 4,
-    title: 'Nourriture & Quotidien',
-    subtitle: 'Au café, au restaurant, à la maison',
-    emoji: '🍵',
-    color: 'from-yellow-800/40 to-amber-900/30',
-    border: 'border-yellow-600/25',
-    courseIds: [5, 12],
-    quizIds: [5, 6],
-    dialogueId: 1,
-    phrases: ['3tini atay b-n3na3', 'Wash 3ndkom tajin?', 'Bla skkor', 'L-hsab mn fdlak'],
-    goal: 'Commander, manger et vivre le quotidien en Darija',
-    xp: 140,
-  },
-  {
-    week: 5,
-    title: 'Directions & Transports',
-    subtitle: 'Naviguer dans la médina, prendre un taxi',
-    emoji: '🧭',
-    color: 'from-amber-900/40 to-orange-900/30',
-    border: 'border-amber-700/25',
-    courseIds: [7, 13],
-    quizIds: [7, 9, 12],
-    dialogueId: 4,
-    phrases: ['Fin kayn?', 'Dir l-limin', 'Negda hta l-jame3', 'Shhal taxi l...?'],
-    goal: 'Trouver son chemin dans une ville marocaine',
-    xp: 160,
-  },
-  {
-    week: 6,
-    title: 'Corps, Santé & Émotions',
-    subtitle: 'Exprimez vos sentiments, consultez un médecin',
-    emoji: '❤️',
-    color: 'from-rose-800/40 to-red-900/30',
-    border: 'border-rose-600/25',
-    courseIds: [8, 9, 10],
-    quizIds: [5, 10],
-    dialogueId: 5,
-    phrases: ['Ferhan bzzaf', 'Khaydini rssi', 'Khasni tbib', '3yyan shwiya'],
-    goal: 'Communiquer vos émotions et décrire un problème de santé',
-    xp: 160,
-  },
-  {
-    week: 7,
-    title: 'Révision & Grand Quiz Final',
-    subtitle: 'Consolidez tout ce que vous avez appris',
+    title: 'Maîtrise',
+    subtitle: 'Verbes, conjugaison, corps, nature, slang',
     emoji: '🏆',
-    color: 'from-orange-700/40 to-amber-800/30',
-    border: 'border-amber-500/35',
-    courseIds: [11, 14],
-    quizIds: [15, 16, 17, 20],
-    dialogueId: null,
-    phrases: ['Expert Darija', 'Wakha', 'Mashi mshkil', 'Yallah!'],
-    goal: 'Atteindre le niveau Intermédiaire et parler avec confiance',
-    xp: 200,
-    isFinal: true,
+    color: 'from-purple-800/40 to-violet-900/30',
+    border: 'border-purple-600/25',
+    headerGradient: 'from-purple-500 to-violet-600',
+    accentColor: 'text-purple-400',
+    accentBg: 'bg-purple-500/20 border-purple-500/40',
+    totalXp: 650,
+    days: [
+      { day: 22, title: 'Les Verbes Essentiels',    emoji: '⚡', courseId: 18,   quizId: null, duration: '30 min', xp: 80,   isReview: false },
+      { day: 23, title: 'La Conjugaison',            emoji: '📝', courseId: null, quizId: null, duration: '35 min', xp: 100,  isReview: false },
+      { day: 24, title: 'Corps & Santé',             emoji: '🩺', courseId: null, quizId: 10,   duration: '30 min', xp: 85,   isReview: false },
+      { day: 25, title: 'La Nature & Paysages',      emoji: '🌿', courseId: null, quizId: null, duration: '25 min', xp: 70,   isReview: false },
+      { day: 26, title: 'Slang & Darija des Jeunes', emoji: '🔥', courseId: 19,   quizId: null, duration: '25 min', xp: 90,   isReview: false },
+      { day: 27, title: 'Culture Marocaine',         emoji: '🇲🇦', courseId: null, quizId: null, duration: '30 min', xp: 75,   isReview: false },
+      { day: 28, title: 'Grand Quiz Final du Mois',  emoji: '👑', courseId: null, quizId: null, duration: '40 min', xp: 150,  isReview: true, isFinalDay: true },
+    ],
   },
 ];
 
-function WeekCard({ week, data, completedLessons, completedQuizzes }) {
-  const weekCourses = courses.filter(c => data.courseIds.includes(c.id));
-  const totalLessons = weekCourses.reduce((s, c) => s + c.lessons.length, 0);
-  const doneLessons = weekCourses.reduce((s, c) =>
-    s + c.lessons.filter(l => completedLessons.includes(`${c.id}-${l.id}`)).length, 0);
-  const doneQuizzes = data.quizIds.filter(id => completedQuizzes.some(q => q.id === id)).length;
-  const weekProgress = totalLessons > 0 ? (doneLessons / totalLessons) * 100 : 0;
-  const isDone = weekProgress === 100 && doneQuizzes === data.quizIds.length;
+// ---------------------------------------------------------------------------
+// Helpers
+// ---------------------------------------------------------------------------
+
+/**
+ * A day is "done" when:
+ *   - If it has a courseId: ALL lessons of that course are completed
+ *   - If it has a quizId:   that quiz is completed
+ *   - If it has neither:    we cannot verify completion → treated as not done
+ * When a day has a courseId but no quizId (or vice-versa), only the
+ * available item needs to be completed.
+ */
+function isDayDone(day, completedLessons, completedQuizzes) {
+  const course = day.courseId ? courses.find(c => c.id === day.courseId) : null;
+
+  const courseOk = course
+    ? course.lessons.every(l => completedLessons.includes(`${course.id}-${l.id}`))
+    : true; // no course required — pass automatically
+
+  const quizOk = day.quizId
+    ? completedQuizzes.some(q => q.id === day.quizId)
+    : true; // no quiz required — pass automatically
+
+  // If BOTH are null, the day has nothing to track → not done
+  if (!day.courseId && !day.quizId) return false;
+
+  return courseOk && quizOk;
+}
+
+/**
+ * Return the status of a day: 'done' | 'available' | 'locked'
+ * Day 1 is always available.
+ * Any subsequent day is available when the previous day is done.
+ */
+function getDayStatus(dayIndex, allDays, completedLessons, completedQuizzes) {
+  if (dayIndex === 0) return 'available';
+  const prev = allDays[dayIndex - 1];
+  const prevDone = isDayDone(prev, completedLessons, completedQuizzes);
+  if (prevDone) return 'available';
+  return 'locked';
+}
+
+// ---------------------------------------------------------------------------
+// DayCard
+// ---------------------------------------------------------------------------
+
+function DayCard({ day, status, weekAccent, weekAccentBg, globalDayIndex }) {
+  const course = day.courseId ? courses.find(c => c.id === day.courseId) : null;
+  const isDone = status === 'done';
+  const isLocked = status === 'locked';
+  const isFinalDay = !!day.isFinalDay;
+
+  const cardBase = `relative rounded-2xl p-4 border transition-all duration-200 ${
+    isLocked ? 'opacity-50 cursor-not-allowed' : 'card-hover'
+  }`;
+
+  const cardBg = isDone
+    ? 'bg-emerald-900/20 border-emerald-600/30'
+    : isLocked
+    ? 'bg-white/3 border-white/8'
+    : day.isReview
+    ? isFinalDay
+      ? 'bg-gradient-to-br from-yellow-900/30 to-amber-900/20 border-yellow-500/40'
+      : 'bg-gradient-to-br from-amber-900/20 to-orange-900/15 border-amber-600/30'
+    : 'glass border-white/10';
 
   return (
-    <div className={`relative rounded-3xl p-6 border ${data.border} overflow-hidden card-hover bg-gradient-to-br ${data.color}`}>
-      {/* Pattern */}
-      <div className="absolute inset-0 moroccan-pattern opacity-15" />
-
-      {/* Done badge */}
-      {isDone && (
-        <div className="absolute top-4 right-4 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 text-xs font-bold">
-          <CheckCircle size={12} /> Terminé
-        </div>
+    <div className={`${cardBase} ${cardBg}`}>
+      {/* Moroccan pattern overlay on review days */}
+      {(day.isReview) && !isLocked && (
+        <div className="absolute inset-0 moroccan-pattern opacity-10 rounded-2xl" />
       )}
 
       <div className="relative">
-        {/* Header */}
-        <div className="flex items-start gap-4 mb-4">
-          <div className="flex-shrink-0 w-12 h-12 rounded-2xl flex items-center justify-center font-bold text-black text-lg shadow-lg"
-            style={{ background: 'linear-gradient(135deg, #D4AF37, #FF8C00)' }}>
-            {week}
+        {/* Top row: day number + status icon + title */}
+        <div className="flex items-start gap-3 mb-3">
+          {/* Day badge */}
+          <div className={`flex-shrink-0 w-9 h-9 rounded-xl flex items-center justify-center text-sm font-bold shadow-md ${
+            isDone
+              ? 'bg-emerald-500/30 text-emerald-300'
+              : isLocked
+              ? 'bg-white/8 text-white/30'
+              : isFinalDay
+              ? 'text-black'
+              : day.isReview
+              ? 'bg-amber-500/20 text-amber-300'
+              : `bg-white/10 ${weekAccent}`
+          }`}
+            style={(!isDone && !isLocked && isFinalDay) ? { background: 'linear-gradient(135deg, #D4AF37, #FF8C00)' } : {}}
+          >
+            {isDone ? (
+              <CheckCircle size={16} className="text-emerald-400" />
+            ) : isLocked ? (
+              <Lock size={14} className="text-white/30" />
+            ) : (
+              <span>{globalDayIndex}</span>
+            )}
           </div>
-          <div>
-            <p className="text-amber-400/70 text-xs uppercase tracking-widest mb-0.5">Semaine {week}</p>
-            <h3 className="font-bold text-white text-lg leading-tight">{data.title}</h3>
-            <p className="text-white/50 text-sm">{data.subtitle}</p>
+
+          {/* Title block */}
+          <div className="flex-1 min-w-0">
+            <div className="flex items-center gap-1.5 flex-wrap">
+              <span className="text-base">{day.emoji}</span>
+              <h4 className={`font-semibold text-sm leading-tight ${
+                isLocked ? 'text-white/30' : isDone ? 'text-emerald-300' : 'text-white'
+              }`}>
+                {day.title}
+              </h4>
+              {day.isReview && !isFinalDay && (
+                <span className="text-xs px-1.5 py-0.5 rounded-lg bg-amber-500/20 text-amber-300 border border-amber-500/30 font-medium">
+                  Révision
+                </span>
+              )}
+              {isFinalDay && (
+                <span className="text-xs px-1.5 py-0.5 rounded-lg font-bold text-black"
+                  style={{ background: 'linear-gradient(135deg, #D4AF37, #FF8C00)' }}>
+                  FINAL
+                </span>
+              )}
+            </div>
+            {/* Meta row */}
+            <div className="flex items-center gap-2 mt-1">
+              <span className={`flex items-center gap-1 text-xs ${isLocked ? 'text-white/20' : 'text-white/40'}`}>
+                <Clock size={10} /> {day.duration}
+              </span>
+              <span className={`flex items-center gap-1 text-xs font-semibold ${
+                isLocked ? 'text-white/20' : isFinalDay ? 'text-yellow-400' : day.isReview ? 'text-amber-400' : weekAccent
+              }`}>
+                <Star size={10} /> +{day.xp} XP
+              </span>
+            </div>
           </div>
         </div>
 
-        {/* Progress bar */}
-        <div className="mb-4">
-          <div className="flex justify-between text-xs text-white/40 mb-1">
-            <span>Progression des cours</span>
-            <span>{doneLessons}/{totalLessons} leçons</span>
-          </div>
-          <div className="h-1.5 bg-white/10 rounded-full overflow-hidden">
-            <div className="progress-bar h-full" style={{ width: `${weekProgress}%` }} />
-          </div>
-        </div>
-
-        {/* Sample phrases */}
-        <div className="flex flex-wrap gap-1.5 mb-4">
-          {data.phrases.map(p => (
-            <span key={p} className="text-xs px-2.5 py-1 rounded-xl bg-black/20 text-amber-300/80 font-arabic">
-              {p}
-            </span>
-          ))}
-        </div>
-
-        {/* Goal */}
-        <div className="glass rounded-xl p-3 mb-4">
-          <p className="text-white/60 text-xs">
-            <span className="text-amber-400">🎯 Objectif :</span> {data.goal}
-          </p>
-        </div>
-
-        {/* Actions */}
-        <div className="flex gap-2 flex-wrap">
-          {data.courseIds.map(id => {
-            const course = courses.find(c => c.id === id);
-            if (!course) return null;
-            return (
-              <Link key={id} to={`/cours/${id}`}
-                className="flex items-center gap-1.5 px-3 py-2 rounded-xl glass border border-amber-700/20 text-amber-300 text-xs font-medium hover:border-amber-500/40 transition-all">
-                <BookOpen size={12} /> {course.title}
+        {/* Action buttons — hidden when locked */}
+        {!isLocked && (
+          <div className="flex gap-1.5 flex-wrap">
+            {/* Course button */}
+            {course ? (
+              <Link
+                to={`/cours/${day.courseId}`}
+                className={`flex items-center gap-1 px-2.5 py-1.5 rounded-xl text-xs font-medium transition-all glass border ${
+                  isDone
+                    ? 'border-emerald-600/30 text-emerald-300/80 hover:border-emerald-500/50'
+                    : 'border-white/15 text-white/70 hover:border-white/30 hover:text-white'
+                }`}
+              >
+                <BookOpen size={11} />
+                <span className="truncate max-w-[100px]">{course.title}</span>
               </Link>
-            );
-          })}
-          {data.dialogueId && (
-            <Link to="/dialogues"
-              className="flex items-center gap-1.5 px-3 py-2 rounded-xl glass border border-orange-700/20 text-orange-300 text-xs font-medium hover:border-orange-500/40 transition-all">
-              <MessageSquare size={12} /> Dialogue
-            </Link>
-          )}
-          <Link to="/quiz"
-            className="flex items-center gap-1.5 px-3 py-2 rounded-xl glass border border-red-700/20 text-red-300 text-xs font-medium hover:border-red-500/40 transition-all">
-            <HelpCircle size={12} /> Quiz ({data.quizIds.length})
-          </Link>
-        </div>
+            ) : day.courseId ? (
+              /* courseId exists but not in data yet */
+              <Link
+                to="/cours"
+                className="flex items-center gap-1 px-2.5 py-1.5 rounded-xl text-xs font-medium glass border border-white/10 text-white/40 hover:text-white/60 transition-all"
+              >
+                <BookOpen size={11} /> Cours à venir
+              </Link>
+            ) : day.isReview ? (
+              /* Pure review day */
+              <Link
+                to="/cours"
+                className="flex items-center gap-1 px-2.5 py-1.5 rounded-xl text-xs font-medium glass border border-amber-700/25 text-amber-300/70 hover:border-amber-600/40 transition-all"
+              >
+                <BookOpen size={11} /> Réviser les cours
+              </Link>
+            ) : null}
 
-        {/* XP */}
-        <div className="mt-3 flex items-center justify-between">
-          <span className="text-xs text-white/30">Potentiel cette semaine</span>
-          <span className="text-sm font-bold text-amber-400">+{data.xp} XP</span>
-        </div>
+            {/* Quiz button */}
+            {day.quizId ? (
+              <Link
+                to="/quiz"
+                className={`flex items-center gap-1 px-2.5 py-1.5 rounded-xl text-xs font-medium transition-all glass border ${
+                  isDone
+                    ? 'border-emerald-600/30 text-emerald-300/80 hover:border-emerald-500/50'
+                    : isFinalDay
+                    ? 'border-yellow-600/40 text-yellow-300 hover:border-yellow-500/60'
+                    : day.isReview
+                    ? 'border-amber-600/30 text-amber-300 hover:border-amber-500/50'
+                    : 'border-white/15 text-white/70 hover:border-white/30 hover:text-white'
+                }`}
+              >
+                <HelpCircle size={11} /> Quiz {day.quizId}
+              </Link>
+            ) : (
+              /* No specific quiz ID — generic quiz link */
+              <Link
+                to="/quiz"
+                className={`flex items-center gap-1 px-2.5 py-1.5 rounded-xl text-xs font-medium transition-all glass border ${
+                  isDone
+                    ? 'border-emerald-600/30 text-emerald-300/80 hover:border-emerald-500/50'
+                    : isFinalDay
+                    ? 'border-yellow-600/40 text-yellow-300 hover:border-yellow-500/60'
+                    : day.isReview
+                    ? 'border-amber-600/30 text-amber-300 hover:border-amber-500/50'
+                    : 'border-white/15 text-white/70 hover:border-white/30 hover:text-white'
+                }`}
+              >
+                <HelpCircle size={11} /> Quiz
+              </Link>
+            )}
+          </div>
+        )}
+
+        {/* Done overlay message */}
+        {isDone && (
+          <div className="mt-2 flex items-center gap-1 text-xs text-emerald-400/80">
+            <CheckCircle size={11} />
+            <span>Complété !</span>
+          </div>
+        )}
       </div>
     </div>
   );
 }
 
-export default function ParcoursPage() {
-  const { completedLessons, completedQuizzes, xp } = useApp();
-  const totalXp = programme.reduce((s, w) => s + w.xp, 0);
+// ---------------------------------------------------------------------------
+// WeekSection
+// ---------------------------------------------------------------------------
 
-  const totalLessonsAll = programme.flatMap(w => {
-    const wCourses = courses.filter(c => w.courseIds.includes(c.id));
-    return wCourses.flatMap(c => c.lessons.map(l => `${c.id}-${l.id}`));
+function WeekSection({ weekData, completedLessons, completedQuizzes, isOpen, onToggle }) {
+  const allDays = weekData.days;
+
+  // Compute statuses for all days in this week
+  const statuses = allDays.map((day, i) => {
+    const done = isDayDone(day, completedLessons, completedQuizzes);
+    if (done) return 'done';
+    return getDayStatus(i, allDays, completedLessons, completedQuizzes);
   });
-  const doneAll = totalLessonsAll.filter(key => completedLessons.includes(key)).length;
-  const globalProgress = totalLessonsAll.length > 0 ? Math.round((doneAll / totalLessonsAll.length) * 100) : 0;
+
+  const doneDays = statuses.filter(s => s === 'done').length;
+  const weekProgress = Math.round((doneDays / 7) * 100);
+  const isWeekComplete = doneDays === 7;
+
+  return (
+    <div className={`rounded-3xl border overflow-hidden transition-all duration-300 ${weekData.border} bg-gradient-to-br ${weekData.color}`}>
+      {/* Moroccan pattern background */}
+      <div className="absolute inset-0 moroccan-pattern opacity-10 pointer-events-none" />
+
+      {/* Week header — always visible, clickable */}
+      <button
+        onClick={onToggle}
+        className="relative w-full text-left p-5 flex items-center gap-4 hover:bg-white/3 transition-colors"
+      >
+        {/* Week number badge */}
+        <div
+          className="flex-shrink-0 w-12 h-12 rounded-2xl flex items-center justify-center font-bold text-black text-lg shadow-lg"
+          style={{ background: `linear-gradient(135deg, var(--tw-gradient-from, #D4AF37), var(--tw-gradient-to, #FF8C00))` }}
+        >
+          <span style={{ background: `linear-gradient(135deg, #D4AF37, #FF8C00)`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', fontSize: '1rem', fontWeight: 'bold' }}>
+            S{weekData.week}
+          </span>
+        </div>
+
+        {/* Header text */}
+        <div className="flex-1 min-w-0">
+          <div className="flex items-center gap-2 mb-0.5">
+            <span className="text-xl">{weekData.emoji}</span>
+            <p className={`text-xs uppercase tracking-widest font-semibold ${weekData.accentColor} opacity-80`}>
+              Semaine {weekData.week}
+            </p>
+            {isWeekComplete && (
+              <span className={`text-xs px-2 py-0.5 rounded-full font-bold ${weekData.accentBg} ${weekData.accentColor}`}>
+                ✓ Terminée
+              </span>
+            )}
+          </div>
+          <h3 className="font-bold text-white text-lg leading-tight">{weekData.title}</h3>
+          <p className="text-white/45 text-xs mt-0.5">{weekData.subtitle}</p>
+        </div>
+
+        {/* Right side: stats + chevron */}
+        <div className="flex-shrink-0 flex flex-col items-end gap-1.5">
+          <div className="flex items-center gap-1 text-xs text-white/50">
+            <span className={`font-bold ${weekData.accentColor}`}>{doneDays}/7</span>
+            <span>jours</span>
+          </div>
+          <div className="w-16 h-1.5 bg-white/10 rounded-full overflow-hidden">
+            <div
+              className="progress-bar h-full rounded-full transition-all duration-500"
+              style={{ width: `${weekProgress}%` }}
+            />
+          </div>
+          <div className={`mt-0.5 ${weekData.accentColor} opacity-70`}>
+            {isOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+          </div>
+        </div>
+      </button>
+
+      {/* Expanded content: 7 day cards */}
+      {isOpen && (
+        <div className="relative px-4 pb-5 grid sm:grid-cols-2 gap-3">
+          {allDays.map((day, i) => (
+            <DayCard
+              key={day.day}
+              day={day}
+              status={statuses[i]}
+              weekAccent={weekData.accentColor}
+              weekAccentBg={weekData.accentBg}
+              globalDayIndex={day.day}
+            />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ---------------------------------------------------------------------------
+// Main page
+// ---------------------------------------------------------------------------
+
+export default function ParcoursPage() {
+  const { completedLessons, completedQuizzes, xp, streak } = useApp();
+
+  // Which week tabs are open (default: open week 1)
+  const [openWeeks, setOpenWeeks] = useState(new Set([1]));
+
+  const toggleWeek = (weekNum) => {
+    setOpenWeeks(prev => {
+      const next = new Set(prev);
+      if (next.has(weekNum)) {
+        next.delete(weekNum);
+      } else {
+        next.add(weekNum);
+      }
+      return next;
+    });
+  };
+
+  // ---------------------------------------------------------------------------
+  // Global stats
+  // ---------------------------------------------------------------------------
+  const allDaysFlat = weeks.flatMap(w => w.days);
+
+  const doneCount = allDaysFlat.filter(day =>
+    isDayDone(day, completedLessons, completedQuizzes)
+  ).length;
+
+  const currentDayIndex = allDaysFlat.findIndex(
+    day => !isDayDone(day, completedLessons, completedQuizzes)
+  );
+  const currentDay = currentDayIndex === -1 ? 28 : currentDayIndex + 1;
+
+  const totalPossibleXp = weeks.reduce((s, w) => s + w.totalXp, 0);
+  const progressPercent = Math.round((doneCount / 28) * 100);
+
+  // Quick-access week tabs
+  const weekLabels = ['S1', 'S2', 'S3', 'S4'];
 
   return (
     <div className="min-h-screen pb-24 md:pb-8 md:pt-24 px-4">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-3xl mx-auto">
 
-        {/* Header */}
+        {/* ------------------------------------------------------------------ */}
+        {/* Header                                                               */}
+        {/* ------------------------------------------------------------------ */}
         <div className="text-center mb-10">
-          <p className="text-amber-500/80 text-xs uppercase tracking-widest mb-3">Notre méthode</p>
+          <p className="text-amber-500/80 text-xs uppercase tracking-widest mb-3">Programme structuré</p>
           <h1 className="font-display text-3xl md:text-5xl font-bold text-white mb-3">
-            Parcours <span className="gradient-text italic">7 Semaines</span>
+            Parcours <span className="gradient-text italic">28 Jours</span>
           </h1>
           <p className="text-white/50 text-base max-w-lg mx-auto mb-5">
-            Suivez notre programme structuré pour passer de débutant complet à un niveau de conversation intermédiaire en Darija.
+            Un programme quotidien progressif pour passer de débutant à un niveau intermédiaire en Darija marocaine.
           </p>
           <div className="moroccan-divider max-w-48 mx-auto" />
         </div>
 
-        {/* Global progress */}
-        <div className="glass-gold rounded-3xl p-6 mb-10 relative overflow-hidden border border-amber-700/20">
+        {/* ------------------------------------------------------------------ */}
+        {/* Stats bar                                                            */}
+        {/* ------------------------------------------------------------------ */}
+        <div className="glass-gold rounded-3xl p-5 mb-8 relative overflow-hidden border border-amber-700/20">
           <div className="absolute inset-0 moroccan-pattern opacity-20" />
           <div className="relative">
-            <div className="grid grid-cols-3 gap-4 mb-5">
-              <div className="text-center">
-                <div className="text-2xl font-bold gradient-text">{globalProgress}%</div>
-                <div className="text-white/40 text-xs">Programme</div>
+            {/* Motivational headline */}
+            <div className="text-center mb-4">
+              <p className="text-amber-400/70 text-xs uppercase tracking-widest mb-1">Progression</p>
+              <p className="font-display text-white font-bold text-lg">
+                {doneCount === 0
+                  ? 'Prêt à commencer ? Yallah !'
+                  : doneCount === 28
+                  ? '🎉 Programme complété ! Félicitations !'
+                  : `Jour ${currentDay} sur 28`}
+              </p>
+            </div>
+
+            {/* Progress bar */}
+            <div className="mb-4">
+              <div className="flex justify-between text-xs text-white/40 mb-1.5">
+                <span>{doneCount} jours complétés</span>
+                <span>{progressPercent}%</span>
               </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-amber-400">{xp}</div>
+              <div className="h-3 bg-white/10 rounded-full overflow-hidden">
+                <div
+                  className="progress-bar h-full rounded-full transition-all duration-700"
+                  style={{ width: `${progressPercent}%` }}
+                />
+              </div>
+            </div>
+
+            {/* Stats grid */}
+            <div className="grid grid-cols-4 gap-2">
+              <div className="text-center glass rounded-2xl p-2.5 border border-white/5">
+                <div className="flex items-center justify-center gap-1 mb-0.5">
+                  <Calendar size={12} className="text-amber-400" />
+                </div>
+                <div className="text-lg font-bold gradient-text">{doneCount}<span className="text-xs text-white/30">/28</span></div>
+                <div className="text-white/40 text-xs">Jours</div>
+              </div>
+              <div className="text-center glass rounded-2xl p-2.5 border border-white/5">
+                <div className="flex items-center justify-center gap-1 mb-0.5">
+                  <Zap size={12} className="text-amber-400" />
+                </div>
+                <div className="text-lg font-bold text-amber-400">{xp}</div>
                 <div className="text-white/40 text-xs">XP gagnés</div>
               </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-orange-400">{totalXp}</div>
-                <div className="text-white/40 text-xs">XP total disponible</div>
+              <div className="text-center glass rounded-2xl p-2.5 border border-white/5">
+                <div className="flex items-center justify-center gap-1 mb-0.5">
+                  <Star size={12} className="text-orange-400" />
+                </div>
+                <div className="text-lg font-bold text-orange-400">{totalPossibleXp}</div>
+                <div className="text-white/40 text-xs">XP total</div>
+              </div>
+              <div className="text-center glass rounded-2xl p-2.5 border border-white/5">
+                <div className="flex items-center justify-center gap-1 mb-0.5">
+                  <Flame size={12} className="text-rose-400" />
+                </div>
+                <div className="text-lg font-bold text-rose-400">{streak}</div>
+                <div className="text-white/40 text-xs">Série</div>
               </div>
             </div>
-            <div className="h-3 bg-white/10 rounded-full overflow-hidden">
-              <div className="progress-bar h-full" style={{ width: `${globalProgress}%` }} />
-            </div>
-            <p className="text-center text-white/40 text-xs mt-2">
-              {doneAll} leçons complétées sur {totalLessonsAll.length}
-            </p>
           </div>
         </div>
 
-        {/* Programme */}
-        <div className="grid md:grid-cols-2 gap-5 mb-10">
-          {programme.map(w => (
-            <WeekCard
+        {/* ------------------------------------------------------------------ */}
+        {/* Week navigation tabs                                                 */}
+        {/* ------------------------------------------------------------------ */}
+        <div className="flex gap-2 mb-6 overflow-x-auto pb-1">
+          {weeks.map(w => {
+            const isOpen = openWeeks.has(w.week);
+            return (
+              <button
+                key={w.week}
+                onClick={() => toggleWeek(w.week)}
+                className={`flex-shrink-0 flex items-center gap-1.5 px-4 py-2 rounded-2xl text-sm font-semibold transition-all border ${
+                  isOpen
+                    ? `${w.accentBg} ${w.accentColor}`
+                    : 'glass border-white/10 text-white/50 hover:text-white/80 hover:border-white/20'
+                }`}
+              >
+                <span>{w.emoji}</span>
+                <span>Semaine {w.week}</span>
+              </button>
+            );
+          })}
+        </div>
+
+        {/* ------------------------------------------------------------------ */}
+        {/* Week accordions                                                      */}
+        {/* ------------------------------------------------------------------ */}
+        <div className="flex flex-col gap-4 mb-10">
+          {weeks.map(w => (
+            <WeekSection
               key={w.week}
-              week={w.week}
-              data={w}
+              weekData={w}
               completedLessons={completedLessons}
               completedQuizzes={completedQuizzes}
+              isOpen={openWeeks.has(w.week)}
+              onToggle={() => toggleWeek(w.week)}
             />
           ))}
         </div>
 
-        {/* CTA */}
+        {/* ------------------------------------------------------------------ */}
+        {/* CTA footer                                                           */}
+        {/* ------------------------------------------------------------------ */}
         <div className="text-center glass rounded-3xl p-7 border border-amber-700/20">
-          <div className="text-3xl mb-3">🏁</div>
-          <h3 className="font-display text-white font-bold text-xl mb-2">Prêt à commencer ?</h3>
-          <p className="text-white/50 text-sm mb-5">Commencez par la Semaine 1 et avancez à votre rythme.</p>
+          <div className="text-3xl mb-3">🚀</div>
+          <h3 className="font-display text-white font-bold text-xl mb-2">Commencez dès aujourd'hui</h3>
+          <p className="text-white/50 text-sm mb-5">
+            Chaque jour compte. Même 20 minutes par jour suffisent pour progresser en Darija.
+          </p>
           <Link
             to="/cours/1"
             className="btn-shine inline-flex items-center gap-2.5 px-8 py-3.5 rounded-2xl text-black font-bold shadow-xl hover:scale-105 transition-all"
             style={{ background: 'linear-gradient(135deg, #D4AF37, #FF8C00)' }}
           >
-            <BookOpen size={18} /> Commencer la Semaine 1
+            <BookOpen size={18} /> Jour 1 — Les Salutations
           </Link>
         </div>
+
       </div>
     </div>
   );
