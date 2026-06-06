@@ -1646,6 +1646,828 @@ export const courses = [
         audio: "arqam_siyaq"
       }
     ]
+  },
+  {
+    id: 21,
+    title: "Les Sports & Loisirs",
+    titleAr: "الرياضة والترفيه",
+    emoji: "⚽",
+    level: "Débutant",
+    duration: "15 min",
+    xp: 65,
+    color: "from-lime-500 to-green-600",
+    lessons: [
+      {
+        id: 1,
+        phrase: "كورة",
+        romanization: "Kora",
+        translation: "Football",
+        pronunciation: "ko-ra",
+        example: "Ntsharfu f-l-kora?",
+        exampleTranslation: "On joue au foot ?",
+        tip: "Le football est une passion nationale au Maroc. 'Kora' vient de l'arabe 'kura' (balle)",
+        audio: "kora"
+      },
+      {
+        id: 2,
+        phrase: "لعب",
+        romanization: "L3ib",
+        translation: "Jouer",
+        pronunciation: "l3ib",
+        example: "Kay-l3eb kora l-nhar kollu",
+        exampleTranslation: "Il joue au foot toute la journée",
+        tip: "Verbe poly-valent: jouer à un sport, jouer un rôle, jouer un instrument",
+        audio: "l3ib"
+      },
+      {
+        id: 3,
+        phrase: "سباحة",
+        romanization: "Sbaha",
+        translation: "Natation",
+        pronunciation: "sba-ha",
+        example: "Kay-mshi y-sba7 f-l-bħer",
+        exampleTranslation: "Il va nager dans la mer",
+        tip: "'Sba7' = nager. 'L-bħer' = la mer, très présente au Maroc",
+        audio: "sbaha"
+      },
+      {
+        id: 4,
+        phrase: "رياضة",
+        romanization: "Riad",
+        translation: "Sport",
+        pronunciation: "ri-yad",
+        example: "Dir riad koll nhar",
+        exampleTranslation: "Fais du sport tous les jours",
+        tip: "Aussi écrit 'riyada'. Le sport est 'riad' ou 'riyada' en Darija",
+        audio: "riad"
+      },
+      {
+        id: 5,
+        phrase: "تلفازة",
+        romanization: "Telfaza",
+        translation: "Télévision",
+        pronunciation: "tel-fa-za",
+        example: "Shaf match f-t-telfaza",
+        exampleTranslation: "Il a regardé le match à la télé",
+        tip: "'Telfaza' from French 'télévision'. Also: 'shaf' = regarder",
+        audio: "telfaza"
+      },
+      {
+        id: 6,
+        phrase: "موسيقى",
+        romanization: "Musiqa",
+        translation: "Musique",
+        pronunciation: "mu-si-qa",
+        example: "Kat-sme3 musiqa",
+        exampleTranslation: "Elle écoute de la musique",
+        tip: "Music is huge in Morocco: Gnawa, Chaabi, Andalusian, modern Pop",
+        audio: "musiqa"
+      },
+      {
+        id: 7,
+        phrase: "سفر",
+        romanization: "Safar",
+        translation: "Voyage",
+        pronunciation: "sa-far",
+        example: "Bghit nsafar l-Marrakesh",
+        exampleTranslation: "Je veux voyager à Marrakech",
+        tip: "'Safar' = voyage/voyager. 'Safer' = voyageur",
+        audio: "safar"
+      },
+      {
+        id: 8,
+        phrase: "ديال الفرحة",
+        romanization: "Dyal l-ferħa",
+        translation: "Pour le plaisir",
+        pronunciation: "dyal el-fer-ħa",
+        example: "Had l-l3iba dyal l-ferħa ghir",
+        exampleTranslation: "Ce jeu est juste pour le plaisir",
+        tip: "Important expression: doing something purely for enjoyment",
+        audio: "dyal_l_ferha"
+      }
+    ]
+  },
+  {
+    id: 22,
+    title: "La Religion & Expressions Courantes",
+    titleAr: "الدين والتعابير",
+    emoji: "🕌",
+    level: "Débutant",
+    duration: "15 min",
+    xp: 65,
+    color: "from-emerald-600 to-teal-700",
+    lessons: [
+      {
+        id: 1,
+        phrase: "بسم الله",
+        romanization: "Bismillah",
+        translation: "Au nom de Dieu",
+        pronunciation: "bis-mil-lah",
+        example: "Gol bismillah qbel ma takol",
+        exampleTranslation: "Dis bismillah avant de manger",
+        tip: "Dite avant chaque action importante: manger, partir, commencer un travail",
+        audio: "bismillah"
+      },
+      {
+        id: 2,
+        phrase: "إن شاء الله",
+        romanization: "Inshallah",
+        translation: "Si Dieu le veut",
+        pronunciation: "in-sha-llah",
+        example: "Ghadi njiw ghda inshallah",
+        exampleTranslation: "On viendra demain si Dieu le veut",
+        tip: "Inshallah has 3 levels of meaning: certainty, hope, or polite refusal depending on tone!",
+        audio: "inshallah_22"
+      },
+      {
+        id: 3,
+        phrase: "الحمد لله",
+        romanization: "Alħamdoulillah",
+        translation: "Grâce à Dieu",
+        pronunciation: "al-ħam-dou-lil-lah",
+        example: "Labas alħamdoulillah",
+        exampleTranslation: "Ça va, grâce à Dieu",
+        tip: "Standard positive response. Can mean 'ça va' or express gratitude",
+        audio: "alhamdoulillah"
+      },
+      {
+        id: 4,
+        phrase: "ماشاء الله",
+        romanization: "Mashallah",
+        translation: "Dieu a voulu",
+        pronunciation: "mash-sha-llah",
+        example: "Mshallah, weldk kbir!",
+        exampleTranslation: "Dieu a voulu, ton fils est grand !",
+        tip: "Said when praising to protect from evil eye (l-3in). Always use when complimenting",
+        audio: "mashallah"
+      },
+      {
+        id: 5,
+        phrase: "الله يسهل",
+        romanization: "Allah ysaħħel",
+        translation: "Que Dieu facilite",
+        pronunciation: "al-lah ysa-ħħel",
+        example: "Allah ysaħħel 3lik l-khedma",
+        exampleTranslation: "Que Dieu te facilite le travail",
+        tip: "Said to wish someone success or ease in a task",
+        audio: "allah_ysahhel_22"
+      },
+      {
+        id: 6,
+        phrase: "ربي يبارك",
+        romanization: "Rbī ybārek",
+        translation: "Que Dieu bénisse",
+        pronunciation: "rbi yba-rek",
+        example: "Rbi ybarek fik!",
+        exampleTranslation: "Que Dieu te bénisse !",
+        tip: "Standard blessing, used after receiving good news or gifts",
+        audio: "rbi_ybarek"
+      },
+      {
+        id: 7,
+        phrase: "رمضان",
+        romanization: "Ramadan",
+        translation: "Ramadan",
+        pronunciation: "ra-ma-dan",
+        example: "F-Ramadan, nnas kaysoumou",
+        exampleTranslation: "En Ramadan, les gens jeûnent",
+        tip: "Ramadan is the holiest month. 'Soum' = jeûner. 'Ftour' = rupture du jeûne (iftar)",
+        audio: "ramadan"
+      },
+      {
+        id: 8,
+        phrase: "الجمعة",
+        romanization: "L-jme3",
+        translation: "La mosquée du vendredi",
+        pronunciation: "el-jme3",
+        example: "Msha l-l-jme3 nhar l-jme3",
+        exampleTranslation: "Il est allé à la grande mosquée le vendredi",
+        tip: "Friday prayer ('sala l-jme3') is essential for men. The day itself is also called 'l-jme3'",
+        audio: "l_jme3"
+      }
+    ]
+  },
+  {
+    id: 23,
+    title: "L'École & Les Études",
+    titleAr: "المدرسة والدراسة",
+    emoji: "📚",
+    level: "Débutant",
+    duration: "15 min",
+    xp: 65,
+    color: "from-sky-500 to-blue-600",
+    lessons: [
+      {
+        id: 1,
+        phrase: "مدرسة",
+        romanization: "Madrasa",
+        translation: "École",
+        pronunciation: "mad-ra-sa",
+        example: "Msha l-l-madrasa bekri",
+        exampleTranslation: "Il est allé à l'école tôt",
+        tip: "'Madrasa' is used for primary/secondary school. University is 'jami3a'",
+        audio: "madrasa"
+      },
+      {
+        id: 2,
+        phrase: "أستاذ",
+        romanization: "Ustad",
+        translation: "Professeur (masc.)",
+        pronunciation: "us-tad",
+        example: "L-ustad mzyan bzzaf",
+        exampleTranslation: "Le professeur est très bien",
+        tip: "'Ustad' (masc.) / 'ustada' (fém.). Used as a title of respect: 'nta ustad!'",
+        audio: "ustad"
+      },
+      {
+        id: 3,
+        phrase: "تلميذ",
+        romanization: "Talmid",
+        translation: "Élève",
+        pronunciation: "tal-mid",
+        example: "L-talmid qra mezyan",
+        exampleTranslation: "L'élève a bien étudié",
+        tip: "'Talmid' (masc.) / 'talmida' (fém.). 'Talba' = les étudiants (plural)",
+        audio: "talmid"
+      },
+      {
+        id: 4,
+        phrase: "قرأ",
+        romanization: "Qra",
+        translation: "Lire / Étudier",
+        pronunciation: "qra",
+        example: "Lazem tqra mezyan l-imtihan",
+        exampleTranslation: "Tu dois bien étudier pour l'examen",
+        tip: "Important dual meaning: both 'to read' and 'to study'. Context determines meaning",
+        audio: "qra"
+      },
+      {
+        id: 5,
+        phrase: "امتحان",
+        romanization: "Imtiħan",
+        translation: "Examen",
+        pronunciation: "im-ti-ħan",
+        example: "Ghda 3ndi imtiħan sab",
+        exampleTranslation: "Demain j'ai un examen difficile",
+        tip: "'Imtiħan' = examen. 'Njħ' = réussir. 'Rsb' = rater. 'Imtiħan sab' = examen difficile",
+        audio: "imtihan"
+      },
+      {
+        id: 6,
+        phrase: "جامعة",
+        romanization: "Jami3a",
+        translation: "Université",
+        pronunciation: "ja-mi-3a",
+        example: "Kat-qra f-l-jami3a d-Casablanca",
+        exampleTranslation: "Elle étudie à l'université de Casablanca",
+        tip: "Moroccan universities: Mohammed V (Rabat), Hassan II (Casablanca), Cadi Ayyad (Marrakech)",
+        audio: "jami3a"
+      },
+      {
+        id: 7,
+        phrase: "دفتر",
+        romanization: "Daftar",
+        translation: "Cahier/Livre",
+        pronunciation: "daf-tar",
+        example: "Khod daftar-k m3ak",
+        exampleTranslation: "Prends ton cahier avec toi",
+        tip: "'Daftar' = cahier/carnet. 'Ktab' = livre. Both essential school supplies",
+        audio: "daftar"
+      },
+      {
+        id: 8,
+        phrase: "واكانسة",
+        romanization: "Vakansa",
+        translation: "Vacances",
+        pronunciation: "va-kan-sa",
+        example: "Imta kayji l-vakansa?",
+        exampleTranslation: "Quand arrivent les vacances ?",
+        tip: "From French 'vacances'. School holidays are a big deal in Morocco!",
+        audio: "vakansa"
+      }
+    ]
+  },
+  {
+    id: 24,
+    title: "La Nature & Les Paysages",
+    titleAr: "الطبيعة والمناظر",
+    emoji: "🏔️",
+    level: "Débutant",
+    duration: "15 min",
+    xp: 65,
+    color: "from-green-500 to-teal-600",
+    lessons: [
+      {
+        id: 1,
+        phrase: "جبل",
+        romanization: "Jbal",
+        translation: "Montagne",
+        pronunciation: "jbal",
+        example: "L-jbal d-l-atlas 3ali bzzaf",
+        exampleTranslation: "Les montagnes de l'Atlas sont très hautes",
+        tip: "Morocco has the Atlas, Rif and Anti-Atlas mountains. 'Jbal' = montagne, 'jbala' = montagneux",
+        audio: "jbal"
+      },
+      {
+        id: 2,
+        phrase: "بحر",
+        romanization: "Bħar",
+        translation: "Mer",
+        pronunciation: "bħar",
+        example: "Maroc 3ndu bħar",
+        exampleTranslation: "Le Maroc a la mer (deux côtes !)",
+        tip: "Morocco borders both the Atlantic ('bħar l-atlasi') and Mediterranean ('bħar l-abyad')",
+        audio: "bhar"
+      },
+      {
+        id: 3,
+        phrase: "صحراء",
+        romanization: "Saħra",
+        translation: "Désert",
+        pronunciation: "saħ-ra",
+        example: "Mshit l-l-saħra – zwina bzzaf!",
+        exampleTranslation: "Je suis allé au désert – c'est magnifique !",
+        tip: "The Sahara in Morocco is a tourist highlight. Erg Chebbi near Merzouga is most famous",
+        audio: "sahra"
+      },
+      {
+        id: 4,
+        phrase: "واد",
+        romanization: "Wad",
+        translation: "Rivière/Oued",
+        pronunciation: "wad",
+        example: "L-wad yji mn l-jbal",
+        exampleTranslation: "La rivière vient de la montagne",
+        tip: "'Wad' = oued/rivière, often seasonal in Morocco. Many city names include 'wad': Wad Tensift, Wad Sebou",
+        audio: "wad"
+      },
+      {
+        id: 5,
+        phrase: "غابة",
+        romanization: "Ghaba",
+        translation: "Forêt",
+        pronunciation: "gha-ba",
+        example: "L-ghaba dyal l-arz f-l-atlas",
+        exampleTranslation: "La forêt de cèdres dans l'Atlas",
+        tip: "Morocco has forests of cedar, argan, cork oak. Argan forest is UNESCO World Heritage",
+        audio: "ghaba"
+      },
+      {
+        id: 6,
+        phrase: "شمس",
+        romanization: "Shemsh",
+        translation: "Soleil",
+        pronunciation: "shemsh",
+        example: "Shemsh d-l-maghrib ħmiya bzzaf",
+        exampleTranslation: "Le soleil du Maroc brûle beaucoup",
+        tip: "'Shemsh' = soleil. 'Ħmiya' = chaleur/brûlant. Summer sun in Morocco is intense",
+        audio: "shemsh_24"
+      },
+      {
+        id: 7,
+        phrase: "برد",
+        romanization: "Berd",
+        translation: "Froid",
+        pronunciation: "berd",
+        example: "F-sh-shta, berd bzzaf f-l-jbal",
+        exampleTranslation: "En hiver, il fait très froid dans les montagnes",
+        tip: "'Berd' = froid (adj/noun). 'F-sh-shta' = en hiver. The Atlas gets heavy snow",
+        audio: "berd_24"
+      },
+      {
+        id: 8,
+        phrase: "أركان",
+        romanization: "Argan",
+        translation: "Arganier",
+        pronunciation: "ar-gan",
+        example: "Shajrat l-argan kayna ghir f-l-Maghrib",
+        exampleTranslation: "L'arganier existe seulement au Maroc",
+        tip: "The argan tree is unique to Morocco. Its oil is used in cooking and cosmetics. UNESCO protected",
+        audio: "argan"
+      }
+    ]
+  },
+  {
+    id: 25,
+    title: "Les Métiers & Professions",
+    titleAr: "المهن والوظائف",
+    emoji: "👨‍💼",
+    level: "Intermédiaire",
+    duration: "18 min",
+    xp: 75,
+    color: "from-slate-500 to-gray-600",
+    lessons: [
+      {
+        id: 1,
+        phrase: "طبيب",
+        romanization: "Tbib",
+        translation: "Médecin",
+        pronunciation: "tbib",
+        example: "L-tbib gal-li sreb dawa",
+        exampleTranslation: "Le médecin m'a dit de prendre le médicament",
+        tip: "'Tbib' = docteur généraliste. 'Tbib l-3yun' = ophtalmologue. 'Tbiba' = femme médecin",
+        audio: "tbib"
+      },
+      {
+        id: 2,
+        phrase: "محامي",
+        romanization: "Muħami",
+        translation: "Avocat",
+        pronunciation: "mu-ħa-mi",
+        example: "Kħessni muħami mezyan",
+        exampleTranslation: "J'ai besoin d'un bon avocat",
+        tip: "'Muħami' from Arabic 'ħimaya' (protection). Legal profession is respected in Morocco",
+        audio: "muhami"
+      },
+      {
+        id: 3,
+        phrase: "مهندس",
+        romanization: "Muhandis",
+        translation: "Ingénieur",
+        pronunciation: "mu-han-dis",
+        example: "Weld-i muħandis f-Casablanca",
+        exampleTranslation: "Mon fils est ingénieur à Casablanca",
+        tip: "'Muħandis' = ingénieur. 'Muħandis m3mari' = architecte. Prestigious profession in Morocco",
+        audio: "muhandis"
+      },
+      {
+        id: 4,
+        phrase: "بوليس",
+        romanization: "Bolis",
+        translation: "Police",
+        pronunciation: "bo-lis",
+        example: "L-bolis wqaf-ni f-t-triq",
+        exampleTranslation: "La police m'a arrêté dans la rue",
+        tip: "From French 'police'. Also 'daraka' = gendarmerie. 'Commissariat' = 'l-komisariya'",
+        audio: "bolis"
+      },
+      {
+        id: 5,
+        phrase: "خدام",
+        romanization: "Kħeddam",
+        translation: "Employé/Ouvrier",
+        pronunciation: "kħed-dam",
+        example: "Hwa kħeddam f-l-fabrika",
+        exampleTranslation: "Il est ouvrier dans l'usine",
+        tip: "'Kħeddam' = celui qui travaille. 'Kħedma' = le travail/l'emploi. Root: kħedm",
+        audio: "kheddam"
+      },
+      {
+        id: 6,
+        phrase: "تاجر",
+        romanization: "Tjar",
+        translation: "Commerçant",
+        pronunciation: "tjar",
+        example: "Bah tjar f-s-souq",
+        exampleTranslation: "Son père est commerçant au souk",
+        tip: "'Tjar' = commerçant/marchand. 'Tijarah' = commerce. Souks are full of 'tjar'",
+        audio: "tjar"
+      },
+      {
+        id: 7,
+        phrase: "فلاح",
+        romanization: "Fallah",
+        translation: "Agriculteur",
+        pronunciation: "fal-lah",
+        example: "L-fallah yħrez l-ard",
+        exampleTranslation: "L'agriculteur laboure la terre",
+        tip: "Agriculture is major in Morocco. 'Fallah' = paysan/agriculteur. 'L-badiya' = la campagne",
+        audio: "fallah"
+      },
+      {
+        id: 8,
+        phrase: "نقاش",
+        romanization: "Naqqash",
+        translation: "Artisan/Peintre décorateur",
+        pronunciation: "naq-qash",
+        example: "Naqqash mazal kaykhdem f-l-manzil",
+        exampleTranslation: "L'artisan travaille encore dans la maison",
+        tip: "Moroccan artisans ('l-7irfiyyin') are world-renowned for zellige, woodcarving, leather, weaving",
+        audio: "naqqash"
+      }
+    ]
+  },
+  {
+    id: 26,
+    title: "La Ville & Les Lieux",
+    titleAr: "المدينة والأماكن",
+    emoji: "🏙️",
+    level: "Débutant",
+    duration: "15 min",
+    xp: 65,
+    color: "from-amber-500 to-orange-600",
+    lessons: [
+      {
+        id: 1,
+        phrase: "مدينة",
+        romanization: "Medina",
+        translation: "Médina (vieille ville)",
+        pronunciation: "mdi-na",
+        example: "Tmsha f-l-mdina d-Fes",
+        exampleTranslation: "Il se balade dans la médina de Fès",
+        tip: "Every Moroccan city has a 'mdina' (old walled city). Fès and Marrakech have the most famous ones",
+        audio: "medina"
+      },
+      {
+        id: 2,
+        phrase: "درب",
+        romanization: "Derb",
+        translation: "Ruelle",
+        pronunciation: "derb",
+        example: "Dribt rasi f-d-drub d-l-mdina",
+        exampleTranslation: "Je me suis perdu dans les ruelles de la médina",
+        tip: "'Derb' = ruelle/impasse dans la médina. 'Mdina' is a maze of derbs!",
+        audio: "derb"
+      },
+      {
+        id: 3,
+        phrase: "جامع",
+        romanization: "Jame3",
+        translation: "Mosquée",
+        pronunciation: "ja-me3",
+        example: "L-jame3 l-kbir f-wsat l-mdina",
+        exampleTranslation: "La grande mosquée au centre de la médina",
+        tip: "'Jame3' = mosquée. Famous: Koutoubia (Marrakech), Hassan II (Casablanca), Qarawiyyin (Fès)",
+        audio: "jame3"
+      },
+      {
+        id: 4,
+        phrase: "فندق",
+        romanization: "Funduq",
+        translation: "Hôtel/Auberge",
+        pronunciation: "fun-duq",
+        example: "Bgha yskun f-funduq",
+        exampleTranslation: "Il veut loger dans un hôtel",
+        tip: "Historically, 'funduq' was a trading inn. Now means hotel. 'Riad' = guesthouse in a medina",
+        audio: "funduq"
+      },
+      {
+        id: 5,
+        phrase: "حانوت",
+        romanization: "Ħanout",
+        translation: "Épicerie/Boutique",
+        pronunciation: "ħa-nout",
+        example: "Msha l-l-ħanout yshri l-khobz",
+        exampleTranslation: "Il est allé à l'épicerie acheter le pain",
+        tip: "'Ħanout' = petite boutique de quartier. Essential in every Moroccan neighborhood",
+        audio: "hanout"
+      },
+      {
+        id: 6,
+        phrase: "حمام",
+        romanization: "Hammam",
+        translation: "Hammam (bain traditionnel)",
+        pronunciation: "ham-mam",
+        example: "Msha l-l-ħammam f-nhar l-jme3",
+        exampleTranslation: "Il est allé au hammam le vendredi",
+        tip: "Traditional public bath. Going to the hammam before Friday prayer is traditional for men",
+        audio: "hammam_26"
+      },
+      {
+        id: 7,
+        phrase: "رياض",
+        romanization: "Riad",
+        translation: "Riad (maison à patio)",
+        pronunciation: "ri-yad",
+        example: "Skenna f-riad jmiil f-Marrakech",
+        exampleTranslation: "J'ai logé dans un beau riad à Marrakech",
+        tip: "A riad is a traditional house built around an interior garden/courtyard. Now popular as guesthouses",
+        audio: "riad_26"
+      },
+      {
+        id: 8,
+        phrase: "بنك",
+        romanization: "Bank",
+        translation: "Banque",
+        pronunciation: "bank",
+        example: "Kħessni nmshi l-l-bank",
+        exampleTranslation: "J'ai besoin d'aller à la banque",
+        tip: "From French 'banque'. Moroccan currency is the Dirham (DH). ATMs are 'gab' or 'distributeur'",
+        audio: "bank"
+      }
+    ]
+  },
+  {
+    id: 27,
+    title: "Santé & Corps Avancé",
+    titleAr: "الصحة والجسم",
+    emoji: "🏥",
+    level: "Avancé",
+    duration: "20 min",
+    xp: 85,
+    color: "from-rose-500 to-pink-600",
+    lessons: [
+      {
+        id: 1,
+        phrase: "خصني طبيب",
+        romanization: "Kħessni tbib",
+        translation: "J'ai besoin d'un médecin",
+        pronunciation: "kħess-ni tbib",
+        example: "Kħessni tbib, 3ndi ħrara",
+        exampleTranslation: "J'ai besoin d'un médecin, j'ai de la fièvre",
+        tip: "'Kħessni' = j'ai besoin. Essential phrase for medical situations",
+        audio: "khessni_tbib"
+      },
+      {
+        id: 2,
+        phrase: "خايدني",
+        romanization: "Kħaydini",
+        translation: "J'ai mal à...",
+        pronunciation: "kħay-di-ni",
+        example: "Kħaydini rasi bzzaf",
+        exampleTranslation: "J'ai très mal à la tête",
+        tip: "'Kħaydini' + body part = j'ai mal à... Works for any body part: kħaydini btni (mal au ventre)",
+        audio: "khaydini"
+      },
+      {
+        id: 3,
+        phrase: "كنكح",
+        romanization: "Kankoh",
+        translation: "Je tousse",
+        pronunciation: "kan-koh",
+        example: "Kankoh bzzaf f-l-lil",
+        exampleTranslation: "Je tousse beaucoup la nuit",
+        tip: "'Kankoh' = je tousse (1st person). 'Ykankoh' = il tousse. 'Kohha' = la toux",
+        audio: "kankoh"
+      },
+      {
+        id: 4,
+        phrase: "حرارة",
+        romanization: "Ħrara",
+        translation: "Fièvre",
+        pronunciation: "ħra-ra",
+        example: "3ndi ħrara 3aliya",
+        exampleTranslation: "J'ai une forte fièvre",
+        tip: "'Ħrara' = fièvre/chaleur. '3ndi ħrara' = j'ai de la fièvre. 'Ħrara 3aliya' = fièvre élevée",
+        audio: "hrara"
+      },
+      {
+        id: 5,
+        phrase: "دواء",
+        romanization: "Dawa",
+        translation: "Médicament",
+        pronunciation: "da-wa",
+        example: "Shreb dawa b3d l-makla",
+        exampleTranslation: "Prends le médicament après le repas",
+        tip: "'Dawa' = médicament. 'Farmasyan' = pharmacie. 'Ordonnance' = 'wurqa d-t-tbib'",
+        audio: "dawa"
+      },
+      {
+        id: 6,
+        phrase: "عملية",
+        romanization: "3amliya",
+        translation: "Opération chirurgicale",
+        pronunciation: "3am-li-ya",
+        example: "Kħessnu y3mel 3amliya",
+        exampleTranslation: "Il doit subir une opération",
+        tip: "'3amliya' = opération chirurgicale. 'Mustashfa' = hôpital (from 'shifa' = guérison)",
+        audio: "3amliya"
+      },
+      {
+        id: 7,
+        phrase: "لغة",
+        romanization: "Lgha",
+        translation: "Allergie",
+        pronunciation: "lgha",
+        example: "3ndi lgha d-l-qmħ",
+        exampleTranslation: "J'ai une allergie au blé",
+        tip: "'Lgha' or 'ħassasiya' = allergie. Common allergies to mention at doctors",
+        audio: "lgha"
+      },
+      {
+        id: 8,
+        phrase: "صحة",
+        romanization: "Sħħa",
+        translation: "Santé",
+        pronunciation: "sħħa",
+        example: "Sħħa w raha!",
+        exampleTranslation: "Bonne santé et repos !",
+        tip: "'Sħħa' = santé. 'Sħħa w raha' = toast/expression de bonne santé. 'B-s-sħħa' = bon appétit (after a meal)",
+        audio: "shhha"
+      }
+    ]
+  },
+  {
+    id: 28,
+    title: "Conjugaison — Passé, Présent, Futur",
+    titleAr: "التصريف",
+    emoji: "📖",
+    level: "Avancé",
+    duration: "25 min",
+    xp: 100,
+    color: "from-indigo-500 to-purple-600",
+    lessons: [
+      {
+        id: 1,
+        phrase: "مشيت / مشيتي / مشى / مشات",
+        romanization: "Mshit / Mshiti / Msha / Mshat",
+        translation: "Passé de 'msha' (aller)",
+        pronunciation: "mshit / mshi-ti / msha / mshat",
+        example: "Mshit l-s-souq w mshitu ntuma fin?",
+        exampleTranslation: "Je suis allé au marché, et vous, vous êtes allés où ?",
+        tip: "Conjugaison complète: mshit (moi) / mshiti (toi m.) / mshitiy (toi f.) / msha (lui) / mshat (elle) / mshina (nous) / mshitu (vous) / mshaw (eux)",
+        audio: "msha_passe"
+      },
+      {
+        id: 2,
+        phrase: "كيَّاكل / كتَّاكل",
+        romanization: "Kay-yakol / Kat-takol",
+        translation: "Présent de 'kla' (manger)",
+        pronunciation: "kay-ya-kol / kat-ta-kol",
+        example: "Ana kan-akol, nta wash kat-akol?",
+        exampleTranslation: "Moi je mange, toi tu manges ?",
+        tip: "Présent: kan-akol (moi) / kat-akol (toi m.) / kat-akli (toi f.) / kay-yakol (lui) / kat-takol (elle) / kan-akliw (nous) / kat-akliw (vous) / kay-yakliw (eux)",
+        audio: "kla_present"
+      },
+      {
+        id: 3,
+        phrase: "غادي يجي",
+        romanization: "Ghadi yji",
+        translation: "Futur de 'ja' (venir)",
+        pronunciation: "gha-di yji",
+        example: "Ghadi yji ghda inshallah",
+        exampleTranslation: "Il viendra demain si Dieu le veut",
+        tip: "Le futur en Darija se forme avec 'ghadi' + présent. Ghadi nji (je viendrai) / ghadi tji (tu viendras) / ghadi yji (il viendra)",
+        audio: "ja_futur"
+      },
+      {
+        id: 4,
+        phrase: "ما مشيتش",
+        romanization: "Ma mshitsh",
+        translation: "Passé négatif",
+        pronunciation: "ma mshi-tsh",
+        example: "Ma mshitsh l-l-7afla 7it kont 3ayyad",
+        exampleTranslation: "Je ne suis pas allé à la fête car j'étais malade",
+        tip: "La négation au passé: 'ma' + verbe + 'sh'. Ma mshitsh (je ne suis pas allé), ma klitsh (je n'ai pas mangé), ma shrebtsh (je n'ai pas bu)",
+        audio: "ma_mshitsh"
+      },
+      {
+        id: 5,
+        phrase: "كنت / كانت / كانو",
+        romanization: "Kant / Kanat / Kanu",
+        translation: "Verbe 'kan' (être/avoir été)",
+        pronunciation: "kant / ka-nat / ka-nu",
+        example: "Kant sghir mlli skent f-Rabat",
+        exampleTranslation: "J'étais jeune quand j'habitais à Rabat",
+        tip: "Conjugaison: kant (moi) / kanti (toi m.) / kantiy (toi f.) / kan (lui) / kanat (elle) / kanna (nous) / kantu (vous) / kanu (eux). Essentiel pour parler du passé",
+        audio: "kan_conjugaison"
+      },
+      {
+        id: 6,
+        phrase: "كيَّاكل دايما / دابا",
+        romanization: "Kay-yakol dima / daba",
+        translation: "Présent habituel vs progressif",
+        pronunciation: "kay-ya-kol di-ma / da-ba",
+        example: "Kay-yakol dima tajine (habitude) — Kay-yakol daba (en ce moment)",
+        exampleTranslation: "Il mange toujours du tajine (habitude) — Il est en train de manger (maintenant)",
+        tip: "La même forme du présent sert pour l'habitude et l'action en cours. C'est le contexte (dima = toujours, daba = maintenant) qui fait la différence",
+        audio: "present_habituel"
+      },
+      {
+        id: 7,
+        phrase: "بغيت / بغا / بغيتو",
+        romanization: "Bghit / Bgha / Bghitu",
+        translation: "Verbe 'bgha' (vouloir) — toutes formes",
+        pronunciation: "bghit / bgha / bghi-tu",
+        example: "Bghit nmshi, hwa bgha yji, w ntuma bghitu tqraw",
+        exampleTranslation: "Moi je voulais partir, lui voulait venir, et vous vouliez étudier",
+        tip: "Passé: bghit / bghiti / bghitiy / bgha / bghat / bghina / bghitu / bghaw. Présent: nbghi / tbghi / tbghiy / ybghi / tbghi / nbghiw / tbghiw / ybghiw",
+        audio: "bgha_conjugaison"
+      },
+      {
+        id: 8,
+        phrase: "امشي! / كل! / شرب! / سير!",
+        romanization: "Mshi! / Kol! / Shreb! / Sir!",
+        translation: "Impératif (ordres)",
+        pronunciation: "mshi / kol / shreb / sir",
+        example: "Mshi men hnaya!",
+        exampleTranslation: "Va-t-en !",
+        tip: "L'impératif se forme avec le radical du verbe directement (2ème pers.). Mshi! (va!), Kol! (mange!), Shreb! (bois!), Sir! (pars!), Hder! (parle!)",
+        audio: "imperatif"
+      },
+      {
+        id: 9,
+        phrase: "عفاك امشي شوية",
+        romanization: "3fak mshi shwiya",
+        translation: "Forme polie de l'impératif",
+        pronunciation: "3fak mshi shwi-ya",
+        example: "3fak mshi shwiya",
+        exampleTranslation: "S'il te plaît, pars doucement",
+        tip: "Pour adoucir un ordre, ajoutez '3fak' (s'il te plaît) ou 'men fadlak' avant le verbe. L'impératif seul peut paraître brusque en Darija",
+        audio: "3fak_imperatif"
+      },
+      {
+        id: 10,
+        phrase: "غادي نمشي نشري خضرة",
+        romanization: "Ghadi nmshi n-shri khodra",
+        translation: "Synthèse — futur + verbes enchaînés",
+        pronunciation: "gha-di nmshi n-shri khod-ra",
+        example: "Ana ghadi nmshi l-s-souq w n-shri khodra, wash bghiti tji m3ya?",
+        exampleTranslation: "Je vais aller au marché acheter des légumes, tu veux venir avec moi ?",
+        tip: "Phrase complète combinant futur (ghadi + verbe), verbes enchaînés (nmshi + n-shri), et question au présent (bghiti). Félicitations, vous maîtrisez la conjugaison Darija !",
+        audio: "synthese_conjugaison"
+      }
+    ]
   }
 ];
 
