@@ -1167,5 +1167,502 @@ export const quizzes = [
         explanation: "'Bnin' = délicieux/bon au goût. 'Mzyan' = bien en général, 'bnin' est spécifique à la nourriture."
       }
     ]
+  },
+  {
+    id: 21,
+    courseId: 15,
+    title: "Quiz : Les Couleurs",
+    emoji: "🎨",
+    difficulty: "Débutant",
+    questions: [
+      {
+        id: 1,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'rouge' en Darija ?",
+        correct: "Ħmer",
+        options: ["Zerq", "Ħmer", "Khdar", "Sfar"],
+        explanation: "'Ħmer' = rouge. La lettre Ħ représente le son 'h' emphatique arabe."
+      },
+      {
+        id: 2,
+        type: "translate-to-french",
+        question: "Que signifie 'Zerq' en français ?",
+        correct: "Bleu",
+        options: ["Vert", "Bleu", "Jaune", "Blanc"],
+        explanation: "'Zerq' = bleu. Couleur très présente dans l'architecture marocaine (Chefchaouen)."
+      },
+      {
+        id: 3,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'vert' en Darija ?",
+        correct: "Khdar",
+        options: ["Sfar", "Biyd", "Khdar", "Ħmer"],
+        explanation: "'Khdar' = vert. Couleur sacrée en Islam, présente sur le drapeau marocain."
+      },
+      {
+        id: 4,
+        type: "choose-meaning",
+        question: "Que signifie 'Kħel' ?",
+        correct: "Noir",
+        options: ["Noir", "Blanc", "Rouge", "Vert"],
+        explanation: "'Kħel' = noir. 'Biyd' = blanc. Ces deux couleurs sont souvent opposées en Darija."
+      },
+      {
+        id: 5,
+        type: "translate-to-french",
+        question: "Que signifie 'Biyd' ?",
+        correct: "Blanc",
+        options: ["Gris", "Beige", "Blanc", "Crème"],
+        explanation: "'Biyd' = blanc. Vient de la racine arabe 'bayadh' (blancheur)."
+      },
+      {
+        id: 6,
+        type: "fill-blank",
+        question: "Complète avec la forme féminine : 'L-qamija _____ (rouge)'",
+        correct: "Ħmra",
+        options: ["Ħmer", "Ħmra", "Zerqa", "Khdra"],
+        explanation: "En Darija, les adjectifs s'accordent au féminin en ajoutant '-a' : Ħmer → Ħmra (rouge féminin)."
+      },
+      {
+        id: 7,
+        type: "match-pairs",
+        question: "Associe chaque couleur Darija à sa traduction française",
+        correct: '[["Ħmer","Rouge"],["Zerq","Bleu"],["Khdar","Vert"],["Sfar","Jaune"]]',
+        options: [],
+        explanation: "Les quatre couleurs de base : Ħmer=Rouge, Zerq=Bleu, Khdar=Vert, Sfar=Jaune."
+      },
+      {
+        id: 8,
+        type: "word-order",
+        question: "Remets les mots dans le bon ordre : 'La serviette rouge est belle'",
+        correct: "L-fouta l-ħmra zwina",
+        options: ["zwina", "l-ħmra", "L-fouta"],
+        explanation: "'L-fouta' = serviette/foulard, 'l-ħmra' = la rouge (féminin), 'zwina' = belle."
+      },
+      {
+        id: 9,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'jaune' en Darija ?",
+        correct: "Sfar",
+        options: ["Sfar", "Smani", "Rmadi", "Bni"],
+        explanation: "'Sfar' = jaune. 'Smani' = bleu ciel, 'rmadi' = gris, 'bni' = marron."
+      },
+      {
+        id: 10,
+        type: "choose-meaning",
+        question: "De quelle couleur est le drapeau marocain ? (en Darija)",
+        correct: "Ħmer w khdar",
+        options: ["Ħmer w biyd", "Ħmer w khdar", "Zerq w biyd", "Kħel w biyd"],
+        explanation: "Le drapeau marocain est rouge (ħmer) avec une étoile verte (khdar) à cinq branches."
+      }
+    ]
+  },
+  {
+    id: 22,
+    courseId: 16,
+    title: "Quiz : Les Vêtements",
+    emoji: "👗",
+    difficulty: "Débutant",
+    questions: [
+      {
+        id: 1,
+        type: "translate-to-french",
+        question: "Que signifie 'Qamija' ?",
+        correct: "Chemise",
+        options: ["Pantalon", "Chemise", "Chaussures", "Veste"],
+        explanation: "'Qamija' = chemise. Vient de l'arabe classique 'qamis'."
+      },
+      {
+        id: 2,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'pantalon' en Darija ?",
+        correct: "Serwal",
+        options: ["Qamija", "Serwal", "Sabbat", "Jellaba"],
+        explanation: "'Serwal' = pantalon. Mot utilisé partout au Maghreb."
+      },
+      {
+        id: 3,
+        type: "translate-to-french",
+        question: "Que signifie 'Sabbat' ?",
+        correct: "Chaussures",
+        options: ["Chaussettes", "Ceinture", "Chaussures", "Sandales"],
+        explanation: "'Sabbat' = chaussures en général. 'Belgha' désigne spécifiquement les babouches traditionnelles."
+      },
+      {
+        id: 4,
+        type: "choose-meaning",
+        question: "Que portent les Marocains traditionnellement pour l'Aïd ?",
+        correct: "Jellaba / Qftan",
+        options: ["Serwal w qamija", "Jellaba / Qftan", "Kabout w gravata", "Jean w t-shirt"],
+        explanation: "Pour l'Aïd, les Marocains portent la jellaba (hommes et femmes) ou le qftan (femmes). Vêtements traditionnels très importants."
+      },
+      {
+        id: 5,
+        type: "fill-blank",
+        question: "Complète : 'Lblast _____ l-3id' (J'ai porté la jellaba pour l'Aïd)",
+        correct: "Jellaba",
+        options: ["Qamija", "Serwal", "Jellaba", "Kabout"],
+        explanation: "'Lblas' = porter/mettre (un vêtement). 'L-3id' = l'Aïd/la fête religieuse."
+      },
+      {
+        id: 6,
+        type: "match-pairs",
+        question: "Associe chaque vêtement Darija à sa traduction française",
+        correct: '[["Qamija","Chemise"],["Serwal","Pantalon"],["Sabbat","Chaussures"],["Shashiya","Bonnet"]]',
+        options: [],
+        explanation: "Vocabulaire de base des vêtements : Qamija=Chemise, Serwal=Pantalon, Sabbat=Chaussures, Shashiya=Bonnet/Calot."
+      },
+      {
+        id: 7,
+        type: "word-order",
+        question: "Remets les mots dans le bon ordre : 'Je veux acheter un nouveau pantalon'",
+        correct: "Bghit nshri serwal jdid",
+        options: ["jdid", "nshri", "Bghit", "serwal"],
+        explanation: "'Bghit' = je veux, 'nshri' = acheter, 'serwal' = pantalon, 'jdid' = nouveau."
+      },
+      {
+        id: 8,
+        type: "translate-to-french",
+        question: "Que signifie 'Jellaba' ?",
+        correct: "Djellaba (vêtement traditionnel à capuche)",
+        options: ["Veste en cuir", "Djellaba (vêtement traditionnel à capuche)", "Robe de soirée", "Chemise brodée"],
+        explanation: "La jellaba est le vêtement traditionnel marocain à capuche, portée par hommes et femmes."
+      },
+      {
+        id: 9,
+        type: "fill-blank",
+        question: "Au souk : 'B-shhal _____ had l-qamija?' (Combien coûte cette chemise ?)",
+        correct: "kayna",
+        options: ["kayna", "ghadi", "bghit", "katbigh"],
+        explanation: "'B-shhal kayna had l-qamija?' = Combien coûte cette chemise ? 'Kayna' = elle est/elle coûte."
+      },
+      {
+        id: 10,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'Je cherche une jellaba pour l'Aïd' ?",
+        correct: "Kanqllb 3la jellaba l-3id",
+        options: ["Bghit nshri l-3id", "Kanqllb 3la jellaba l-3id", "3ndi jellaba jdida", "Lblast jellaba l-bareh"],
+        explanation: "'Kanqllb 3la' = je cherche. 'L-3id' = l'Aïd. Phrase utile pour faire du shopping."
+      }
+    ]
+  },
+  {
+    id: 23,
+    courseId: 17,
+    title: "Quiz : Fruits & Légumes",
+    emoji: "🥦",
+    difficulty: "Débutant",
+    questions: [
+      {
+        id: 1,
+        type: "translate-to-french",
+        question: "Que signifie 'Teffah' ?",
+        correct: "Pomme",
+        options: ["Orange", "Pomme", "Poire", "Pêche"],
+        explanation: "'Teffah' = pomme. Les pommes du Moyen Atlas marocain sont réputées."
+      },
+      {
+        id: 2,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'citron' en Darija ?",
+        correct: "Limo",
+        options: ["Limo", "Brtqal", "Teffah", "Dellah"],
+        explanation: "'Limo' = citron. 'Brtqal' = orange. Le citron confit est très utilisé dans la cuisine marocaine."
+      },
+      {
+        id: 3,
+        type: "translate-to-french",
+        question: "Que signifie 'Dellah' ?",
+        correct: "Pastèque",
+        options: ["Melon", "Pastèque", "Concombre", "Courgette"],
+        explanation: "'Dellah' = pastèque. Fruit très populaire en été au Maroc."
+      },
+      {
+        id: 4,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'pomme de terre' en Darija ?",
+        correct: "Betata",
+        options: ["Betata", "Khodra", "Jelbana", "Slq"],
+        explanation: "'Betata' = pomme de terre. Vient du mot 'patata'. Ingrédient de base dans de nombreux plats marocains."
+      },
+      {
+        id: 5,
+        type: "choose-meaning",
+        question: "Que signifie 'Zaytoun' ?",
+        correct: "Olive",
+        options: ["Figue", "Datte", "Olive", "Raisin"],
+        explanation: "'Zaytoun' = olive. Le Maroc est l'un des plus grands producteurs d'olives et d'huile d'argan au monde."
+      },
+      {
+        id: 6,
+        type: "match-pairs",
+        question: "Associe chaque fruit/légume Darija à sa traduction française",
+        correct: '[["Teffah","Pomme"],["Limo","Citron"],["Dellah","Pastèque"],["Zaytoun","Olive"]]',
+        options: [],
+        explanation: "Fruits essentiels : Teffah=Pomme, Limo=Citron, Dellah=Pastèque, Zaytoun=Olive."
+      },
+      {
+        id: 7,
+        type: "word-order",
+        question: "Remets les mots dans le bon ordre : 'Donne-moi un kilo de pommes s'il te plaît'",
+        correct: "3tini kilo d-teffah men fadlak",
+        options: ["d-teffah", "3tini", "men", "kilo", "fadlak"],
+        explanation: "'3tini' = donne-moi, 'kilo d-teffah' = un kilo de pommes, 'men fadlak' = s'il te plaît."
+      },
+      {
+        id: 8,
+        type: "fill-blank",
+        question: "'B-shhal _____ had l-betata?' (Combien coûtent ces pommes de terre ?)",
+        correct: "kayna",
+        options: ["kayna", "bghit", "ghadi", "khasni"],
+        explanation: "'B-shhal kayna had l-betata?' = Combien coûtent ces pommes de terre ? Phrase essentielle au marché."
+      },
+      {
+        id: 9,
+        type: "translate-to-french",
+        question: "Que signifie 'Khodra' ?",
+        correct: "Légumes",
+        options: ["Fruits", "Légumes", "Viande", "Épices"],
+        explanation: "'Khodra' = légumes (collectif). 'Fakiya' = fruits. Mots utiles au marché."
+      },
+      {
+        id: 10,
+        type: "choose-meaning",
+        question: "Quel produit est unique au Maroc et protégé par l'UNESCO ?",
+        correct: "L-argan (huile d'argan)",
+        options: ["L-zaytoun (olive)", "L-argan (huile d'argan)", "L-dellah (pastèque)", "L-teffah (pomme)"],
+        explanation: "L'arganier pousse exclusivement au Maroc (région de Souss). L'huile d'argan est protégée par l'UNESCO."
+      }
+    ]
+  },
+  {
+    id: 24,
+    courseId: 18,
+    title: "Quiz : Les Verbes Essentiels",
+    emoji: "⚡",
+    difficulty: "Intermédiaire",
+    questions: [
+      {
+        id: 1,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'tu veux' en Darija ?",
+        correct: "Tbghi",
+        options: ["Bgha", "Tbghi", "Nbghi", "Bghiw"],
+        explanation: "'Tbghi' = tu veux (2e personne singulier). 'Nbghi' = je veux, 'Bgha' = il veut."
+      },
+      {
+        id: 2,
+        type: "translate-to-french",
+        question: "Que signifie 'Kay-mshi' ?",
+        correct: "Il va / Il est en train d'aller",
+        options: ["Il est allé", "Il va / Il est en train d'aller", "Il veut aller", "Il doit aller"],
+        explanation: "'Kay-' est le préfixe du présent progressif masculin. 'Kay-mshi' = il va (en ce moment)."
+      },
+      {
+        id: 3,
+        type: "fill-blank",
+        question: "Complète : '_____ nmshi l-s-souq ghda' (Je vais aller au marché demain)",
+        correct: "Ghadi",
+        options: ["Bghit", "Ghadi", "Kont", "Safi"],
+        explanation: "'Ghadi' + verbe = futur proche en Darija. 'Ghadi nmshi' = je vais aller."
+      },
+      {
+        id: 4,
+        type: "match-pairs",
+        question: "Associe chaque verbe Darija à sa traduction française",
+        correct: '[["Msha","Aller"],["Ja","Venir"],["Bgha","Vouloir"],["Kla","Manger"]]',
+        options: [],
+        explanation: "Verbes fondamentaux : Msha=Aller, Ja=Venir, Bgha=Vouloir, Kla=Manger."
+      },
+      {
+        id: 5,
+        type: "choose-meaning",
+        question: "Que signifie 'Kay-hder' ?",
+        correct: "Il parle",
+        options: ["Il parle", "Il mange", "Il dort", "Il travaille"],
+        explanation: "'Kay-hder' = il parle (en ce moment). 'Hder' = parler. 'Kay-' = préfixe présent masculin."
+      },
+      {
+        id: 6,
+        type: "word-order",
+        question: "Remets les mots dans le bon ordre : 'Est-ce qu'il veut apporter du thé ?'",
+        correct: "Wash bgha yjib atay",
+        options: ["yjib", "bgha", "Wash", "atay"],
+        explanation: "'Wash' = est-ce que, 'bgha' = il veut, 'yjib' = apporter, 'atay' = thé."
+      },
+      {
+        id: 7,
+        type: "fill-blank",
+        question: "'Ma _____ sh l-s-souq' (Je ne suis pas allé au marché)",
+        correct: "mshit",
+        options: ["mshit", "nmshi", "ghadi", "kont"],
+        explanation: "'Ma mshit-sh' = je ne suis pas allé. La négation en Darija encadre le verbe : Ma...sh."
+      },
+      {
+        id: 8,
+        type: "translate-to-french",
+        question: "Que signifie 'Ma tbghish' ?",
+        correct: "Tu ne veux pas",
+        options: ["Je ne veux pas", "Tu ne veux pas", "Il ne veut pas", "Nous ne voulons pas"],
+        explanation: "'Ma tbghi-sh' = tu ne veux pas. 'Tbghi' = tu veux, 'ma...sh' = négation."
+      },
+      {
+        id: 9,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'nous allons' (présent) en Darija ?",
+        correct: "Kay-mshiw",
+        options: ["Kay-mshi", "Nmshiw", "Kay-mshiw", "Ghadi nmshi"],
+        explanation: "'Kay-mshiw' = ils/elles vont. 'Nmshiw' = nous allons. Le préfixe 'n-' indique la 1ère personne."
+      },
+      {
+        id: 10,
+        type: "fill-blank",
+        question: "'Hiya kat-_____ f-l-jami3a' (Elle étudie à l'université)",
+        correct: "qra",
+        options: ["mshi", "qra", "khdm", "klm"],
+        explanation: "'Kat-qra' = elle étudie/lit (présent féminin). 'Kat-' est le préfixe du présent féminin."
+      },
+      {
+        id: 11,
+        type: "choose-meaning",
+        question: "Que signifie 'Bgha ykhdm' ?",
+        correct: "Il veut travailler",
+        options: ["Il veut manger", "Il veut travailler", "Il veut partir", "Il veut dormir"],
+        explanation: "'Bgha' = il veut, 'ykhdm' = travailler (forme subjontive). Construction courante en Darija."
+      },
+      {
+        id: 12,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'Ils mangent' (présent) en Darija ?",
+        correct: "Kay-klaw",
+        options: ["Klaw", "Kay-klaw", "Ghadi yaklu", "Ma klawsh"],
+        explanation: "'Kay-klaw' = ils mangent (présent progressif). 'Klaw' = ils ont mangé (passé)."
+      }
+    ]
+  },
+  {
+    id: 25,
+    courseId: 19,
+    title: "Quiz : Slang & Darija des Jeunes",
+    emoji: "🔥",
+    difficulty: "Avancé",
+    questions: [
+      {
+        id: 1,
+        type: "translate-to-french",
+        question: "Que signifie 'Zwine' en argot marocain ?",
+        correct: "Cool / Beau",
+        options: ["Ennuyeux", "Cool / Beau", "Bizarre", "Fatigant"],
+        explanation: "'Zwine' = beau/belle, cool. Très utilisé par les jeunes marocains pour tout ce qui est bien."
+      },
+      {
+        id: 2,
+        type: "choose-meaning",
+        question: "Dans quel contexte utilise-t-on 'Safi' ?",
+        correct: "Pour marquer l'accord ou la fin d'une discussion",
+        options: [
+          "Uniquement quand on quitte quelqu'un",
+          "Pour marquer l'accord ou la fin d'une discussion",
+          "Quand on mange quelque chose de bon",
+          "Pour saluer quelqu'un"
+        ],
+        explanation: "'Safi' est polyvalent : ok, c'est bon, ça suffit, c'est réglé. Ultra-courant dans les conversations."
+      },
+      {
+        id: 3,
+        type: "fill-blank",
+        question: "'_____, mshina!' (Allons-y, je suis motivé !)",
+        correct: "3andi niya",
+        options: ["Ma bghitsh", "3andi niya", "Walu", "Bslama"],
+        explanation: "'3andi niya' = j'ai l'intention/je suis motivé. 'Mshina' = allons-y (passé utilisé comme impératif)."
+      },
+      {
+        id: 4,
+        type: "match-pairs",
+        question: "Associe chaque expression argotique à sa traduction",
+        correct: '[["Zwine","Cool/Beau"],["Safi","Ok/C est bon"],["Khouya","Mon frère/ami"],["3ayb","Honteux"]]',
+        options: [],
+        explanation: "Argot marocain moderne : Zwine=Cool, Safi=Ok, Khouya=Ami/Frère, 3ayb=C'est honteux."
+      },
+      {
+        id: 5,
+        type: "word-order",
+        question: "Remets les mots dans le bon ordre : 'Est-ce que ça c'est vraiment cool ?'",
+        correct: "Wach hda zwine bzzaf",
+        options: ["bzzaf", "Wach", "zwine", "hda"],
+        explanation: "'Wach' = est-ce que, 'hda' = ça/ceci, 'zwine' = cool/beau, 'bzzaf' = beaucoup/vraiment."
+      },
+      {
+        id: 6,
+        type: "choose-meaning",
+        question: "'Khouya' peut s'utiliser avec... ?",
+        correct: "Un ami proche, pas forcément son frère",
+        options: [
+          "Uniquement son frère biologique",
+          "Un ami proche, pas forcément son frère",
+          "Uniquement les hommes plus âgés",
+          "Uniquement en famille"
+        ],
+        explanation: "'Khouya' = littéralement 'mon frère', mais s'utilise entre amis proches. Comme 'bro' en français familier."
+      },
+      {
+        id: 7,
+        type: "translate-to-french",
+        question: "Que signifie l'expression 'Nta wach?!' ?",
+        correct: "Surprise / Incrédulité (genre 'mais c'est quoi ça ?!')",
+        options: [
+          "Tu vas bien ?",
+          "Surprise / Incrédulité (genre 'mais c'est quoi ça ?!')",
+          "Tu es d'accord ?",
+          "Tu viens ?"
+        ],
+        explanation: "'Nta wach?!' = littéralement 'toi quoi?!' Exprime la surprise ou l'incrédulité face à une situation inattendue."
+      },
+      {
+        id: 8,
+        type: "fill-blank",
+        question: "'_____ 3lik had l-khedma' (C'est honteux ce travail que tu as fait)",
+        correct: "3ayb",
+        options: ["Mzyan", "Zwine", "3ayb", "Baraka"],
+        explanation: "'3ayb 3lik' = c'est honteux pour toi / tu devrais avoir honte. Expression morale très courante."
+      },
+      {
+        id: 9,
+        type: "translate-to-darija",
+        question: "Comment dit-on 'c'est n'importe quoi !' en argot marocain ?",
+        correct: "Hadshi ma kayn-sh !",
+        options: ["Zwine bzzaf!", "Hadshi ma kayn-sh !", "3andi niya !", "Safi, safi!"],
+        explanation: "'Hadshi ma kayn-sh' = littéralement 'ça n'existe pas' = c'est n'importe quoi / c'est incroyable."
+      },
+      {
+        id: 10,
+        type: "choose-meaning",
+        question: "Que signifie 'Wili wili' ?",
+        correct: "Exclamation de surprise ou de regret",
+        options: [
+          "Exclamation de joie intense",
+          "Exclamation de surprise ou de regret",
+          "Formule pour dire au revoir",
+          "Expression pour dire qu'on est fatigué"
+        ],
+        explanation: "'Wili wili' est une exclamation qui exprime la surprise, le regret ou la consternation. Équivalent de 'oh là là' en français."
+      },
+      {
+        id: 11,
+        type: "translate-to-french",
+        question: "Que signifie 'Wakha' ?",
+        correct: "D'accord / Ok",
+        options: ["Jamais", "D'accord / Ok", "Peut-être", "Non"],
+        explanation: "'Wakha' = d'accord, ok. Réponse positive très fréquente, équivalent de 'safi' dans certains contextes."
+      },
+      {
+        id: 12,
+        type: "fill-blank",
+        question: "'Dak r-rajel _____ bzzaf, ma bghitsh nshuf-h' (Cet homme est vraiment ennuyeux)",
+        correct: "m3qqed",
+        options: ["zwine", "mzyan", "m3qqed", "ferhan"],
+        explanation: "'M3qqed' = compliqué/prise de tête/ennuyeux. 'Ma bghitsh nshuf-h' = je ne veux pas le voir."
+      }
+    ]
   }
 ];
